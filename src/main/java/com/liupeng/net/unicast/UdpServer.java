@@ -1,4 +1,4 @@
-package com.liupeng.net.udp;
+package com.liupeng.net.unicast;
 
 import java.io.IOException;
 import java.net.DatagramPacket;

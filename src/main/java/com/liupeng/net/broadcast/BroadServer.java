@@ -1,4 +1,4 @@
-package com.liupeng.net.broad;
+package com.liupeng.net.broadcast;
 
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
