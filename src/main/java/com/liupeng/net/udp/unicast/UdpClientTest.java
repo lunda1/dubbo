@@ -1,4 +1,4 @@
-package com.liupeng.net.unicast;
+package com.liupeng.net.udp.unicast;
 
 public class UdpClientTest {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.liupeng.net.broadcast;
+package com.liupeng.net.udp.broadcast;
 
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
