@@ -15,12 +15,17 @@ public class TestLoadBalanceServer {
     public static void main(String[] args) {
         ExecutorService executorService = Executors.newFixedThreadPool(2);
         executorService.submit(()-> {
-            ClassPathXmlApplicationContext remoteContext = new ClassPathXmlApplicationContext("dubbo-config-provider.xml");
-            remoteContext.start();
+            try {
+                SECONDS.sleep(10);
+                ClassPathXmlApplicationContext remoteContext = new ClassPathXmlApplicationContext("dubbo-config-provider.xml");
+                remoteContext.start();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         });
         executorService.submit(()->{
             try {
-                SECONDS.sleep(2);
+                SECONDS.sleep(20);
                 ClassPathXmlApplicationContext remoteContext2 = new ClassPathXmlApplicationContext("dubbo-config-provider-5s.xml");
                 remoteContext2.start();
             } catch (InterruptedException e) {
