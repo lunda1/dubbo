@@ -1,21 +1,26 @@
-package com.liupeng.learning.io.zip;
+package com.liupeng.learning.haoqjob;
 
 import com.alibaba.fastjson.JSON;
 
 import java.io.*;
-import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.LinkedBlockingDeque;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.concurrent.*;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipException;
 import java.util.zip.ZipFile;
 import java.util.zip.ZipInputStream;
 
-public class TestZip {
-    public static void main(String[] args) throws IOException, ZipException {
-        testReadZip();
+public class TestHaoQJob {
+    public static void main(String[] args) throws IOException {
+        BlockingQueue queue = getHotelTaskQueue();
+        if (queue!=null && !queue.isEmpty()) {
+            //增加校验数据文件的个数来粗略的判断数据是否有问题
+            updateHotel(queue);
+        }
     }
 
-    public static void testReadZip() throws IOException, ZipException {
+    public static BlockingQueue getHotelTaskQueue() throws IOException, ZipException {
         File file = new File("src/main/resources/io/HAOQIAO_test_static_xml.zip");
         ZipFile zipFile = new ZipFile(file);
         ZipInputStream zipIn = new ZipInputStream(new FileInputStream(file));
@@ -34,9 +39,9 @@ public class TestZip {
                     outFile.createNewFile();
                 }
 
-                //打印文件名称
                 queue.offer(outFile.getName());
-                System.out.println(outFile.getName());
+                //打印文件名称
+                //System.out.println(outFile.getName());
 
                 BufferedInputStream bis = null;
                 BufferedOutputStream bos = null;
@@ -55,7 +60,30 @@ public class TestZip {
         }
 
         zipIn.close();
+        System.out.println("hotel task queue: "+JSON.toJSONString(queue));
+        return queue;
+    }
 
-        System.out.println(JSON.toJSONString(queue));
+    public static void updateHotel(BlockingQueue<String> queue) {
+
+        ExecutorService pool = Executors.newFixedThreadPool(5);
+        for (int i=0; i<5; i++) {
+            pool.submit(new Runnable() {
+                @Override public void run() {
+                    String fileName = null;
+                    try {
+                        while ((fileName = queue.poll()) != null) {
+                            TimeUnit.SECONDS.sleep(3);
+                            //插入数据
+                            SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
+                            System.out.println("insert data: "+fileName+" "+df.format(new Date()));
+                        }
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            });
+        }
+        pool.shutdown();
     }
 }
