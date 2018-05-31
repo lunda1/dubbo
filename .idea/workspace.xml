@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="04489e23-602d-4c28-96b8-a5141ff36630" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/dubbo.iml" afterPath="$PROJECT_DIR$/dubbo.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/liupeng/learning/haoqjob/TestHaoQJob.java" afterPath="$PROJECT_DIR$/src/main/java/com/liupeng/learning/haoqjob/TestHaoQJob.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/http/TestHttp.java" afterPath="$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/http/TestHttp.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/liupeng/learning/pool/TestThreadPool.java" afterPath="$PROJECT_DIR$/src/main/java/com/liupeng/learning/pool/TestThreadPool.java" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/io/tmp/HAOQIAO_test_static_xml/cityList/cityList.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/io/tmp/HAOQIAO_test_static_xml/countryList/countryList.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/io/tmp/HAOQIAO_test_static_xml/hotelList/hotellist_cityId1.xml" afterPath="" />
@@ -34,44 +35,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestJaxb.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/xml/jaxb/TestJaxb.java">
+      <file leaf-file-name="TestZip.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/zip/TestZip.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="58" column="19" lean-forward="false" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
+            <state relative-caret-position="570">
+              <caret line="38" column="54" lean-forward="false" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestFTP.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/ftp/TestFTP.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="191">
+              <caret line="22" column="25" lean-forward="false" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestHttp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/http/TestHttp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="33" selection-end-column="66" />
               <folding>
-                <element signature="method#testCityXmlToBean#0;class#TestJaxb#0" expanded="false" />
-                <element signature="method#testCountryXmlToBean#0;class#TestJaxb#0" expanded="false" />
+                <element signature="imports" expanded="true" />
+                <element signature="method#uploadFile#0;class#TestHttp#0" expanded="false" />
+                <element signature="method#uploadFileByDirectlySetAuth#0;class#TestHttp#0" expanded="false" />
+                <element signature="method#downloadTxtFile#0;class#TestHttp#0" expanded="false" />
+                <element signature="method#downloadZipFile#0;class#TestHttp#0" expanded="false" />
+                <element signature="method#downloadZipFileByDirectlySetAuth#0;class#TestHttp#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HaoQHotelResponse.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/xml/jaxb/HaoQHotelResponse.java">
+      <file leaf-file-name="AtomicInteger.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/util/concurrent/atomic/AtomicInteger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="198">
+              <caret line="184" column="21" lean-forward="false" selection-start-line="184" selection-start-column="21" selection-end-line="184" selection-end-column="21" />
+              <folding>
+                <element signature="e#4725#4726#0" expanded="true" />
+                <element signature="e#4793#4794#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HaoQHotel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/xml/jaxb/HaoQHotel.java">
+      <file leaf-file-name="TestThreadPool.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/pool/TestThreadPool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1751">
-              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestHttp.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/http/TestHttp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="368" column="46" lean-forward="false" selection-start-line="368" selection-start-column="46" selection-end-line="368" selection-end-column="46" />
+            <state relative-caret-position="171">
+              <caret line="9" column="45" lean-forward="true" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,239 +97,58 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefaultStyledDocument.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/javax/swing/text/DefaultStyledDocument.java">
+      <file leaf-file-name="TaskEntry.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/haoqjob/TaskEntry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="1183" column="34" lean-forward="false" selection-start-line="1183" selection-start-column="34" selection-end-line="1183" selection-end-column="34" />
+            <state relative-caret-position="38">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding>
+                <element signature="e#157#158#0" expanded="true" />
+                <element signature="e#188#189#0" expanded="true" />
+                <element signature="e#236#237#0" expanded="true" />
+                <element signature="e#276#277#0" expanded="true" />
+                <element signature="e#312#313#0" expanded="true" />
+                <element signature="e#344#345#0" expanded="true" />
+                <element signature="e#394#395#0" expanded="true" />
+                <element signature="e#436#437#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LinkedBlockingDeque.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/util/concurrent/LinkedBlockingDeque.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="465" column="13" lean-forward="false" selection-start-line="465" selection-start-column="13" selection-end-line="465" selection-end-column="13" />
+              <folding>
+                <element signature="e#18496#18497#0" expanded="true" />
+                <element signature="e#18530#18531#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LinkedBlockingQueue.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/util/concurrent/LinkedBlockingQueue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="259" column="11" lean-forward="false" selection-start-line="259" selection-start-column="11" selection-end-line="259" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractHttpClient.class" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/maven_repositories/org/apache/httpcomponents/httpclient/4.5.5/httpclient-4.5.5.jar!/org/apache/http/impl/client/AbstractHttpClient.class">
+      <file leaf-file-name="TestHaoQJob.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/haoqjob/TestHaoQJob.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1495">
-              <caret line="600" column="27" lean-forward="false" selection-start-line="600" selection-start-column="27" selection-end-line="600" selection-end-column="27" />
+            <state relative-caret-position="228">
+              <caret line="28" column="18" lean-forward="true" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
               <folding>
-                <marker date="1527670245446" expanded="false" signature="0:104" ph="/.../" />
-                <marker date="1527670245446" expanded="false" signature="151:3137" ph="..." />
-                <marker date="1527670245446" expanded="true" signature="3139:3157" ph="/**...*/" />
-                <marker date="1527670245446" expanded="true" signature="3158:3233" ph="@{...}" />
-                <marker date="1527670245446" expanded="true" signature="4393:4472" ph="{...}" />
-                <marker date="1527670245446" expanded="true" signature="4641:5160" ph="{...}" />
-                <marker date="1527670245446" expanded="true" signature="5232:6673" ph="{...}" />
-                <marker date="1527670245446" expanded="true" signature="6735:7152" ph="{...}" />
-                <marker date="1527670245446" expanded="true" signature="7214:7789" ph="{...}" />
-                <marker date="1527670245446" expanded="false" signature="7848:7859" ph=" { " />
-                <marker date="1527670245446" expanded="false" signature="7892:7898" ph=" }" />
-                <marker date="1527670245446" expanded="false" signature="7969:7980" ph=" { " />
-                <marker date="1527670245446" expanded="false" signature="8024:8030" ph=" }" />
-                <marker date="1527670245446" expanded="false" signature="8109:8120" ph=" { " />
-                <marker date="1527670245446" expanded="false" signature="8168:8174" ph=" }" />
-                <marker date="1527670245446" expanded="false" signature="8245:8256" ph=" { " />
-                <marker date="1527670245446" expanded="false" signature="8300:8306" ph=" }" />
-                <marker date="1527670245446" expanded="true" signature="8312:8330" ph="/**...*/" />
-                <marker date="1527670245446" expanded="false" signature="8400:8411" ph=" { " />
-                <marker date="1527670245446" expanded="false" signature="8447:8453" ph=" }" />
-                <marker date="1527670245446" expanded="false" signature="8528:8539" ph=" { " />
-                <marker date="1527670245446" expanded="false" signature="8581:8587" ph=" }" />
-                <marker date="1527670245446" expanded="true" signature="8593:8611" ph="/**...*/" />
-                <marker date="1527670245446" expanded="false" signature="8699:8710" ph=" { " />
-                <marker date="1527670245446" expanded="false" signature="8758:8764" ph=" }" />
-                <marker date="1527670245446" expanded="false" signature="8838:8849" ph=" { " />
-                <marker date="1527670245446" expanded="false" signature="8890:8896" ph=" }" />
-                <marker date="1527670245446" expanded="true" signature="8902:8920" ph="/**...*/" />
-                <marker date="1527670245446" expanded="false" signature="9007:9018" ph=" { " />
-                <marker date="1527670245446" expanded="false" signature="9065:9071" ph=" }" />
-                <marker date="1527670245446" expanded="false" signature="9118:9129" ph=" { " />
-                <marker date="1527670245446" expanded="false" signature="9159:9165" ph=" }" />
-                <marker date="1527670245446" expanded="false" signature="9228:9239" ph=" { " />
-                <marker date="1527670245446" expanded="false" signature="9277:9283" ph=" }" />
-                <marker date="1527670245446" expanded="true" signature="9341:9441" ph="{...}" />
-                <marker date="1527670245446" expanded="false" signature="9498:9509" ph=" { " />
-                <marker date="1527670245446" expanded="false" signature="9546:9552" ph=" }" />
-                <marker date="1527670245446" expanded="true" signature="9607:9760" ph="{...}" />
-                <marker date="1527670245446" expanded="false" signature="9819:9830" ph=" { " />
-                <marker date="1527670245446" expanded="false" signature="9858:9864" ph=" }" />
-                <marker date="1527670245446" expanded="true" signature="9943:10103" ph="{...}" />
-                <marker date="1527670245446" expanded="true" signature="10176:10328" ph="{...}" />
-                <marker date="1527670245446" expanded="true" signature="10396:10578" ph="{...}" />
-                <marker date="1527670245446" expanded="false" signature="10652:10663" ph=" { " />
-                <marker date="1527670245446" expanded="false" signature="10700:10706" ph=" }" />
-                <marker date="1527670245446" expanded="false" signature="10794:10805" ph=" { " />
-                <marker date="1527670245446" expanded="false" signature="10843:10849" ph=" }" />
-                <marker date="1527670245446" expanded="true" signature="10945:11003" ph="{...}" />
-                <marker date="1527670245446" expanded="true" signature="11071:11253" ph="{...}" />
-                <marker date="1527670245446" expanded="false" signature="11319:11330" ph=" { " />
-                <marker date="1527670245446" expanded="false" signature="11357:11363" ph=" }" />
-                <marker date="1527670245446" expanded="false" signature="11435:11446" ph=" { " />
-                <marker date="1527670245446" expanded="false" signature="11476:11482" ph=" }" />
-                <marker date="1527670245446" expanded="false" signature="11556:11567" ph=" { " />
-                <marker date="1527670245446" expanded="false" signature="11604:11610" ph=" }" />
-                <marker date="1527670245446" expanded="true" signature="11695:11861" ph="{...}" />
-                <marker date="1527670245446" expanded="false" signature="11942:11953" ph=" { " />
-                <marker date="1527670245446" expanded="false" signature="11983:11989" ph=" }" />
-                <marker date="1527670245446" expanded="true" signature="12082:12264" ph="{...}" />
-                <marker date="1527670245446" expanded="false" signature="12353:12364" ph=" { " />
-                <marker date="1527670245446" expanded="false" signature="12398:12404" ph=" }" />
-                <marker date="1527670245446" expanded="true" signature="12489:12652" ph="{...}" />
-                <marker date="1527670245446" expanded="false" signature="12742:12753" ph=" { " />
-                <marker date="1527670245446" expanded="false" signature="12781:12787" ph=" }" />
-                <marker date="1527670245446" expanded="true" signature="12793:12811" ph="/**...*/" />
-                <marker date="1527670245446" expanded="false" signature="12894:12905" ph=" { " />
-                <marker date="1527670245446" expanded="false" signature="12941:12947" ph=" }" />
-                <marker date="1527670245446" expanded="true" signature="12953:12971" ph="/**...*/" />
-                <marker date="1527670245446" expanded="true" signature="13061:13145" ph="{...}" />
-                <marker date="1527670245446" expanded="true" signature="13216:13384" ph="{...}" />
-                <marker date="1527670245446" expanded="false" signature="13461:13472" ph=" { " />
-                <marker date="1527670245446" expanded="false" signature="13505:13511" ph=" }" />
-                <marker date="1527670245446" expanded="true" signature="13517:13535" ph="/**...*/" />
-                <marker date="1527670245446" expanded="true" signature="13637:13701" ph="{...}" />
-                <marker date="1527670245446" expanded="true" signature="13707:13725" ph="/**...*/" />
-                <marker date="1527670245446" expanded="true" signature="13833:13918" ph="{...}" />
-                <marker date="1527670245446" expanded="true" signature="14007:14193" ph="{...}" />
-                <marker date="1527670245446" expanded="true" signature="14289:14340" ph="{...}" />
-                <marker date="1527670245446" expanded="true" signature="14346:14364" ph="/**...*/" />
-                <marker date="1527670245446" expanded="true" signature="14465:14528" ph="{...}" />
-                <marker date="1527670245446" expanded="true" signature="14534:14552" ph="/**...*/" />
-                <marker date="1527670245446" expanded="true" signature="14659:14743" ph="{...}" />
-                <marker date="1527670245446" expanded="true" signature="14831:15013" ph="{...}" />
-                <marker date="1527670245446" expanded="true" signature="15108:15158" ph="{...}" />
-                <marker date="1527670245446" expanded="true" signature="15219:15367" ph="{...}" />
-                <marker date="1527670245446" expanded="false" signature="15437:15448" ph=" { " />
-                <marker date="1527670245446" expanded="false" signature="15479:15485" ph=" }" />
-                <marker date="1527670245446" expanded="true" signature="15562:15724" ph="{...}" />
-                <marker date="1527670245446" expanded="false" signature="15812:15823" ph=" { " />
-                <marker date="1527670245446" expanded="false" signature="15858:15864" ph=" }" />
-                <marker date="1527670245446" expanded="true" signature="15931:16087" ph="{...}" />
-                <marker date="1527670245446" expanded="false" signature="16164:16175" ph=" { " />
-                <marker date="1527670245446" expanded="false" signature="16208:16214" ph=" }" />
-                <marker date="1527670245446" expanded="true" signature="16285:16453" ph="{...}" />
-                <marker date="1527670245446" expanded="false" signature="16529:16540" ph=" { " />
-                <marker date="1527670245446" expanded="false" signature="16572:16578" ph=" }" />
-                <marker date="1527670245446" expanded="true" signature="16651:16816" ph="{...}" />
-                <marker date="1527670245446" expanded="true" signature="16880:17728" ph="{...}" />
-                <marker date="1527670245446" expanded="false" signature="17787:17798" ph=" { " />
-                <marker date="1527670245446" expanded="false" signature="17859:17865" ph=" }" />
-                <marker date="1527670245446" expanded="true" signature="17949:18026" ph="{...}" />
-                <marker date="1527670245446" expanded="true" signature="18108:18184" ph="{...}" />
-                <marker date="1527670245446" expanded="false" signature="18242:18253" ph=" { " />
-                <marker date="1527670245446" expanded="false" signature="18313:18319" ph=" }" />
-                <marker date="1527670245446" expanded="true" signature="18403:18503" ph="{...}" />
-                <marker date="1527670245446" expanded="true" signature="18598:18705" ph="{...}" />
-                <marker date="1527670245446" expanded="true" signature="18764:18871" ph="{...}" />
-                <marker date="1527670245446" expanded="true" signature="18983:19102" ph="{...}" />
-                <marker date="1527670245446" expanded="true" signature="19184:19284" ph="{...}" />
-                <marker date="1527670245446" expanded="true" signature="19377:19484" ph="{...}" />
-                <marker date="1527670245446" expanded="true" signature="19542:19648" ph="{...}" />
-                <marker date="1527670245446" expanded="true" signature="19758:19876" ph="{...}" />
-                <marker date="1527670245446" expanded="true" signature="20033:23284" ph="{...}" />
-                <marker date="1527670245446" expanded="true" signature="23290:23308" ph="/**...*/" />
-                <marker date="1527670245446" expanded="true" signature="23780:23988" ph="{...}" />
-                <marker date="1527670245446" expanded="true" signature="23994:24012" ph="/**...*/" />
-                <marker date="1527670245446" expanded="true" signature="24486:24705" ph="{...}" />
-                <marker date="1527670245446" expanded="true" signature="25168:25389" ph="{...}" />
-                <marker date="1527670245446" expanded="true" signature="25449:25565" ph="{...}" />
-                <marker date="1527670245446" expanded="false" signature="25590:25601" ph=" { " />
-                <marker date="1527670245446" expanded="false" signature="25640:25646" ph=" }" />
+                <element signature="e#899#900#0" expanded="true" />
+                <element signature="e#924#925#0" expanded="true" />
+                <element signature="e#2886#2894#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MultipartEntityBuilder.class" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/maven_repositories/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3.jar!/org/apache/http/entity/mime/MultipartEntityBuilder.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="123" column="78" lean-forward="false" selection-start-line="123" selection-start-column="78" selection-end-line="123" selection-end-column="78" />
-              <folding>
-                <marker date="1527679838246" expanded="false" signature="0:104" ph="/.../" />
-                <marker date="1527679838246" expanded="false" signature="151:814" ph="..." />
-                <marker date="1527679838246" expanded="false" signature="1272:1283" ph=" { " />
-                <marker date="1527679838246" expanded="false" signature="1319:1325" ph=" }" />
-                <marker date="1527679838246" expanded="true" signature="1356:1499" ph="{...}" />
-                <marker date="1527679838246" expanded="true" signature="1567:1621" ph="{...}" />
-                <marker date="1527679838246" expanded="true" signature="1670:1756" ph="{...}" />
-                <marker date="1527679838246" expanded="true" signature="1808:1882" ph="{...}" />
-                <marker date="1527679838246" expanded="true" signature="1947:2009" ph="{...}" />
-                <marker date="1527679838246" expanded="true" signature="2076:2223" ph="{...}" />
-                <marker date="1527679838246" expanded="true" signature="2229:2247" ph="/**...*/" />
-                <marker date="1527679838246" expanded="false" signature="2336:2347" ph=" { " />
-                <marker date="1527679838246" expanded="false" signature="2387:2393" ph=" }" />
-                <marker date="1527679838246" expanded="true" signature="2469:2588" ph="{...}" />
-                <marker date="1527679838246" expanded="true" signature="2652:2712" ph="{...}" />
-                <marker date="1527679838246" expanded="true" signature="2779:3044" ph="{...}" />
-                <marker date="1527679838246" expanded="true" signature="3126:3304" ph="{...}" />
-                <marker date="1527679838246" expanded="true" signature="3403:3480" ph="{...}" />
-                <marker date="1527679838246" expanded="true" signature="3554:3632" ph="{...}" />
-                <marker date="1527679838246" expanded="true" signature="3747:3834" ph="{...}" />
-                <marker date="1527679838246" expanded="true" signature="3907:4008" ph="{...}" />
-                <marker date="1527679838246" expanded="true" signature="4124:4209" ph="{...}" />
-                <marker date="1527679838246" expanded="true" signature="4283:4403" ph="{...}" />
-                <marker date="1527679838246" expanded="true" signature="4528:4622" ph="{...}" />
-                <marker date="1527679838246" expanded="true" signature="4705:4816" ph="{...}" />
-                <marker date="1527679838246" expanded="true" signature="4856:5163" ph="{...}" />
-                <marker date="1527679838246" expanded="true" signature="5203:7013" ph="{...}" />
-                <marker date="1527679838246" expanded="false" signature="7044:7055" ph=" { " />
-                <marker date="1527679838246" expanded="false" signature="7081:7087" ph=" }" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContentType.class" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/maven_repositories/org/apache/httpcomponents/httpcore/4.4.9/httpcore-4.4.9.jar!/org/apache/http/entity/ContentType.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="38" column="19" lean-forward="false" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
-              <folding>
-                <marker date="1527670244876" expanded="false" signature="0:104" ph="/.../" />
-                <marker date="1527670244876" expanded="false" signature="146:1130" ph="..." />
-                <marker date="1527670244876" expanded="true" signature="1132:1188" ph="@{...}" />
-                <marker date="1527670244876" expanded="true" signature="2635:2736" ph="{...}" />
-                <marker date="1527670244876" expanded="true" signature="2812:2915" ph="{...}" />
-                <marker date="1527670244876" expanded="false" signature="2948:2959" ph=" { " />
-                <marker date="1527670244876" expanded="false" signature="2980:2986" ph=" }" />
-                <marker date="1527670244876" expanded="false" signature="3019:3030" ph=" { " />
-                <marker date="1527670244876" expanded="false" signature="3050:3056" ph=" }" />
-                <marker date="1527670244876" expanded="true" signature="3102:3588" ph="{...}" />
-                <marker date="1527670244876" expanded="true" signature="3619:4039" ph="{...}" />
-                <marker date="1527670244876" expanded="true" signature="4084:4303" ph="{...}" />
-                <marker date="1527670244876" expanded="true" signature="4376:4649" ph="{...}" />
-                <marker date="1527670244876" expanded="false" signature="4704:4715" ph=" { " />
-                <marker date="1527670244876" expanded="false" signature="4754:4760" ph=" }" />
-                <marker date="1527670244876" expanded="true" signature="4867:4970" ph="{...}" />
-                <marker date="1527670244876" expanded="true" signature="5047:5125" ph="{...}" />
-                <marker date="1527670244876" expanded="true" signature="5222:6050" ph="{...}" />
-                <marker date="1527670244876" expanded="true" signature="6166:6397" ph="{...}" />
-                <marker date="1527670244876" expanded="true" signature="6496:6964" ph="{...}" />
-                <marker date="1527670244876" expanded="true" signature="7070:7466" ph="{...}" />
-                <marker date="1527670244876" expanded="true" signature="7528:8062" ph="{...}" />
-                <marker date="1527670244876" expanded="true" signature="8177:8296" ph="{...}" />
-                <marker date="1527670244876" expanded="true" signature="8418:8537" ph="{...}" />
-                <marker date="1527670244876" expanded="true" signature="8600:8693" ph="{...}" />
-                <marker date="1527670244876" expanded="false" signature="8746:8757" ph=" { " />
-                <marker date="1527670244876" expanded="false" signature="8800:8806" ph=" }" />
-                <marker date="1527670244876" expanded="false" signature="8858:8869" ph=" { " />
-                <marker date="1527670244876" expanded="false" signature="8912:8918" ph=" }" />
-                <marker date="1527670244876" expanded="true" signature="9018:10463" ph="{...}" />
-                <marker date="1527670244876" expanded="true" signature="10476:12436" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="81" column="17" lean-forward="false" selection-start-line="81" selection-start-column="17" selection-end-line="81" selection-end-column="17" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -348,6 +185,9 @@
       <find>ContentType</find>
       <find>addHeader</find>
       <find>downloadZipFileByDirectlySetAuth</find>
+      <find>addHe</find>
+      <find>totalTaskCount</find>
+      <find>completedTask</find>
     </findStrings>
     <replaceStrings>
       <replace>HaoQCountryFieldEnum</replace>
@@ -368,8 +208,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Java.gitignore" />
-        <option value="$PROJECT_DIR$/src/main/java/com/liupeng/dubbo/Provider2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/liupeng/dubbo/loadbalance/TestLoadBalance.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/liupeng/dubbo/DemoServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/liupeng/dubbo/DemoServiceImpl2.java" />
@@ -412,13 +250,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/liupeng/learning/xml/jaxb/HaoQHotel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/liupeng/learning/xml/jaxb/TestJaxb.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/ftp/FtpUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/liupeng/learning/pool/TestThreadPool.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/zip/TestZip.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/liupeng/learning/haoqjob/TestHaoQJob.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/ftp/TestFTP.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/liupeng/learning/haoqjob/TestHaoQJob1.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/ftp/TestFTP.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/liupeng/learning/pool/TaskEntry.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/http/TestHttp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/liupeng/learning/haoqjob/TestHaoQJob.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/liupeng/learning/pool/TestThreadPool.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/liupeng/learning/haoqjob/TaskEntry.java" />
       </list>
     </option>
   </component>
@@ -460,8 +300,9 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
-    <option name="width" value="1932" />
-    <option name="height" value="1057" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -531,7 +372,28 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="liupeng" type="462c0819:PsiDirectoryNode" />
               <item name="learning" type="462c0819:PsiDirectoryNode" />
+              <item name="haoqjob" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="liupeng" type="462c0819:PsiDirectoryNode" />
+              <item name="learning" type="462c0819:PsiDirectoryNode" />
               <item name="io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="liupeng" type="462c0819:PsiDirectoryNode" />
+              <item name="learning" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
+              <item name="ftp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
@@ -549,6 +411,27 @@
               <item name="dubbo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="liupeng" type="462c0819:PsiDirectoryNode" />
+              <item name="learning" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
+              <item name="zip" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="liupeng" type="462c0819:PsiDirectoryNode" />
+              <item name="learning" type="462c0819:PsiDirectoryNode" />
+              <item name="pool" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -558,6 +441,126 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
+              <item name="reflect" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
+              <item name="atomic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alibaba:dubbo:2.6.1" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alibaba:dubbo:2.6.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="dubbo-2.6.1.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alibaba:dubbo:2.6.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="dubbo-2.6.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="alibaba" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alibaba:dubbo:2.6.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="dubbo-2.6.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="alibaba" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alibaba:dubbo:2.6.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="dubbo-2.6.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="alibaba" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alibaba:dubbo:2.6.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="dubbo-2.6.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="alibaba" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="extension" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alibaba:dubbo:2.6.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="dubbo-2.6.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="alibaba" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="container" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -575,7 +578,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/好巧/carapihertz/pom.xml" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="Failover&#9;PSI&#9;JAVA://com.alibaba.dubbo.rpc.cluster.support.FailoverClusterInvoker&#10;Fork&#9;FILE&#9;jar://D:/Users/liupenga/.m2/repository/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/rpc/cluster/support/ForkingClusterInvoker.class&#10;ZipEntry&#9;PSI&#9;JAVA://java.util.zip.ZipEntry&#10;ForkClus&#9;PSI&#9;JAVA://com.alibaba.dubbo.rpc.cluster.support.ForkingClusterInvoker&#10;FailsafeClusterInvoker&#9;PSI&#9;JAVA://com.alibaba.dubbo.rpc.cluster.support.FailsafeClusterInvoker&#10;Randoml&#9;PSI&#9;JAVA://com.alibaba.dubbo.rpc.cluster.loadbalance.RandomLoadBalance&#10;loadbalance&#9;PSI&#9;JAVA://com.alibaba.dubbo.config.annotation.Service#loadbalance&#10;loadBalancer&#9;null&#9;null&#10;LoadBalance&#9;PSI&#9;JAVA://com.alibaba.dubbo.common.Constants#LOADBALANCE_KEY&#10;dubbo.iml&#9;FILE&#9;file://D:/lp-ctrip-project/dubbo/dubbo.iml" />
+    <property name="SearchEverywhereHistoryKey" value="Main&#9;PSI&#9;JAVA://com.alibaba.dubbo.container.Main&#10;Failover&#9;PSI&#9;JAVA://com.alibaba.dubbo.rpc.cluster.support.FailoverClusterInvoker&#10;Fork&#9;FILE&#9;jar://D:/Users/liupenga/.m2/repository/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/rpc/cluster/support/ForkingClusterInvoker.class&#10;ZipEntry&#9;PSI&#9;JAVA://java.util.zip.ZipEntry&#10;ForkClus&#9;PSI&#9;JAVA://com.alibaba.dubbo.rpc.cluster.support.ForkingClusterInvoker&#10;FailsafeClusterInvoker&#9;PSI&#9;JAVA://com.alibaba.dubbo.rpc.cluster.support.FailsafeClusterInvoker&#10;Randoml&#9;PSI&#9;JAVA://com.alibaba.dubbo.rpc.cluster.loadbalance.RandomLoadBalance&#10;loadbalance&#9;PSI&#9;JAVA://com.alibaba.dubbo.config.annotation.Service#loadbalance&#10;loadBalancer&#9;null&#9;null&#10;LoadBalance&#9;PSI&#9;JAVA://com.alibaba.dubbo.common.Constants#LOADBALANCE_KEY&#10;dubbo.iml&#9;FILE&#9;file://D:/lp-ctrip-project/dubbo/dubbo.iml" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
@@ -609,13 +612,32 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestHttp">
+  <component name="RunManager" selected="Application.TestHaoQJob">
     <configuration default="true" type="Applet" factoryName="Applet">
       <module />
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+    </configuration>
+    <configuration name="TestFTP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.liupeng.learning.io.ftp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.liupeng.learning.io.ftp.TestFTP" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="dubbo" />
+      <envs />
     </configuration>
     <configuration name="TestHaoQJob" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -674,33 +696,14 @@
       <module name="dubbo" />
       <envs />
     </configuration>
-    <configuration name="TestLoadBalanceClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="TestThreadPool" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.liupeng.dubbo.loadbalance.*" />
+          <option name="PATTERN" value="com.liupeng.learning.haoqjob.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.liupeng.dubbo.loadbalance.TestLoadBalanceClient" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="dubbo" />
-      <envs />
-    </configuration>
-    <configuration name="TestLoadBalanceServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.liupeng.dubbo.loadbalance.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.liupeng.dubbo.loadbalance.TestLoadBalanceServer" />
+      <option name="MAIN_CLASS_NAME" value="com.liupeng.learning.pool.TestThreadPool" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -787,19 +790,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.TestHaoQJob" />
-      <item index="1" class="java.lang.String" itemvalue="Application.TestLoadBalanceServer" />
-      <item index="2" class="java.lang.String" itemvalue="Application.TestLoadBalanceClient" />
-      <item index="3" class="java.lang.String" itemvalue="Application.TestHttp" />
-      <item index="4" class="java.lang.String" itemvalue="Application.TestHaoQJob1" />
+      <item index="0" class="java.lang.String" itemvalue="Application.TestHttp" />
+      <item index="1" class="java.lang.String" itemvalue="Application.TestHaoQJob1" />
+      <item index="2" class="java.lang.String" itemvalue="Application.TestFTP" />
+      <item index="3" class="java.lang.String" itemvalue="Application.TestHaoQJob" />
+      <item index="4" class="java.lang.String" itemvalue="Application.TestThreadPool" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.TestHttp" />
-        <item index="1" class="java.lang.String" itemvalue="Application.TestHaoQJob1" />
-        <item index="2" class="java.lang.String" itemvalue="Application.TestLoadBalanceClient" />
-        <item index="3" class="java.lang.String" itemvalue="Application.TestLoadBalanceServer" />
-        <item index="4" class="java.lang.String" itemvalue="Application.TestHaoQJob" />
+        <item index="0" class="java.lang.String" itemvalue="Application.TestHaoQJob" />
+        <item index="1" class="java.lang.String" itemvalue="Application.TestThreadPool" />
+        <item index="2" class="java.lang.String" itemvalue="Application.TestHttp" />
+        <item index="3" class="java.lang.String" itemvalue="Application.TestFTP" />
+        <item index="4" class="java.lang.String" itemvalue="Application.TestHaoQJob1" />
       </list>
     </recent_temporary>
   </component>
@@ -824,7 +827,7 @@
       <workItem from="1527168018778" duration="8913000" />
       <workItem from="1527476528632" duration="19003000" />
       <workItem from="1527518937089" duration="7130000" />
-      <workItem from="1527576005337" duration="45685000" />
+      <workItem from="1527576005337" duration="60538000" />
     </task>
     <task id="LOCAL-00001" summary="add .gitignore file">
       <created>1524627380283</created>
@@ -837,7 +840,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101230000" />
+    <option name="totallyTimeSpent" value="116083000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -871,7 +874,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3257329" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3257329" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -895,14 +898,14 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3257329" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23614073" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23614073" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="SonarQube" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3651386" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3995657" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -988,31 +991,31 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/http/TestHttp.java</url>
-          <line>260</line>
+          <line>284</line>
           <properties />
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/http/TestHttp.java</url>
-          <line>245</line>
+          <line>269</line>
           <properties />
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/http/TestHttp.java</url>
-          <line>91</line>
+          <line>207</line>
           <properties />
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/http/TestHttp.java</url>
-          <line>80</line>
+          <line>196</line>
           <properties />
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/http/TestHttp.java</url>
-          <line>310</line>
+          <line>334</line>
           <properties />
           <option name="timeStamp" value="27" />
         </line-breakpoint>
@@ -1071,123 +1074,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/io/unzip/HAOQIAO_test_static_xml/hotelList/hotellist_cityId7.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/xml/dom4j/HaoQCityFieldEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/xml/jaxb/HaoQCity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="32" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1453#1454#0" expanded="false" />
-            <element signature="e#1631#1632#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/xml/dom4j/HaoQCity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/xml/dom4j/HaoQCountry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/xml/dom4j/HaoQHotelFacilitiesFacilityFieldEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/xml/jaxb/HaoQCity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="30" />
-          <folding>
-            <element signature="e#665#666#0" expanded="false" />
-            <element signature="e#697#698#0" expanded="false" />
-            <element signature="e#748#749#0" expanded="false" />
-            <element signature="e#790#791#0" expanded="false" />
-            <element signature="e#825#826#0" expanded="false" />
-            <element signature="e#855#856#0" expanded="false" />
-            <element signature="e#902#903#0" expanded="false" />
-            <element signature="e#940#941#0" expanded="false" />
-            <element signature="e#974#975#0" expanded="false" />
-            <element signature="e#1003#1004#0" expanded="false" />
-            <element signature="e#1048#1049#0" expanded="false" />
-            <element signature="e#1084#1085#0" expanded="false" />
-            <element signature="e#1117#1118#0" expanded="false" />
-            <element signature="e#1147#1148#0" expanded="false" />
-            <element signature="e#1193#1194#0" expanded="false" />
-            <element signature="e#1231#1232#0" expanded="false" />
-            <element signature="e#1265#1266#0" expanded="false" />
-            <element signature="e#1295#1296#0" expanded="false" />
-            <element signature="e#1341#1342#0" expanded="false" />
-            <element signature="e#1379#1380#0" expanded="false" />
-            <element signature="e#1418#1419#0" expanded="false" />
-            <element signature="e#1453#1454#0" expanded="false" />
-            <element signature="e#1509#1510#0" expanded="false" />
-            <element signature="e#1557#1558#0" expanded="false" />
-            <element signature="e#1596#1597#0" expanded="false" />
-            <element signature="e#1631#1632#0" expanded="false" />
-            <element signature="e#1687#1688#0" expanded="false" />
-            <element signature="e#1735#1736#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/xml/jaxb/HaoQCountryResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#392#393#0" expanded="false" />
-            <element signature="e#426#427#0" expanded="false" />
-            <element signature="e#491#492#0" expanded="false" />
-            <element signature="e#537#538#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/xml/jaxb/HaoQCityResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#371#372#0" expanded="false" />
-            <element signature="e#402#403#0" expanded="false" />
-            <element signature="e#458#459#0" expanded="false" />
-            <element signature="e#498#499#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/io/tmp/HAOQIAO_test_static_xml/hotelList/hotellist_cityId1.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -1418,16 +1304,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/pool/TestThreadPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="35" column="5" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="35" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/dubbo-config-provider-5s.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1643,36 +1519,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/ftp/FtpUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-399">
-          <caret line="21" column="37" lean-forward="false" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/io/111.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/haoqjob/TestHaoQJob.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="47" column="74" lean-forward="false" selection-start-line="47" selection-start-column="69" selection-end-line="47" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/ftp/TestFTP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -1697,14 +1547,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="987">
           <caret line="87" column="35" lean-forward="false" selection-start-line="87" selection-start-column="35" selection-end-line="87" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/zip/TestZip.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="54" lean-forward="false" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
           <folding />
         </state>
       </provider>
@@ -2084,12 +1926,150 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/common/Constants.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="172" column="32" lean-forward="false" selection-start-line="172" selection-start-column="32" selection-end-line="172" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/lang/reflect/AnnotatedElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="256" column="20" lean-forward="false" selection-start-line="256" selection-start-column="20" selection-end-line="256" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="3415" column="19" lean-forward="false" selection-start-line="3415" selection-start-column="19" selection-end-line="3415" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/common/extension/ExtensionLoader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="67" column="41" lean-forward="false" selection-start-line="67" selection-start-column="41" selection-end-line="67" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/container/Main.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/ftp/FtpUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="60" column="26" lean-forward="true" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/zip/TestZip.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="54" lean-forward="false" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/ftp/TestFTP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="22" column="25" lean-forward="false" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/util/concurrent/LinkedBlockingQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="259" column="11" lean-forward="false" selection-start-line="259" selection-start-column="11" selection-end-line="259" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/util/concurrent/LinkedBlockingDeque.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="465" column="13" lean-forward="false" selection-start-line="465" selection-start-column="13" selection-end-line="465" selection-end-column="13" />
+          <folding>
+            <element signature="e#18496#18497#0" expanded="true" />
+            <element signature="e#18530#18531#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/util/concurrent/atomic/AtomicInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="184" column="21" lean-forward="false" selection-start-line="184" selection-start-column="21" selection-end-line="184" selection-end-column="21" />
+          <folding>
+            <element signature="e#4725#4726#0" expanded="true" />
+            <element signature="e#4793#4794#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/http/TestHttp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="368" column="46" lean-forward="false" selection-start-line="368" selection-start-column="46" selection-end-line="368" selection-end-column="46" />
+        <state relative-caret-position="361">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="33" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#uploadFile#0;class#TestHttp#0" expanded="false" />
+            <element signature="method#uploadFileByDirectlySetAuth#0;class#TestHttp#0" expanded="false" />
+            <element signature="method#downloadTxtFile#0;class#TestHttp#0" expanded="false" />
+            <element signature="method#downloadZipFile#0;class#TestHttp#0" expanded="false" />
+            <element signature="method#downloadZipFileByDirectlySetAuth#0;class#TestHttp#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/pool/TestThreadPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="45" lean-forward="true" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/haoqjob/TaskEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#157#158#0" expanded="true" />
+            <element signature="e#188#189#0" expanded="true" />
+            <element signature="e#236#237#0" expanded="true" />
+            <element signature="e#276#277#0" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
+            <element signature="e#344#345#0" expanded="true" />
+            <element signature="e#394#395#0" expanded="true" />
+            <element signature="e#436#437#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/haoqjob/TestHaoQJob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="28" column="18" lean-forward="true" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+          <folding>
+            <element signature="e#899#900#0" expanded="true" />
+            <element signature="e#924#925#0" expanded="true" />
+            <element signature="e#2886#2894#0" expanded="true" />
           </folding>
         </state>
       </provider>
