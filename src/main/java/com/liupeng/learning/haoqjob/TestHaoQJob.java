@@ -1,6 +1,9 @@
 package com.liupeng.learning.haoqjob;
 
 import com.alibaba.fastjson.JSON;
+import com.liupeng.learning.xml.jaxb.HaoQCityResponse;
+import com.liupeng.learning.xml.jaxb.HaoQCountryResponse;
+import com.liupeng.learning.xml.jaxb.HaoQHotelResponse;
 import org.apache.commons.net.util.Base64;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -8,6 +11,8 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
 
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.Unmarshaller;
 import java.io.*;
 import java.nio.charset.Charset;
 import java.text.SimpleDateFormat;
@@ -143,7 +148,11 @@ public class TestHaoQJob {
                         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
                         int i = completedTask.incrementAndGet();
                         System.out.println("task "+i+" insert into redis "+taskEntry.getFileName()+" "+df.format(new Date()));
+
+
                         System.out.println("task "+i+" insert into mysql "+taskEntry.getFileName()+" "+df.format(new Date()));
+                        batchUpdateDBBasicData(taskEntry);
+
                         System.out.println("task "+i+" sync "+taskEntry.getFileName()+" finished !");
                     } catch (InterruptedException e) {
                         e.printStackTrace();
@@ -153,6 +162,46 @@ public class TestHaoQJob {
         }
 
         pool.shutdown();
+    }
+
+    private static void batchUpdateDBBasicData(TaskEntry taskEntry) {
+        BufferedReader br = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(taskEntry.getFileBytes())));
+        StringBuilder sb = new StringBuilder();
+        String str = null;
+        try{
+            while ((str = br.readLine()) != null) {
+                sb.append(str);
+            }
+            br.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        Integer count = 0;
+        if (taskEntry.getFileName().startsWith(HaoQBasicDataFileNameEnum.HOTEL.getFileName())) {
+            HaoQHotelResponse haoQHotelResponse = converyToJavaBean(sb.toString(),HaoQHotelResponse.class);
+            count = haoQHotelResponse.getHotelList().size();
+        } else if (taskEntry.getFileName().startsWith(HaoQBasicDataFileNameEnum.COUNTRY.getFileName())) {
+            HaoQCountryResponse haoQCountryResponse = converyToJavaBean(sb.toString(), HaoQCountryResponse.class);
+            count = haoQCountryResponse.getCountryList().size();
+        } else if (taskEntry.getFileName().startsWith(HaoQBasicDataFileNameEnum.CITY.getFileName())) {
+            HaoQCityResponse haoQCityResponse = converyToJavaBean(sb.toString(),HaoQCityResponse.class);
+            count = haoQCityResponse.getCityList().size();
+        }
+
+        System.out.println(taskEntry.getFileName()+" "+count);
+    }
+
+    public static <T> T converyToJavaBean(String xml, Class<T> c) {
+        T t = null;
+        try {
+            JAXBContext context = JAXBContext.newInstance(c);
+            Unmarshaller unmarshaller = context.createUnmarshaller();
+            t = (T) unmarshaller.unmarshal(new StringReader(xml));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return t;
     }
 
     private static String getHeader(String username, String password) {
