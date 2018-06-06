@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="04489e23-602d-4c28-96b8-a5141ff36630" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liupeng/learning/haoqjob/TestHaoQJob.java" afterPath="$PROJECT_DIR$/src/main/java/com/liupeng/learning/haoqjob/TestHaoQJob.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/http/TestHttp.java" afterPath="$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/http/TestHttp.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/zip/TestHotelFinal.java" afterPath="$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/zip/TestHotelFinal.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,13 +35,22 @@
       <file leaf-file-name="TestHotelFinal.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/zip/TestHotelFinal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="328" column="13" lean-forward="true" selection-start-line="328" selection-start-column="13" selection-end-line="328" selection-end-column="13" />
+            <state relative-caret-position="148">
+              <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#rezipLocalFiles#0;class#TestHotelFinal#0" expanded="false" />
-                <element signature="method#getFilesSize#0;class#TestHotelFinal#0" expanded="false" />
+                <element signature="method#generateLocalCountFile#0;class#TestHotelFinal#0" expanded="false" />
+                <element signature="method#deleteLocalRezipDir#0;class#TestHotelFinal#0" expanded="false" />
+                <element signature="method#rezipHotelRelevantFiles#0;class#TestHotelFinal#0" expanded="false" />
+                <element signature="method#deleteFTPFiles#0;class#TestHotelFinal#0" expanded="false" />
+                <element signature="method#uploadCity#0;class#TestHotelFinal#0" expanded="false" />
+                <element signature="method#uploadCountry#0;class#TestHotelFinal#0" expanded="false" />
+                <element signature="method#uploadHotelRelevantFiles#0;class#TestHotelFinal#0" expanded="false" />
+                <element signature="method#downloadAndSyncHotels#0;class#TestHotelFinal#0" expanded="false" />
+                <element signature="method#downloadAndSyncCountries#0;class#TestHotelFinal#0" expanded="false" />
+                <element signature="method#getFTPFileNames#0;class#TestHotelFinal#0" expanded="false" />
                 <element signature="method#getLargestNum#0;class#TestHotelFinal#0" expanded="false" />
+                <element signature="method#validDataDir#0;class#TestHotelFinal#0" expanded="false" />
                 <element signature="method#getHeader#0;class#TestHotelFinal#0" expanded="false" />
               </folding>
             </state>
@@ -197,20 +205,12 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>HaoQFacility</find>
-      <find>dubbo</find>
-      <find>uploadFile</find>
-      <find>downloadZipFile</find>
-      <find>uploadFileByDirectlySetAuth</find>
-      <find>ContentType</find>
-      <find>addHeader</find>
       <find>addHe</find>
       <find>completedTask</find>
       <find>response</find>
       <find>closeableHttpClient</find>
       <find>downloadZipFileByDirectlySetAuth</find>
       <find>rezipFile</find>
-      <find>downloadAndUnZipFile</find>
       <find>deleteFileWithPool</find>
       <find>downloadAndUnzipFile</find>
       <find>getParentFile().createNewFile()</find>
@@ -227,6 +227,14 @@
       <find>本地计数文件</find>
       <find>deleteFTPFiles</find>
       <find>100</find>
+      <find>---------------------------------------------------------------------</find>
+      <find>_____________________________________________________________________</find>
+      <find>FTP服务器文件删除完成</find>
+      <find>path</find>
+      <find>downloadAndUnZipFile</find>
+      <find>downloadAndUnZipHotelFiles</find>
+      <find>downloadAndSyncCities</find>
+      <find>downloadAndSyncCountries</find>
     </findStrings>
     <replaceStrings>
       <replace>HaoQCountryFieldEnum</replace>
@@ -235,6 +243,8 @@
       <replace>!Strings.isNullOrEmpty(fieldTag.getStringValue())</replace>
       <replace>!Strings.isNullOrEmpty(hotelFieldTag.getStringValue())</replace>
       <replace>hotelFileName</replace>
+      <replace>---------------------------------------------------------------------</replace>
+      <replace>downloadAndSyncHotels</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -468,6 +478,27 @@
               <item name="dubbo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="liupeng" type="462c0819:PsiDirectoryNode" />
+              <item name="learning" type="462c0819:PsiDirectoryNode" />
+              <item name="xml" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="liupeng" type="462c0819:PsiDirectoryNode" />
+              <item name="learning" type="462c0819:PsiDirectoryNode" />
+              <item name="xml" type="462c0819:PsiDirectoryNode" />
+              <item name="jaxb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -477,15 +508,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="io" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="io" type="462c0819:PsiDirectoryNode" />
-              <item name="zip" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
@@ -816,7 +838,7 @@
       <workItem from="1527576005337" duration="67086000" />
       <workItem from="1528079800140" duration="4528000" />
       <workItem from="1528096793956" duration="22045000" />
-      <workItem from="1528193640921" duration="40510000" />
+      <workItem from="1528193640921" duration="44703000" />
     </task>
     <task id="LOCAL-00001" summary="add .gitignore file">
       <created>1524627380283</created>
@@ -829,7 +851,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="189714000" />
+    <option name="totallyTimeSpent" value="193907000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -842,6 +864,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3257329" sideWeight="0.5021322" order="9" side_tool="true" content_ui="tabs" />
@@ -863,9 +886,9 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49728554" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39413682" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2771855" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
@@ -906,11 +929,11 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3257329" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49728554" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2238806" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2771855" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2771855" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
@@ -1041,13 +1064,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/zip/TestHotelFinal.java</url>
-          <line>54</line>
+          <line>57</line>
           <properties />
           <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/zip/TestHotelFinal.java</url>
-          <line>113</line>
+          <line>131</line>
           <properties />
           <option name="timeStamp" value="57" />
         </line-breakpoint>
@@ -1536,13 +1559,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/zip/TestHotelFinal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="328" column="13" lean-forward="true" selection-start-line="328" selection-start-column="13" selection-end-line="328" selection-end-column="13" />
+        <state relative-caret-position="148">
+          <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#rezipLocalFiles#0;class#TestHotelFinal#0" expanded="false" />
-            <element signature="method#getFilesSize#0;class#TestHotelFinal#0" expanded="false" />
+            <element signature="method#generateLocalCountFile#0;class#TestHotelFinal#0" expanded="false" />
+            <element signature="method#deleteLocalRezipDir#0;class#TestHotelFinal#0" expanded="false" />
+            <element signature="method#rezipHotelRelevantFiles#0;class#TestHotelFinal#0" expanded="false" />
+            <element signature="method#deleteFTPFiles#0;class#TestHotelFinal#0" expanded="false" />
+            <element signature="method#uploadCity#0;class#TestHotelFinal#0" expanded="false" />
+            <element signature="method#uploadCountry#0;class#TestHotelFinal#0" expanded="false" />
+            <element signature="method#uploadHotelRelevantFiles#0;class#TestHotelFinal#0" expanded="false" />
+            <element signature="method#downloadAndSyncHotels#0;class#TestHotelFinal#0" expanded="false" />
+            <element signature="method#downloadAndSyncCountries#0;class#TestHotelFinal#0" expanded="false" />
+            <element signature="method#getFTPFileNames#0;class#TestHotelFinal#0" expanded="false" />
             <element signature="method#getLargestNum#0;class#TestHotelFinal#0" expanded="false" />
+            <element signature="method#validDataDir#0;class#TestHotelFinal#0" expanded="false" />
             <element signature="method#getHeader#0;class#TestHotelFinal#0" expanded="false" />
           </folding>
         </state>

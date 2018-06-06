@@ -13,6 +13,7 @@ import org.apache.http.entity.mime.MultipartEntityBuilder;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
+import org.springframework.util.CollectionUtils;
 
 import java.io.*;
 import java.nio.charset.Charset;
@@ -32,7 +33,9 @@ import java.util.zip.ZipOutputStream;
 
 public class TestHotelFinal {
 
-    public static String haoqUnZipFilePath = "D:\\H9847_online_static_xml\\hotelList\\";
+    public static String haoqHotelUnZipFilePath = "D:\\H9847_online_static_xml\\hotelList\\";
+    public static String haoqCityUnZipFile = "D:\\H9847_online_static_xml\\cityList\\cityList.xml";
+    public static String haoqCountryUnZipFile = "D:\\H9847_online_static_xml\\countryList\\countryList.xml";
     public static String hotelFileName = "hotellist_cityId";
     public static String ext = ".xml";
     public static int largestFileNum = getLargestNum();
@@ -49,20 +52,35 @@ public class TestHotelFinal {
 
         /*//1.本机读取酒店xml文件并重压缩xml文件为zip文件
         if (!validDataDir()) {
-            System.out.println("原始数据文件目录不存在，"+haoqUnZipFilePath);
+            System.out.println("原始数据文件目录不存在，"+ haoqHotelUnZipFilePath);
             return;
         }
-        rezipLocalFiles();
+        rezipHotelRelevantFiles();
 
         //2.删除ctrip的ftp服务器上的原有的zip文件
-        deleteFTPFiles();
+        List<String> paths = new ArrayList<>();
+        paths.add("/igtftptest/hotelList/");
+        paths.add("/igtftptest/cityList/");
+        paths.add("/igtftptest/countryList/");
+        deleteFTPFiles(paths);
 
         //3.将本机新压缩的zip文件上传到ctrip的ftp服务器
-        uploadFiles();*/
+        uploadHotelRelevantFiles();
 
-        //4.定时任务从ctrip的ftp服务器下载解析重压缩包
-        downloadAndUnZipFile();
+        //4.上传城市xml文件
+        uploadCity();
 
+        //5.上传国家xml文件
+        uploadCountry();*/
+
+        //6.定时任务从ctrip的ftp服务器下载解析重压缩包
+        //downloadAndSyncHotels();
+
+        //7.定时任务更新城市
+        downloadAndSyncCities("/igtftptest/cityList/");
+
+        //8.定时任务更新国家
+        downloadAndSyncCountries("/igtftptest/countryList/");
     }
 
     private static void generateLocalCountFile() throws Exception {
@@ -101,7 +119,7 @@ public class TestHotelFinal {
     }
 
 
-    public static void rezipLocalFiles() {
+    public static void rezipHotelRelevantFiles() {
         System.out.println("开始本地重压缩...");
         byte[] buf = new byte[1024];
         try {
@@ -123,7 +141,7 @@ public class TestHotelFinal {
                 }
                 ZipOutputStream zos = new ZipOutputStream(new FileOutputStream(outZipFile));
                 for (int i = 1+step*j; i < step+1+step*j && i<=largestFileNum; i++) {
-                    File file = new File(haoqUnZipFilePath + hotelFileName + i + ext);
+                    File file = new File(haoqHotelUnZipFilePath + hotelFileName + i + ext);
                     if (!file.exists()){
                         continue;
                     }
@@ -141,70 +159,191 @@ public class TestHotelFinal {
                 System.out.println((j+1)+"."+outZipFile.getName()+" 重压缩文件创建成功，耗时"+(System.currentTimeMillis()-start)+"毫秒，大小"+(outZipFile.length()/1024/1024)+"MB");
             }
             System.out.println("本地重压缩完成，耗时"+(System.currentTimeMillis()-begin)/(1000)+"秒");
-            System.out.println("---------------------------------------------------------------------");
+            System.out.println("=====================================================================");
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println("本地重压缩文件异常！");
-            System.out.println("---------------------------------------------------------------------");
+            System.out.println("=====================================================================");
         }
 
     }
 
-    public static void deleteFTPFiles() {
-        System.out.println("开始删除FTP服务器文件...");
-        List<String> fileNames = getFTPFileNames("/igtftptest/hotelList");
-
-        if (fileNames == null) {
-            return;
+    public static void deleteFTPFiles(List<String> paths) {
+        if (CollectionUtils.isEmpty(paths)) {
+            System.out.println("FTP服务器文件删除路径为空！");
+            throw new RuntimeException("FTP服务器文件删除路径不得为空！");
         }
 
+        System.out.println("开始删除FTP服务器文件...");
         long begin = System.currentTimeMillis();
-        int count = 0;
-        for (String fn : fileNames) {
-            count++;
-            // 创建HttpClientBuilder
-            HttpClientBuilder httpClientBuilder = HttpClientBuilder.create();
-            CloseableHttpClient closeableHttpClient = httpClientBuilder.build();
 
-            HttpDelete httpDelete = new HttpDelete("http://10.2.73.43:8080/filex/rest/file/NT-TEST?pathAndFile=/igtftptest/hotelList/"+fn);
-            httpDelete.addHeader("Authorization",basicAuth);
+        for (String path : paths) {
+            List<String> fileNames = getFTPFileNames(path);
 
-            CloseableHttpResponse response = null;
-            try {
-                // 执行请求
-                response = closeableHttpClient.execute(httpDelete);
-                // 判断返回状态是否为200
-                if (response.getStatusLine().getStatusCode() == 200) {
-                    System.out.println(count+".FTP服务器文件 "+fn+" 删除成功!");
-                } else {
-                    System.out.println(count+".FTP服务器文件 "+fn+" 删除失败， "+response.getStatusLine().getReasonPhrase());
-                }
-            } catch(Exception e) {
-                e.printStackTrace();
-                System.out.println("FTP服务器文件删除异常！");
+            if (fileNames == null || fileNames.isEmpty()) {
+                System.out.println("["+path+"]路径下FTP服务器文件个数为0!");
                 System.out.println("---------------------------------------------------------------------");
-            } finally {
-                if (response != null) {
-                    try {
-                        response.close();
-                    } catch (IOException e) {
-                        e.printStackTrace();
+                continue;
+            }
+            long begin2 = System.currentTimeMillis();
+            int count = 0;
+            for (String fn : fileNames) {
+                count++;
+                // 创建HttpClientBuilder
+                HttpClientBuilder httpClientBuilder = HttpClientBuilder.create();
+                CloseableHttpClient closeableHttpClient = httpClientBuilder.build();
+
+                HttpDelete httpDelete = new HttpDelete("http://10.2.73.43:8080/filex/rest/file/NT-TEST?pathAndFile="+path+fn);
+                httpDelete.addHeader("Authorization",basicAuth);
+
+                CloseableHttpResponse response = null;
+                try {
+                    // 执行请求
+                    response = closeableHttpClient.execute(httpDelete);
+                    // 判断返回状态是否为200
+                    if (response.getStatusLine().getStatusCode() == 200) {
+                        System.out.println(count+".FTP服务器文件 "+fn+" 删除成功!");
+                    } else {
+                        System.out.println(count+".FTP服务器文件 "+fn+" 删除失败， "+response.getStatusLine().getReasonPhrase());
                     }
-                }
-                if (closeableHttpClient != null) {
-                    try {
-                        closeableHttpClient.close();
-                    } catch (IOException e) {
-                        e.printStackTrace();
+                } catch(Exception e) {
+                    e.printStackTrace();
+                    System.out.println("["+path+"]FTP服务器文件删除异常！");
+                    System.out.println("---------------------------------------------------------------------");
+                } finally {
+                    if (response != null) {
+                        try {
+                            response.close();
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                    if (closeableHttpClient != null) {
+                        try {
+                            closeableHttpClient.close();
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
                     }
                 }
             }
+            System.out.println("["+path+"]路径下FTP服务器文件删除完成，文件个数"+fileNames.size()+"，耗时： "+(System.currentTimeMillis()-begin2)/1000 +"秒");
+            System.out.println("---------------------------------------------------------------------");
         }
-        System.out.println("FTP服务器文件删除完成，文件个数"+fileNames.size()+"，耗时： "+(System.currentTimeMillis()-begin)/1000 +"秒");
-        System.out.println("---------------------------------------------------------------------");
+        System.out.println("FTP服务器文件删除完成，耗时： "+(System.currentTimeMillis()-begin)/1000 +"秒");
+        System.out.println("=====================================================================");
+
     }
 
-    public static void uploadFiles() {
+    public static void uploadCity() {
+        System.out.println("开始上传城市xml文件...");
+        /* 1.设置basic auth */
+        HttpClientBuilder httpClientBuilder = HttpClientBuilder.create();
+        CloseableHttpClient closeableHttpClient = httpClientBuilder.build();
+
+        /* 2.设置post参数 */
+        HttpPost httpPost = new HttpPost("http://10.2.73.43:8080/filex/rest/file/NT-TEST?path=/igtftptest/cityList");
+        httpPost.addHeader("Authorization",basicAuth);
+        MultipartEntityBuilder multipartEntityBuilder = MultipartEntityBuilder.create();
+
+        CloseableHttpResponse response = null;
+
+        try {
+            byte[] bytes;
+            File f = new File(haoqCityUnZipFile);
+            HttpEntity httpEntity;
+
+            long start;
+            multipartEntityBuilder.addBinaryBody("file",f);
+            httpEntity = multipartEntityBuilder.build();
+            httpPost.setEntity(httpEntity);
+
+            start = System.currentTimeMillis();
+            response = closeableHttpClient.execute(httpPost);
+            // 判断返回状态是否为200
+            if (response.getStatusLine().getStatusCode() == 200) {
+                System.out.println("文件"+f.getName()+" 上传成功!");
+            } else {
+                System.out.println("文件"+f.getName()+" 上传失败，"+response.getStatusLine().getReasonPhrase());
+            }
+            System.out.println("=====================================================================");
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("上传城市xml文件异常！");
+            System.out.println("=====================================================================");
+        } finally {
+            if (response != null) {
+                try {
+                    response.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (closeableHttpClient != null) {
+                try {
+                    closeableHttpClient.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
+    public static void uploadCountry() {
+        System.out.println("开始上传国家xml文件...");
+        /* 1.设置basic auth */
+        HttpClientBuilder httpClientBuilder = HttpClientBuilder.create();
+        CloseableHttpClient closeableHttpClient = httpClientBuilder.build();
+
+        /* 2.设置post参数 */
+        HttpPost httpPost = new HttpPost("http://10.2.73.43:8080/filex/rest/file/NT-TEST?path=/igtftptest/countryList");
+        httpPost.addHeader("Authorization",basicAuth);
+        MultipartEntityBuilder multipartEntityBuilder = MultipartEntityBuilder.create();
+
+        CloseableHttpResponse response = null;
+
+        try {
+            byte[] bytes;
+            File f = new File(haoqCountryUnZipFile);
+            HttpEntity httpEntity;
+
+            long start;
+            multipartEntityBuilder.addBinaryBody("file",f);
+            httpEntity = multipartEntityBuilder.build();
+            httpPost.setEntity(httpEntity);
+
+            start = System.currentTimeMillis();
+            response = closeableHttpClient.execute(httpPost);
+            // 判断返回状态是否为200
+            if (response.getStatusLine().getStatusCode() == 200) {
+                System.out.println("文件"+f.getName()+" 上传成功!");
+            } else {
+                System.out.println("文件"+f.getName()+" 上传失败，"+response.getStatusLine().getReasonPhrase());
+            }
+            System.out.println("=====================================================================");
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("上传国家xml文件异常！");
+            System.out.println("=====================================================================");
+        } finally {
+            if (response != null) {
+                try {
+                    response.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (closeableHttpClient != null) {
+                try {
+                    closeableHttpClient.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
+    public static void uploadHotelRelevantFiles() {
         System.out.println("开始上传重压缩文件...");
         File localFileDir = new File(haoqReZipFilePath);
         File[] files = localFileDir.listFiles();
@@ -249,7 +388,7 @@ public class TestHotelFinal {
             } catch (Exception e) {
                 e.printStackTrace();
                 System.out.println("上传重压缩文件异常！");
-                System.out.println("---------------------------------------------------------------------");
+                System.out.println("=====================================================================");
             } finally {
                 if (response != null) {
                     try {
@@ -269,53 +408,11 @@ public class TestHotelFinal {
 
         }//for
         System.out.println("上传重压缩文件完成，耗时: "+(System.currentTimeMillis()-begin)/1000/60+"分钟");
-        System.out.println("---------------------------------------------------------------------");
+        System.out.println("=====================================================================");
     }
 
-    private static int getZIPFileCount() throws Exception {
-        // 创建HttpClientBuilder
-        HttpClientBuilder httpClientBuilder = HttpClientBuilder.create();
-        CloseableHttpClient closeableHttpClient = httpClientBuilder.build();
-
-        HttpGet httpGet = new HttpGet("http://10.2.73.43:8080/filex/rest/file/NT-TEST?pathAndFile=/igtftptest/hotelList/"+ haoqCountFileName);
-        httpGet.addHeader("Authorization", basicAuth);
-
-        CloseableHttpResponse response = null;
-
-        response = closeableHttpClient.execute(httpGet);
-        // 判断返回状态是否为200
-        int count = 0;
-        if (response.getStatusLine().getStatusCode() == 200) {
-            // 获取服务端返回的数据
-            byte[] bytes = EntityUtils.toByteArray(response.getEntity());
-            BufferedReader br = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(bytes)));
-            count = Integer.parseInt(br.readLine());
-            br.close();
-        } else {
-            throw new RuntimeException(response.getStatusLine().getStatusCode()+" "+response.getStatusLine().getReasonPhrase());
-        }
-
-        if (response != null) {
-            try {
-                response.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-
-        if (closeableHttpClient != null) {
-            try {
-                closeableHttpClient.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-
-        return count;
-    }
-
-    public static void downloadAndUnZipFile() {
-        System.out.println("开始下载zip文件并更新数据...");
+    public static void downloadAndSyncHotels() {
+        System.out.println("开始下载zip文件并更新Hotel数据...");
         long begin = System.currentTimeMillis();
 
         List<String> fileNames = getFTPFileNames("/igtftptest/hotelList");
@@ -421,12 +518,12 @@ public class TestHotelFinal {
                     latch.await();
                     pool.shutdown();
                     System.out.println("["+count+"]"+fn+"下载并同步数据完成，xml文件总数"+singleZipCompletedTask+"，耗时: "+(System.currentTimeMillis()-start)/1000/60+"分钟");
-                    System.out.println("_____________________________________________________________________");
+                    System.out.println("---------------------------------------------------------------------");
                 }
             } catch (Exception e) {
                 e.printStackTrace();
                 System.out.println("下载并更新酒店数据异常！");
-                System.out.println("---------------------------------------------------------------------");
+                System.out.println("=====================================================================");
             } finally {
                 if (response != null) {
                     try {
@@ -450,50 +547,105 @@ public class TestHotelFinal {
         try {
             totalLatch.await();
             System.out.println("下载zip文件并同步数据完成，zip文件总数"+totalZipCompletedTask.get()+"，耗时: "+(System.currentTimeMillis()-begin)/1000/60+"分钟");
-            System.out.println("---------------------------------------------------------------------");
+            System.out.println("=====================================================================");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
 
-    public static int getFilesSize(String path) {
+    public static void downloadAndSyncCities(String cityXmlPath) {
+        System.out.println("开始下载cityList.xml文件并更新City数据...");
         long begin = System.currentTimeMillis();
-        int fileCount = 0;
+
+            // 创建HttpClientBuilder
+            HttpClientBuilder httpClientBuilder = HttpClientBuilder.create();
+            CloseableHttpClient closeableHttpClient = httpClientBuilder.build();
+
+            HttpGet httpGet = new HttpGet("http://10.2.73.43:8080/filex/rest/file/NT-TEST?pathAndFile="+cityXmlPath+"cityList.xml");
+            httpGet.addHeader("Authorization", basicAuth);
+
+            CloseableHttpResponse response = null;
+
+            try {
+                response = closeableHttpClient.execute(httpGet);
+                // 判断返回状态是否为200
+                if (response.getStatusLine().getStatusCode() == 200) {
+                    // 获取服务端返回的数据
+                    byte[] bytes = EntityUtils.toByteArray(response.getEntity());
+                    // 服务端返回数据的长度
+                    DecimalFormat df = new DecimalFormat("0.##");
+                    System.out.println("cityList.xml文件大小" + df.format(Double.parseDouble(String.valueOf(bytes.length))/1024/1024) + "MB，开始更新...");
+
+                    //插入数据
+                    SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
+                    System.out.println("cityList.xml sync data finished! "+dateFormat.format(new Date()));
+
+
+                    System.out.println("cityList.xml下载并同步数据完成，耗时: "+(System.currentTimeMillis()-begin)/1000/60+"分钟");
+                } else {
+                    System.out.println("cityList.xml下载失败，"+response.getStatusLine().getReasonPhrase());
+                }
+                System.out.println("=====================================================================");
+            } catch (Exception e) {
+                e.printStackTrace();
+                System.out.println("下载并更新城市数据异常！");
+                System.out.println("=====================================================================");
+            } finally {
+                if (response != null) {
+                    try {
+                        response.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+                if (closeableHttpClient != null) {
+                    try {
+                        closeableHttpClient.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+
+            }//finally
+    }
+
+    public static void downloadAndSyncCountries(String coutryXmlPath) {
+        System.out.println("开始下载countryList.xml文件并更新Coutry数据...");
+        long begin = System.currentTimeMillis();
+
         // 创建HttpClientBuilder
         HttpClientBuilder httpClientBuilder = HttpClientBuilder.create();
         CloseableHttpClient closeableHttpClient = httpClientBuilder.build();
 
-        HttpGet httpGet = new HttpGet("http://10.2.73.43:8080/filex/rest/file/NT-TEST/list?path="+path);
-        httpGet.addHeader("Authorization",basicAuth);
+        HttpGet httpGet = new HttpGet("http://10.2.73.43:8080/filex/rest/file/NT-TEST?pathAndFile="+coutryXmlPath+"countryList.xml");
+        httpGet.addHeader("Authorization", basicAuth);
 
         CloseableHttpResponse response = null;
+
         try {
-            // 执行请求
             response = closeableHttpClient.execute(httpGet);
             // 判断返回状态是否为200
             if (response.getStatusLine().getStatusCode() == 200) {
-                System.out.println("SUCCESS ");
                 // 获取服务端返回的数据
                 byte[] bytes = EntityUtils.toByteArray(response.getEntity());
-                File f = new File(haoqReZipFilePath+"dir.txt");
-                if (!f.exists()) {
-                    f.createNewFile();
-                }
-                FileOutputStream fos = new FileOutputStream(f);
-                fos.write(bytes);
-                fos.close();
+                // 服务端返回数据的长度
+                DecimalFormat df = new DecimalFormat("0.##");
+                System.out.println("coutryList.xml文件大小" + df.format(Double.parseDouble(String.valueOf(bytes.length))/1024/1024) + "MB，开始更新...");
 
-                String json = new String(bytes,"utf-8");
-                CtripDirList ctripDirList = JSON.parseObject(json,CtripDirList.class);
-                if (ctripDirList != null && ctripDirList.getFiles() != null) {
-                    fileCount = ctripDirList.getFiles().size();
-                }
+                //插入数据
+                SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
+                System.out.println("coutryList.xml sync data finished! "+dateFormat.format(new Date()));
+
+
+                System.out.println("coutryList.xml下载并同步数据完成，耗时: "+(System.currentTimeMillis()-begin)/1000/60+"分钟");
             } else {
-                System.out.println(response.getStatusLine().getReasonPhrase()+" ");
+                System.out.println("coutryList.xml下载失败，"+response.getStatusLine().getReasonPhrase());
             }
-        } catch(Exception e) {
+            System.out.println("=====================================================================");
+        } catch (Exception e) {
             e.printStackTrace();
-            System.out.println("查看目录异常！");
+            System.out.println("下载并更新国家数据异常！");
+            System.out.println("=====================================================================");
         } finally {
             if (response != null) {
                 try {
@@ -509,9 +661,8 @@ public class TestHotelFinal {
                     e.printStackTrace();
                 }
             }
-        }
-        System.out.println("查看目录完成，耗时： "+(System.currentTimeMillis()-begin)/1000 +"秒");
-        return fileCount;
+
+        }//finally
     }
 
     public static List<String> getFTPFileNames(String path) {
@@ -569,7 +720,7 @@ public class TestHotelFinal {
         }
 
         try {
-            File file = new File(haoqUnZipFilePath);
+            File file = new File(haoqHotelUnZipFilePath);
             int startIndex = hotelFileName.length();
             String[] fileNames = file.list();
             int max = 0;
@@ -589,7 +740,7 @@ public class TestHotelFinal {
     }
 
     public static boolean validDataDir() {
-        File examDirFile = new File(haoqUnZipFilePath);
+        File examDirFile = new File(haoqHotelUnZipFilePath);
         if (!examDirFile.exists()) {
             return false;
         }
