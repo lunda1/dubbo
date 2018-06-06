@@ -26,8 +26,12 @@ import java.util.zip.ZipInputStream;
 public class TestHaoQJob {
 
 
-    public static String username = "filex-test";
-    public static String password = "123456";
+//    public static String username = "filex-test";
+//    public static String password = "123456";
+
+    public static String username = "filex-test2";
+    public static String password = "intcar";
+
     public static String basicAuth = getHeader(username,password);
 
     public static void main(String[] args) {
@@ -40,7 +44,8 @@ public class TestHaoQJob {
         HttpClientBuilder httpClientBuilder = HttpClientBuilder.create();
         CloseableHttpClient closeableHttpClient = httpClientBuilder.build();
 
-        HttpGet httpGet = new HttpGet("http://10.2.73.43:8080/filex/rest/file/NT-TEST?pathAndFile=/igtftptest/HAOQIAO_test_static_xml.zip");
+//        HttpGet httpGet = new HttpGet("http://10.2.73.43:8080/filex/rest/file/NT-TEST?pathAndFile=/igtftptest/HAOQIAO_test_static_xml.zip");
+        HttpGet httpGet = new HttpGet("http://10.2.73.43:8080/filex/rest/file/intcar-test?pathAndFile=/H9847_online_static_xml.zip");
         httpGet.addHeader("Authorization",basicAuth);
         CloseableHttpResponse response = null;
         try {

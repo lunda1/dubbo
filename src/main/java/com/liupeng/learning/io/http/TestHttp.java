@@ -8,6 +8,7 @@ import org.apache.http.auth.AuthScope;
 import org.apache.http.auth.UsernamePasswordCredentials;
 import org.apache.http.client.CredentialsProvider;
 import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpDelete;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.ContentType;
@@ -46,6 +47,8 @@ public class TestHttp {
         //uploadFileByDirectlySetAuth();
         //6.下载zip文件
         //downloadZipFileByDirectlySetAuth();
+        //7.删除文件
+        //deleteFile();
     }
 
     public static void downloadAndUnzipFile() throws Exception{
@@ -400,6 +403,36 @@ public class TestHttp {
             closeableHttpClient.close();
         }
 
+    }
+
+    public static void deleteFile() throws Exception{
+        for (int i=1; i<=185; i++) {
+            // 创建HttpClientBuilder
+            HttpClientBuilder httpClientBuilder = HttpClientBuilder.create();
+            CloseableHttpClient closeableHttpClient = httpClientBuilder.build();
+
+
+            HttpDelete httpDelete = new HttpDelete("http://10.2.73.43:8080/filex/rest/file/NT-TEST?pathAndFile=/igtftptest/hotelList/zip"+i+".xml");
+            httpDelete.addHeader("Authorization",basicAuth);
+
+            CloseableHttpResponse response = null;
+            try {
+                // 执行请求
+                response = closeableHttpClient.execute(httpDelete);
+                // 判断返回状态是否为200
+                if (response.getStatusLine().getStatusCode() == 200) {
+                    System.out.println("SUCCESS "+i);
+                } else {
+                    System.out.println(response.getStatusLine().getReasonPhrase());
+                }
+            } finally {
+                if (response != null) {
+                    response.close();
+                }
+                // 相当于关闭浏览器
+                closeableHttpClient.close();
+            }
+        }
     }
 
     private static String getHeader(String username, String password) {
