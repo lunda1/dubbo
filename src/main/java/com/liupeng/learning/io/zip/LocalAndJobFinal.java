@@ -31,7 +31,7 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 import java.util.zip.ZipOutputStream;
 
-public class TestHotelFinal {
+public class LocalAndJobFinal {
 
     public static String haoqHotelUnZipFilePath = "D:\\H9847_online_static_xml\\hotelList\\";
     public static String haoqCityUnZipFile = "D:\\H9847_online_static_xml\\cityList\\cityList.xml";
