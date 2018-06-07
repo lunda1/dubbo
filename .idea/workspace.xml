@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04489e23-602d-4c28-96b8-a5141ff36630" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/zip/TestHotelFinal.java" afterPath="$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/zip/TestHotelFinal.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/zip/LocalAndJobFinal.java" afterPath="$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/zip/LocalAndJobFinal.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,26 +31,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestHotelFinal.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/zip/TestHotelFinal.java">
+      <file leaf-file-name="TestZip.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/zip/TestZip.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+            <state relative-caret-position="133">
+              <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LocalAndJobFinal.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/zip/LocalAndJobFinal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="254">
+              <caret line="73" column="54" lean-forward="false" selection-start-line="73" selection-start-column="54" selection-end-line="73" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#generateLocalCountFile#0;class#TestHotelFinal#0" expanded="false" />
-                <element signature="method#deleteLocalRezipDir#0;class#TestHotelFinal#0" expanded="false" />
-                <element signature="method#rezipHotelRelevantFiles#0;class#TestHotelFinal#0" expanded="false" />
-                <element signature="method#deleteFTPFiles#0;class#TestHotelFinal#0" expanded="false" />
-                <element signature="method#uploadCity#0;class#TestHotelFinal#0" expanded="false" />
-                <element signature="method#uploadCountry#0;class#TestHotelFinal#0" expanded="false" />
-                <element signature="method#uploadHotelRelevantFiles#0;class#TestHotelFinal#0" expanded="false" />
-                <element signature="method#downloadAndSyncHotels#0;class#TestHotelFinal#0" expanded="false" />
-                <element signature="method#downloadAndSyncCountries#0;class#TestHotelFinal#0" expanded="false" />
-                <element signature="method#getFTPFileNames#0;class#TestHotelFinal#0" expanded="false" />
-                <element signature="method#getLargestNum#0;class#TestHotelFinal#0" expanded="false" />
-                <element signature="method#validDataDir#0;class#TestHotelFinal#0" expanded="false" />
-                <element signature="method#getHeader#0;class#TestHotelFinal#0" expanded="false" />
+                <element signature="method#generateLocalCountFile#0;class#LocalAndJobFinal#0" expanded="false" />
+                <element signature="method#deleteLocalRezipDir#0;class#LocalAndJobFinal#0" expanded="false" />
+                <element signature="method#rezipHotelRelevantFiles#0;class#LocalAndJobFinal#0" expanded="false" />
+                <element signature="method#deleteFTPFiles#0;class#LocalAndJobFinal#0" expanded="false" />
+                <element signature="method#uploadCity#0;class#LocalAndJobFinal#0" expanded="false" />
+                <element signature="method#uploadCountry#0;class#LocalAndJobFinal#0" expanded="false" />
+                <element signature="method#uploadHotelRelevantFiles#0;class#LocalAndJobFinal#0" expanded="false" />
+                <element signature="method#downloadAndSyncCities#0;class#LocalAndJobFinal#0" expanded="false" />
+                <element signature="method#getLargestNum#0;class#LocalAndJobFinal#0" expanded="false" />
+                <element signature="method#validDataDir#0;class#LocalAndJobFinal#0" expanded="false" />
+                <element signature="method#getHeader#0;class#LocalAndJobFinal#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -62,16 +69,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="197">
               <caret line="56" column="14" lean-forward="false" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileInputStream.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/io/FileInputStream.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="48" column="6" lean-forward="false" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -163,6 +160,29 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="TestJaxb.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/xml/jaxb/TestJaxb.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="54" selection-end-column="69" />
+              <folding>
+                <element signature="method#testCityXmlToBean#0;class#TestJaxb#0" expanded="false" />
+                <element signature="method#testCountryXmlToBean#0;class#TestJaxb#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HaoQHotelResponse.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/xml/jaxb/HaoQHotelResponse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="DeleteZipTask.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/zip/DeleteZipTask.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -170,23 +190,6 @@
               <caret line="14" column="53" lean-forward="false" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestHttp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/http/TestHttp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="614">
-              <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-              <folding>
-                <element signature="method#uploadFile#0;class#TestHttp#0" expanded="false" />
-                <element signature="method#uploadFileByDirectlySetAuth#0;class#TestHttp#0" expanded="false" />
-                <element signature="method#downloadTxtFile#0;class#TestHttp#0" expanded="false" />
-                <element signature="method#downloadZipFile#0;class#TestHttp#0" expanded="false" />
-                <element signature="method#downloadZipFileByDirectlySetAuth#0;class#TestHttp#0" expanded="false" />
-                <element signature="method#deleteFile#0;class#TestHttp#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -205,9 +208,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>addHe</find>
-      <find>completedTask</find>
-      <find>response</find>
       <find>closeableHttpClient</find>
       <find>downloadZipFileByDirectlySetAuth</find>
       <find>rezipFile</find>
@@ -235,6 +235,9 @@
       <find>downloadAndUnZipHotelFiles</find>
       <find>downloadAndSyncCities</find>
       <find>downloadAndSyncCountries</find>
+      <find>&quot;http://10.2.73.43:8080</find>
+      <find>urlPrefix</find>
+      <find>hotelList</find>
     </findStrings>
     <replaceStrings>
       <replace>HaoQCountryFieldEnum</replace>
@@ -245,6 +248,7 @@
       <replace>hotelFileName</replace>
       <replace>---------------------------------------------------------------------</replace>
       <replace>downloadAndSyncHotels</replace>
+      <replace>urlPrefix+&quot;</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -258,7 +262,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/liupeng/dubbo/loadbalance/TestLoadBalanceServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/liupeng/dubbo/loadbalance/TestLoadBalanceServer2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/liupeng/dubbo/loadbalance/TestLoadBalanceClient3.java" />
         <option value="$PROJECT_DIR$/src/main/resources/dubbo-config-consumer.xml" />
@@ -309,6 +312,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/zip/CtripDirList.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/zip/TestZipMultiInOne.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/zip/TestHotelFinal.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/zip/LocalAndJobFinal.java" />
       </list>
     </option>
   </component>
@@ -628,14 +632,14 @@
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
-    <configuration name="TestHotelFinal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="LocalAndJobFinal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.liupeng.learning.io.zip.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.liupeng.learning.io.zip.TestHotelFinal" />
+      <option name="MAIN_CLASS_NAME" value="com.liupeng.learning.io.zip.LocalAndJobFinal" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -802,11 +806,11 @@
       <item index="1" class="java.lang.String" itemvalue="Application.TestJConsole" />
       <item index="2" class="java.lang.String" itemvalue="Application.TestZipMultiInOne" />
       <item index="3" class="java.lang.String" itemvalue="Application.TestHttp" />
-      <item index="4" class="java.lang.String" itemvalue="Application.TestHotelFinal" />
+      <item index="4" class="java.lang.String" itemvalue="Application.LocalAndJobFinal" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.TestHotelFinal" />
+        <item index="0" class="java.lang.String" itemvalue="Application.LocalAndJobFinal" />
         <item index="1" class="java.lang.String" itemvalue="Application.TestZipMultiInOne" />
         <item index="2" class="java.lang.String" itemvalue="Application.TestHttp" />
         <item index="3" class="java.lang.String" itemvalue="Application.TestZip" />
@@ -838,7 +842,7 @@
       <workItem from="1527576005337" duration="67086000" />
       <workItem from="1528079800140" duration="4528000" />
       <workItem from="1528096793956" duration="22045000" />
-      <workItem from="1528193640921" duration="44761000" />
+      <workItem from="1528193640921" duration="47171000" />
     </task>
     <task id="LOCAL-00001" summary="add .gitignore file">
       <created>1524627380283</created>
@@ -851,7 +855,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="193965000" />
+    <option name="totallyTimeSpent" value="196375000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -864,6 +868,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3257329" sideWeight="0.5021322" order="9" side_tool="true" content_ui="tabs" />
@@ -885,9 +890,9 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39413682" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39413682" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2771855" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
@@ -1062,14 +1067,14 @@
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/zip/TestHotelFinal.java</url>
-          <line>57</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/zip/LocalAndJobFinal.java</url>
+          <line>67</line>
           <properties />
           <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/zip/TestHotelFinal.java</url>
-          <line>131</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/zip/LocalAndJobFinal.java</url>
+          <line>141</line>
           <properties />
           <option name="timeStamp" value="57" />
         </line-breakpoint>
@@ -1323,14 +1328,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/xml/jaxb/HaoQHotelResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/xml/jaxb/HaoQCountryResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -1400,32 +1397,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/xml/jaxb/TestJaxb.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="52" column="19" lean-forward="false" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
-          <folding>
-            <element signature="method#testCityXmlToBean#0;class#TestJaxb#0" expanded="false" />
-            <element signature="method#testCountryXmlToBean#0;class#TestJaxb#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/util/zip/ZipEntry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="693">
           <caret line="557" column="63" lean-forward="true" selection-start-line="557" selection-start-column="63" selection-end-line="557" selection-end-column="63" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/zip/TestZip.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1556,25 +1532,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/zip/TestHotelFinal.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/zip/TestZip.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+        <state relative-caret-position="133">
+          <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/xml/jaxb/TestJaxb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="54" selection-end-column="69" />
+          <folding>
+            <element signature="method#testCityXmlToBean#0;class#TestJaxb#0" expanded="false" />
+            <element signature="method#testCountryXmlToBean#0;class#TestJaxb#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/xml/jaxb/HaoQHotelResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/io/zip/LocalAndJobFinal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="73" column="54" lean-forward="false" selection-start-line="73" selection-start-column="54" selection-end-line="73" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#generateLocalCountFile#0;class#TestHotelFinal#0" expanded="false" />
-            <element signature="method#deleteLocalRezipDir#0;class#TestHotelFinal#0" expanded="false" />
-            <element signature="method#rezipHotelRelevantFiles#0;class#TestHotelFinal#0" expanded="false" />
-            <element signature="method#deleteFTPFiles#0;class#TestHotelFinal#0" expanded="false" />
-            <element signature="method#uploadCity#0;class#TestHotelFinal#0" expanded="false" />
-            <element signature="method#uploadCountry#0;class#TestHotelFinal#0" expanded="false" />
-            <element signature="method#uploadHotelRelevantFiles#0;class#TestHotelFinal#0" expanded="false" />
-            <element signature="method#downloadAndSyncHotels#0;class#TestHotelFinal#0" expanded="false" />
-            <element signature="method#downloadAndSyncCountries#0;class#TestHotelFinal#0" expanded="false" />
-            <element signature="method#getFTPFileNames#0;class#TestHotelFinal#0" expanded="false" />
-            <element signature="method#getLargestNum#0;class#TestHotelFinal#0" expanded="false" />
-            <element signature="method#validDataDir#0;class#TestHotelFinal#0" expanded="false" />
-            <element signature="method#getHeader#0;class#TestHotelFinal#0" expanded="false" />
+            <element signature="method#generateLocalCountFile#0;class#LocalAndJobFinal#0" expanded="false" />
+            <element signature="method#deleteLocalRezipDir#0;class#LocalAndJobFinal#0" expanded="false" />
+            <element signature="method#rezipHotelRelevantFiles#0;class#LocalAndJobFinal#0" expanded="false" />
+            <element signature="method#deleteFTPFiles#0;class#LocalAndJobFinal#0" expanded="false" />
+            <element signature="method#uploadCity#0;class#LocalAndJobFinal#0" expanded="false" />
+            <element signature="method#uploadCountry#0;class#LocalAndJobFinal#0" expanded="false" />
+            <element signature="method#uploadHotelRelevantFiles#0;class#LocalAndJobFinal#0" expanded="false" />
+            <element signature="method#downloadAndSyncCities#0;class#LocalAndJobFinal#0" expanded="false" />
+            <element signature="method#getLargestNum#0;class#LocalAndJobFinal#0" expanded="false" />
+            <element signature="method#validDataDir#0;class#LocalAndJobFinal#0" expanded="false" />
+            <element signature="method#getHeader#0;class#LocalAndJobFinal#0" expanded="false" />
           </folding>
         </state>
       </provider>

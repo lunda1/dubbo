@@ -2,6 +2,9 @@ package com.liupeng.learning.io.zip;
 
 import com.alibaba.fastjson.JSON;
 import com.liupeng.learning.haoqjob.TaskEntry;
+import com.liupeng.learning.xml.jaxb.HaoQCityResponse;
+import com.liupeng.learning.xml.jaxb.HaoQCountryResponse;
+import com.liupeng.learning.xml.jaxb.HaoQHotelResponse;
 import org.apache.commons.net.util.Base64;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
@@ -15,6 +18,8 @@ import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
 import org.springframework.util.CollectionUtils;
 
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.Unmarshaller;
 import java.io.*;
 import java.nio.charset.Charset;
 import java.text.DecimalFormat;
@@ -33,6 +38,11 @@ import java.util.zip.ZipOutputStream;
 
 public class LocalAndJobFinal {
 
+    public static String urlPrefix = "http://10.2.73.43:8080";
+    public static String ctripFtpRootPath = "/igtftptest";
+    public static String ctripFtpHotelPath = "/hotelList/";
+    public static String ctripFtpCityPath = "/cityList/";
+    public static String ctripFtpCountryPath = "/countryList/";
     public static String haoqHotelUnZipFilePath = "D:\\H9847_online_static_xml\\hotelList\\";
     public static String haoqCityUnZipFile = "D:\\H9847_online_static_xml\\cityList\\cityList.xml";
     public static String haoqCountryUnZipFile = "D:\\H9847_online_static_xml\\countryList\\countryList.xml";
@@ -50,7 +60,7 @@ public class LocalAndJobFinal {
 
     public static void main(String[] args) throws Exception {
 
-        /*//1.本机读取酒店xml文件并重压缩xml文件为zip文件
+        //1.本机读取酒店xml文件并重压缩xml文件为zip文件
         if (!validDataDir()) {
             System.out.println("原始数据文件目录不存在，"+ haoqHotelUnZipFilePath);
             return;
@@ -59,9 +69,9 @@ public class LocalAndJobFinal {
 
         //2.删除ctrip的ftp服务器上的原有的zip文件
         List<String> paths = new ArrayList<>();
-        paths.add("/igtftptest/hotelList/");
-        paths.add("/igtftptest/cityList/");
-        paths.add("/igtftptest/countryList/");
+        paths.add(ctripFtpRootPath+ctripFtpHotelPath);
+        paths.add(ctripFtpRootPath+ctripFtpCityPath);
+        paths.add(ctripFtpRootPath+ctripFtpCountryPath);
         deleteFTPFiles(paths);
 
         //3.将本机新压缩的zip文件上传到ctrip的ftp服务器
@@ -71,16 +81,16 @@ public class LocalAndJobFinal {
         uploadCity();
 
         //5.上传国家xml文件
-        uploadCountry();*/
+        uploadCountry();
 
         //6.定时任务从ctrip的ftp服务器下载解析重压缩包
-        //downloadAndSyncHotels();
+        downloadAndSyncHotels(ctripFtpRootPath+ctripFtpHotelPath);
 
         //7.定时任务更新城市
-        downloadAndSyncCities("/igtftptest/cityList/");
+        downloadAndSyncCities(ctripFtpRootPath+ctripFtpCityPath);
 
         //8.定时任务更新国家
-        downloadAndSyncCountries("/igtftptest/countryList/");
+        downloadAndSyncCountries(ctripFtpRootPath+ctripFtpCountryPath);
     }
 
     private static void generateLocalCountFile() throws Exception {
@@ -411,11 +421,11 @@ public class LocalAndJobFinal {
         System.out.println("=====================================================================");
     }
 
-    public static void downloadAndSyncHotels() {
+    public static void downloadAndSyncHotels(String path) {
         System.out.println("开始下载zip文件并更新Hotel数据...");
         long begin = System.currentTimeMillis();
 
-        List<String> fileNames = getFTPFileNames("/igtftptest/hotelList");
+        List<String> fileNames = getFTPFileNames(path);
         AtomicInteger totalZipCompletedTask = new AtomicInteger(0);
         CountDownLatch totalLatch = new CountDownLatch(fileNames.size()-1);
 
@@ -431,7 +441,7 @@ public class LocalAndJobFinal {
             HttpClientBuilder httpClientBuilder = HttpClientBuilder.create();
             CloseableHttpClient closeableHttpClient = httpClientBuilder.build();
 
-            HttpGet httpGet = new HttpGet("http://10.2.73.43:8080/filex/rest/file/NT-TEST?pathAndFile=/igtftptest/hotelList/"+fn);
+            HttpGet httpGet = new HttpGet("http://10.2.73.43:8080/filex/rest/file/NT-TEST?pathAndFile="+path+fn);
             httpGet.addHeader("Authorization", basicAuth);
 
             CloseableHttpResponse response = null;
@@ -507,9 +517,17 @@ public class LocalAndJobFinal {
                     for (TaskEntry taskEntry : taskList) {
                         pool.submit(new Runnable() {
                             @Override public void run() {
+                                HaoQHotelResponse haoQCityHotelResponse = null;
+                                try {
+                                    haoQCityHotelResponse = converyToJavaBean(new String(taskEntry.getFileBytes(),"utf-8"),HaoQHotelResponse.class);
+                                } catch (UnsupportedEncodingException e) {
+                                    e.printStackTrace();
+                                    System.out.println("酒店同步时字节转换异常！");
+                                }
+
                                 //插入数据
                                 SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
-                                System.out.println(singleZipCompletedTask.incrementAndGet()+". "+taskEntry.getFileName()+" sync data finished! "+df.format(new Date()));
+                                System.out.println(singleZipCompletedTask.incrementAndGet()+". "+taskEntry.getFileName()+"中酒店个数为"+JSON.toJSONString(haoQCityHotelResponse.getHotelList().size())+"， data sync finished! "+df.format(new Date()));
                                 latch.countDown();
                             }
                         });
@@ -553,7 +571,7 @@ public class LocalAndJobFinal {
         }
     }
 
-    public static void downloadAndSyncCities(String cityXmlPath) {
+    public static void downloadAndSyncCities(String path) {
         System.out.println("开始下载cityList.xml文件并更新City数据...");
         long begin = System.currentTimeMillis();
 
@@ -561,7 +579,7 @@ public class LocalAndJobFinal {
             HttpClientBuilder httpClientBuilder = HttpClientBuilder.create();
             CloseableHttpClient closeableHttpClient = httpClientBuilder.build();
 
-            HttpGet httpGet = new HttpGet("http://10.2.73.43:8080/filex/rest/file/NT-TEST?pathAndFile="+cityXmlPath+"cityList.xml");
+            HttpGet httpGet = new HttpGet(urlPrefix+"/filex/rest/file/NT-TEST?pathAndFile="+path+"cityList.xml");
             httpGet.addHeader("Authorization", basicAuth);
 
             CloseableHttpResponse response = null;
@@ -576,9 +594,11 @@ public class LocalAndJobFinal {
                     DecimalFormat df = new DecimalFormat("0.##");
                     System.out.println("cityList.xml文件大小" + df.format(Double.parseDouble(String.valueOf(bytes.length))/1024/1024) + "MB，开始更新...");
 
+                    HaoQCityResponse haoQCityHotelResponse = converyToJavaBean(new String(bytes,"utf-8"),HaoQCityResponse.class);
+
                     //插入数据
                     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
-                    System.out.println("cityList.xml sync data finished! "+dateFormat.format(new Date()));
+                    System.out.println("cityList.xml中城市个数为"+JSON.toJSONString(haoQCityHotelResponse.getCityList().size())+"，data sync finished! "+dateFormat.format(new Date()));
 
 
                     System.out.println("cityList.xml下载并同步数据完成，耗时: "+(System.currentTimeMillis()-begin)/1000/60+"分钟");
@@ -609,7 +629,7 @@ public class LocalAndJobFinal {
             }//finally
     }
 
-    public static void downloadAndSyncCountries(String coutryXmlPath) {
+    public static void downloadAndSyncCountries(String path) {
         System.out.println("开始下载countryList.xml文件并更新Coutry数据...");
         long begin = System.currentTimeMillis();
 
@@ -617,7 +637,7 @@ public class LocalAndJobFinal {
         HttpClientBuilder httpClientBuilder = HttpClientBuilder.create();
         CloseableHttpClient closeableHttpClient = httpClientBuilder.build();
 
-        HttpGet httpGet = new HttpGet("http://10.2.73.43:8080/filex/rest/file/NT-TEST?pathAndFile="+coutryXmlPath+"countryList.xml");
+        HttpGet httpGet = new HttpGet(urlPrefix+"/filex/rest/file/NT-TEST?pathAndFile="+path+"countryList.xml");
         httpGet.addHeader("Authorization", basicAuth);
 
         CloseableHttpResponse response = null;
@@ -632,9 +652,11 @@ public class LocalAndJobFinal {
                 DecimalFormat df = new DecimalFormat("0.##");
                 System.out.println("coutryList.xml文件大小" + df.format(Double.parseDouble(String.valueOf(bytes.length))/1024/1024) + "MB，开始更新...");
 
+                HaoQCountryResponse haoQCountryResponse = converyToJavaBean(new String(bytes,"utf-8"),HaoQCountryResponse.class);
+
                 //插入数据
                 SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
-                System.out.println("coutryList.xml sync data finished! "+dateFormat.format(new Date()));
+                System.out.println("coutryList.xml中国家个数为"+JSON.toJSONString(haoQCountryResponse.getCountryList().size())+"，data sync finished! "+dateFormat.format(new Date()));
 
 
                 System.out.println("coutryList.xml下载并同步数据完成，耗时: "+(System.currentTimeMillis()-begin)/1000/60+"分钟");
@@ -672,7 +694,7 @@ public class LocalAndJobFinal {
         HttpClientBuilder httpClientBuilder = HttpClientBuilder.create();
         CloseableHttpClient closeableHttpClient = httpClientBuilder.build();
 
-        HttpGet httpGet = new HttpGet("http://10.2.73.43:8080/filex/rest/file/NT-TEST/list?path="+path);
+        HttpGet httpGet = new HttpGet(urlPrefix+"/filex/rest/file/NT-TEST/list?path="+path);
         httpGet.addHeader("Authorization",basicAuth);
 
         CloseableHttpResponse response = null;
@@ -752,5 +774,17 @@ public class LocalAndJobFinal {
         byte[] encodedAuth = Base64.encodeBase64(auth.getBytes(Charset.forName("UTF-8")));
         String authHeader = "Basic " + new String(encodedAuth);
         return authHeader;
+    }
+
+    public static <T> T converyToJavaBean(String xml, Class<T> c) {
+        T t = null;
+        try {
+            JAXBContext context = JAXBContext.newInstance(c);
+            Unmarshaller unmarshaller = context.createUnmarshaller();
+            t = (T) unmarshaller.unmarshal(new StringReader(xml));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return t;
     }
 }
