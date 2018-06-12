@@ -9,7 +9,8 @@ public class TestJavasist {
         ClassPool cp = ClassPool.getDefault();
         CtClass cc = cp.get("com.liupeng.learning.javasist.Hello");
         CtMethod m = cc.getDeclaredMethod("say");
-        m.insertBefore("{ System.out.println(\"new inserted Hello.say():\"); }");
+        m.insertBefore("{ System.out.println(\"javasist before hello.say():\"); }");
+        m.insertAfter("{ System.out.println(\"javasist after hello.say():\"); }");
         Class c = cc.toClass();
         Hello h = (Hello)c.newInstance();
         h.say();
