@@ -2,6 +2,8 @@ package com.liupeng.dubbo;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import static java.util.concurrent.TimeUnit.SECONDS;
+
 public class Consumer {
     public static void main(String[] args) throws Exception {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
@@ -13,5 +15,6 @@ public class Consumer {
         String hello = demoService.sayHello("world");
         // show the result
         System.out.println(hello);
+        SECONDS.sleep(10);
     }
 }
