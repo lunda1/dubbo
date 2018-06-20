@@ -1,4 +1,4 @@
-package com.liupeng.net.group;
+package com.liupeng.net.udp.multicast;
 
 import java.io.IOException;
 import java.net.DatagramPacket;
