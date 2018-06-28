@@ -15,8 +15,8 @@ public class TestApiConsumer {
         registryConfig.setAddress("127.0.0.1:2181");
         registryConfig.setProtocol("zookeeper");
 
-        MonitorConfig monitorConfig = new MonitorConfig();
-        monitorConfig.setProtocol("registry");
+//        MonitorConfig monitorConfig = new MonitorConfig();
+//        monitorConfig.setProtocol("registry");
 //        monitorConfig.setDefault(true);
 //        monitorConfig.setAddress("127.0.0.1:8083");
 
@@ -26,8 +26,8 @@ public class TestApiConsumer {
         referenceConfig.setInterface(DemoService.class);
         referenceConfig.setVersion("1.0.0");
         referenceConfig.setGroup("dubbo1");
-        referenceConfig.setMonitor(monitorConfig);
-//        referenceConfig.setTimeout(3000);
+//        referenceConfig.setMonitor(monitorConfig);
+        referenceConfig.setTimeout(3000);
 
 
 

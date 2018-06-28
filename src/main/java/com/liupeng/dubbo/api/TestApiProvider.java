@@ -19,8 +19,8 @@ public class TestApiProvider {
         protocol.setName("dubbo");
         protocol.setPort(20880);
 
-        MonitorConfig monitorConfig = new MonitorConfig();
-        monitorConfig.setProtocol("registry");
+//        MonitorConfig monitorConfig = new MonitorConfig();
+//        monitorConfig.setProtocol("registry");
 //        monitorConfig.setDefault(true);
 //        monitorConfig.setAddress("127.0.0.1:8083");
 
@@ -32,7 +32,7 @@ public class TestApiProvider {
         service.setRef(demoService);
         service.setVersion("1.0.0");
         service.setGroup("dubbo1");
-        service.setMonitor(monitorConfig);
+//        service.setMonitor(monitorConfig);
 
         service.export();
 
