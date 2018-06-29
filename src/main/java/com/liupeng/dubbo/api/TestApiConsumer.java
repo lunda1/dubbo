@@ -1,9 +1,6 @@
 package com.liupeng.dubbo.api;
 
-import com.alibaba.dubbo.config.ApplicationConfig;
-import com.alibaba.dubbo.config.MonitorConfig;
-import com.alibaba.dubbo.config.ReferenceConfig;
-import com.alibaba.dubbo.config.RegistryConfig;
+import com.alibaba.dubbo.config.*;
 import com.liupeng.dubbo.DemoService;
 
 public class TestApiConsumer {
@@ -14,6 +11,10 @@ public class TestApiConsumer {
         RegistryConfig registryConfig = new RegistryConfig();
         registryConfig.setAddress("127.0.0.1:2181");
         registryConfig.setProtocol("zookeeper");
+
+        ProtocolConfig protocolConfig = new ProtocolConfig();
+        protocolConfig.setName("rmi");
+        protocolConfig.setPort(1099);
 
 //        MonitorConfig monitorConfig = new MonitorConfig();
 //        monitorConfig.setProtocol("registry");
@@ -28,7 +29,6 @@ public class TestApiConsumer {
         referenceConfig.setGroup("dubbo1");
 //        referenceConfig.setMonitor(monitorConfig);
         referenceConfig.setTimeout(3000);
-
 
 
         DemoService demoService = (DemoService) referenceConfig.get();
