@@ -1,4 +1,4 @@
-package com.liupeng.learning.zookeeper;
+package com.liupeng.learning.zookeeper.api;
 
 import org.apache.zookeeper.Watcher;
 import org.apache.zookeeper.WatchedEvent;
@@ -39,18 +39,39 @@ public class ZookeeperClient implements Watcher {
     @Override  
     public void process(WatchedEvent event) {  
         if(event.getState() == KeeperState.SyncConnected){  
-            System.out.println("watcher receiver event");  
+            System.out.println("111 watcher receiver event");
             countDownLatch.countDown();  
         }  
-		//监听节点数据变化事件并再次绑定
-		if(event.getType() == Event.EventType.NodeDataChanged){  
-            System.out.println("path: "+event.getPath()+" data changed !!!");  
-			try{
-				this.zookeeper.exists(event.getPath(),true);
-			}catch(Exception e){
-				e.printStackTrace();
-			}
-        }  
+        //监听节点数据变化事件并再次绑定
+        if(event.getType() == Event.EventType.NodeDataChanged){
+            System.out.println("path: "+event.getPath()+" data changed !!!");
+            try{
+                this.zookeeper.exists(event.getPath(),true);
+            }catch(Exception e){
+                e.printStackTrace();
+            }
+        } else if (event.getType() == Event.EventType.NodeChildrenChanged) {
+            System.out.println("path: "+event.getPath()+" children changed !!!");
+            try{
+                this.zookeeper.getChildren(event.getPath(),true);
+            }catch(Exception e){
+                e.printStackTrace();
+            }
+        } else if (event.getType() == Event.EventType.NodeDeleted) {
+            System.out.println("path: " + event.getPath() + " node deleted !!!");
+            try {
+                this.zookeeper.exists(event.getPath(), true);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        } else if (event.getType() == Event.EventType.NodeCreated){
+            System.out.println("path: " + event.getPath() + " node created !!!");
+            try {
+                this.zookeeper.exists(event.getPath(), true);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }  
       
 	/**
@@ -81,8 +102,12 @@ public class ZookeeperClient implements Watcher {
      */  
     public List<String> getChildren(String path) throws KeeperException, InterruptedException{  
         return this.zookeeper.getChildren(path, false);  
-    }  
-      
+    }
+
+    public List<String> getChildren(String path, boolean watcher) throws KeeperException, InterruptedException{
+        return this.zookeeper.getChildren(path, watcher);
+    }
+
     public Stat setData(String path,byte[] data,int version) throws KeeperException, InterruptedException{  
         return this.zookeeper.setData(path, data, version);  
     }  
@@ -146,14 +171,17 @@ public class ZookeeperClient implements Watcher {
         log.info("成功获取节点数据！");  
   
         // 更新节点数据  
-        //data = "test data".getBytes();  
-        //client.setData("/test", data, 0);  
+        data = "test data".getBytes();
+        client.setData("/test", data, 0);
         log.info("成功更新节点数据！");  
-        nodeData = client.getData("/test");  
-		
-		
-		    client.exists("/test");
-		
+        nodeData = client.getData("/test");
+
+        //监听节点"/test1"上发生的事件，如节点自身修改，此节点删除事件，此节点添加
+        client.exists("/test1");
+
+        //给节点"/test1"的子节点添加事件监听，如给其添加或者删除子节点
+        client.getChildren("/test1",true);
+
 		    Thread.sleep(1000*60*5);
         client.closeConnect();  
     }  
