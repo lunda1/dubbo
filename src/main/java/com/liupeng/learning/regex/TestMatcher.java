@@ -31,5 +31,9 @@ public class TestMatcher {
         while (m4.find()) {
             System.out.println(m4.group());
         }
+
+        String s = "\\dddd\\$";
+        System.out.println(s);
+        System.out.println(Matcher.quoteReplacement(s));
     }
 }
