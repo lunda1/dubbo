@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="04489e23-602d-4c28-96b8-a5141ff36630" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liupeng/learning/basic/TestBigDecimal.java" afterPath="$PROJECT_DIR$/src/main/java/com/liupeng/learning/basic/TestBigDecimal.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/liupeng/dubbo/api/TestApiProvider.java" afterPath="$PROJECT_DIR$/src/main/java/com/liupeng/dubbo/api/TestApiProvider.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/spi/target/" />
@@ -34,143 +34,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HeaderExchanger.class" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/exchange/support/header/HeaderExchanger.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="24" column="36" lean-forward="false" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
-              <folding>
-                <marker date="1523971799454" expanded="false" signature="0:104" ph="/.../" />
-                <marker date="1523971799454" expanded="false" signature="174:645" ph="..." />
-                <marker date="1523971799454" expanded="true" signature="777:784" ph="{}" />
-                <marker date="1523971799454" expanded="true" signature="879:1037" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="1129:1278" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HeaderExchangeClient.class" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/exchange/support/header/HeaderExchangeClient.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="37" column="11" lean-forward="false" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
-              <folding>
-                <marker date="1523971799454" expanded="false" signature="0:104" ph="/.../" />
-                <marker date="1523971799454" expanded="false" signature="174:1155" ph="..." />
-                <marker date="1523971799454" expanded="true" signature="1734:2557" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="2634:2687" ph="{...}" />
-                <marker date="1523971799454" expanded="false" signature="2712:2723" ph=" { " />
-                <marker date="1523971799454" expanded="false" signature="2752:2758" ph=" }" />
-                <marker date="1523971799454" expanded="false" signature="2807:2818" ph=" { " />
-                <marker date="1523971799454" expanded="false" signature="2857:2863" ph=" }" />
-                <marker date="1523971799454" expanded="true" signature="2953:3015" ph="{...}" />
-                <marker date="1523971799454" expanded="false" signature="3062:3073" ph=" { " />
-                <marker date="1523971799454" expanded="false" signature="3113:3119" ph=" }" />
-                <marker date="1523971799454" expanded="false" signature="3153:3164" ph=" { " />
-                <marker date="1523971799454" expanded="false" signature="3198:3204" ph=" }" />
-                <marker date="1523971799454" expanded="false" signature="3252:3263" ph=" { " />
-                <marker date="1523971799454" expanded="false" signature="3301:3307" ph=" }" />
-                <marker date="1523971799454" expanded="false" signature="3356:3367" ph=" { " />
-                <marker date="1523971799454" expanded="false" signature="3408:3414" ph=" }" />
-                <marker date="1523971799454" expanded="true" signature="3478:3521" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="3599:3648" ph="{...}" />
-                <marker date="1523971799454" expanded="false" signature="3679:3690" ph=" { " />
-                <marker date="1523971799454" expanded="false" signature="3721:3727" ph=" }" />
-                <marker date="1523971799454" expanded="true" signature="3753:3814" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="3851:3946" ph="{...}" />
-                <marker date="1523971799454" expanded="false" signature="3976:3987" ph=" { " />
-                <marker date="1523971799454" expanded="false" signature="4013:4019" ph=" }" />
-                <marker date="1523971799454" expanded="false" signature="4051:4062" ph=" { " />
-                <marker date="1523971799454" expanded="false" signature="4085:4091" ph=" }" />
-                <marker date="1523971799454" expanded="true" signature="4097:4115" ph="/**...*/" />
-                <marker date="1523971799454" expanded="false" signature="4176:4187" ph=" { " />
-                <marker date="1523971799454" expanded="false" signature="4255:4261" ph=" }" />
-                <marker date="1523971799454" expanded="true" signature="4316:4356" ph="{...}" />
-                <marker date="1523971799454" expanded="false" signature="4400:4411" ph=" { " />
-                <marker date="1523971799454" expanded="false" signature="4449:4455" ph=" }" />
-                <marker date="1523971799454" expanded="false" signature="4511:4522" ph=" { " />
-                <marker date="1523971799454" expanded="false" signature="4560:4566" ph=" }" />
-                <marker date="1523971799454" expanded="false" signature="4611:4622" ph=" { " />
-                <marker date="1523971799454" expanded="false" signature="4656:4662" ph=" }" />
-                <marker date="1523971799454" expanded="false" signature="4707:4718" ph=" { " />
-                <marker date="1523971799454" expanded="false" signature="4756:4762" ph=" }" />
-                <marker date="1523971799454" expanded="true" signature="4803:5280" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="4981:5154" ph="{...}" />
-                <marker date="1523971799454" expanded="false" signature="5039:5062" ph=" { " />
-                <marker date="1523971799454" expanded="false" signature="5122:5140" ph=" }" />
-                <marker date="1523971799454" expanded="true" signature="5320:5733" ph="{...}" />
-                <marker date="1523971799454" expanded="false" signature="5761:5772" ph=" { " />
-                <marker date="1523971799454" expanded="false" signature="5798:5804" ph=" }" />
-                <marker date="1523971799454" expanded="false" signature="5834:5845" ph=" { " />
-                <marker date="1523971799454" expanded="false" signature="5906:5912" ph=" }" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Exchanger.class" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/exchange/Exchanger.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-              <folding>
-                <marker date="1523971799454" expanded="false" signature="0:104" ph="/.../" />
-                <marker date="1523971799454" expanded="false" signature="159:340" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DubboProtocol.class" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/rpc/protocol/dubbo/DubboProtocol.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5928">
-              <caret line="360" column="44" lean-forward="false" selection-start-line="360" selection-start-column="44" selection-end-line="360" selection-end-column="44" />
-              <folding>
-                <marker date="1523971799454" expanded="false" signature="0:104" ph="/.../" />
-                <marker date="1523971799454" expanded="false" signature="160:1741" ph="..." />
-                <marker date="1523971799454" expanded="true" signature="2563:6839" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="2659:4637" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="4726:4935" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="5009:5067" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="5144:5409" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="5474:5931" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="6021:6833" ph="{...}" />
-                <marker date="1523971799454" expanded="false" signature="6868:6879" ph=" { " />
-                <marker date="1523971799454" expanded="false" signature="6895:6901" ph=" }" />
-                <marker date="1523971799454" expanded="true" signature="6954:7115" ph="{...}" />
-                <marker date="1523971799454" expanded="false" signature="7167:7178" ph=" { " />
-                <marker date="1523971799454" expanded="false" signature="7245:7251" ph=" }" />
-                <marker date="1523971799454" expanded="false" signature="7302:7313" ph=" { " />
-                <marker date="1523971799454" expanded="false" signature="7382:7388" ph=" }" />
-                <marker date="1523971799454" expanded="false" signature="7435:7446" ph=" { " />
-                <marker date="1523971799454" expanded="false" signature="7470:7476" ph=" }" />
-                <marker date="1523971799454" expanded="true" signature="7528:7812" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="7898:9308" ph="{...}" />
-                <marker date="1523971799454" expanded="false" signature="9357:9368" ph=" { " />
-                <marker date="1523971799454" expanded="false" signature="9425:9431" ph=" }" />
-                <marker date="1523971799454" expanded="false" signature="9464:9475" ph=" { " />
-                <marker date="1523971799454" expanded="false" signature="9488:9494" ph=" }" />
-                <marker date="1523971799454" expanded="true" signature="9570:10613" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="10652:11042" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="11093:12324" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="12394:14092" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="14177:14392" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="14443:15010" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="15064:15772" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="15821:16946" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="16974:19174" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Exchangers.class" pinned="false" current-in-tab="false">
         <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/exchange/Exchangers.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="86" column="41" lean-forward="false" selection-start-line="86" selection-start-column="41" selection-end-line="86" selection-end-column="41" />
+            <state relative-caret-position="418">
+              <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding>
                 <marker date="1523971799454" expanded="false" signature="0:104" ph="/.../" />
                 <marker date="1523971799454" expanded="false" signature="159:596" ph="..." />
@@ -197,27 +65,75 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestBigDecimal.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/basic/TestBigDecimal.java">
+      <file leaf-file-name="RegistryProtocol.class" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/registry/integration/RegistryProtocol.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="21" column="72" lean-forward="true" selection-start-line="21" selection-start-column="72" selection-end-line="21" selection-end-column="72" />
+            <state relative-caret-position="589">
+              <caret line="124" column="22" lean-forward="false" selection-start-line="124" selection-start-column="22" selection-end-line="124" selection-end-column="22" />
               <folding>
-                <element signature="e#140#141#0" expanded="true" />
-                <element signature="e#163#164#0" expanded="true" />
+                <element signature="e#3290#3291#0" expanded="true" />
+                <element signature="e#3344#3345#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExchangeClient.class" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/exchange/ExchangeClient.class">
+      <file leaf-file-name="RegistryService.class" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/registry/RegistryService.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+            <state relative-caret-position="209">
+              <caret line="15" column="9" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FailbackRegistry.class" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/registry/support/FailbackRegistry.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="152" column="16" lean-forward="false" selection-start-line="152" selection-start-column="16" selection-end-line="152" selection-end-column="16" />
               <folding>
-                <marker date="1523971799454" expanded="false" signature="0:104" ph="/.../" />
+                <element signature="e#1761#2101#0" expanded="true" />
+                <element signature="e#2100#2101#0" expanded="true" />
+                <element signature="e#9476#9477#0" expanded="true" />
+                <element signature="e#9525#9526#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ZookeeperRegistry.class" pinned="false" current-in-tab="true">
+        <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/registry/zookeeper/ZookeeperRegistry.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="754">
+              <caret line="138" column="33" lean-forward="false" selection-start-line="138" selection-start-column="33" selection-end-line="138" selection-end-column="33" />
+              <folding>
+                <element signature="e#2035#2457#0" expanded="true" />
+                <element signature="e#2456#2457#0" expanded="true" />
+                <element signature="e#4602#5432#0" expanded="true" />
+                <element signature="e#5431#5432#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ZookeeperClient.class" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/zookeeper/ZookeeperClient.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="11" column="9" lean-forward="false" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractZookeeperClient.class" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/zookeeper/support/AbstractZookeeperClient.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="298">
+              <caret line="35" column="53" lean-forward="false" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="53" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -242,70 +158,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Transporter.class" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/Transporter.class">
+      <file leaf-file-name="ExchangeServer.class" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/exchange/ExchangeServer.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="152">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding>
                 <marker date="1523971799454" expanded="false" signature="0:104" ph="/.../" />
-                <marker date="1523971799454" expanded="false" signature="150:278" ph="..." />
+                <marker date="1523971799454" expanded="false" signature="159:257" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExtensionLoader.class" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/common/extension/ExtensionLoader.class">
+      <file leaf-file-name="Server.class" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/Server.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5795">
-              <caret line="348" column="13" lean-forward="false" selection-start-line="348" selection-start-column="13" selection-end-line="348" selection-end-column="13" />
+            <state relative-caret-position="114">
+              <caret line="12" column="53" lean-forward="false" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
               <folding>
                 <marker date="1523971799454" expanded="false" signature="0:104" ph="/.../" />
-                <marker date="1523971799454" expanded="false" signature="158:1242" ph="..." />
-                <marker date="1523971799454" expanded="true" signature="2736:2923" ph="{...}" />
-                <marker date="1523971799454" expanded="false" signature="2994:3005" ph=" { " />
-                <marker date="1523971799454" expanded="false" signature="3048:3054" ph=" }" />
-                <marker date="1523971799454" expanded="true" signature="3131:3934" ph="{...}" />
-                <marker date="1523971799454" expanded="false" signature="3984:3995" ph=" { " />
-                <marker date="1523971799454" expanded="false" signature="4041:4047" ph=" }" />
-                <marker date="1523971799454" expanded="false" signature="4104:4115" ph=" { " />
-                <marker date="1523971799454" expanded="false" signature="4174:4180" ph=" }" />
-                <marker date="1523971799454" expanded="false" signature="4241:4252" ph=" { " />
-                <marker date="1523971799454" expanded="false" signature="4304:4310" ph=" }" />
-                <marker date="1523971799454" expanded="false" signature="4372:4383" ph=" { " />
-                <marker date="1523971799454" expanded="false" signature="4448:4454" ph=" }" />
-                <marker date="1523971799454" expanded="true" signature="4522:4608" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="4685:4882" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="4964:6583" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="6649:7151" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="7210:8200" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="8247:8698" ph="{...}" />
-                <marker date="1523971799454" expanded="false" signature="8744:8755" ph=" { " />
-                <marker date="1523971799454" expanded="false" signature="8834:8840" ph=" }" />
-                <marker date="1523971799454" expanded="true" signature="8881:9889" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="9926:10149" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="10196:10530" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="10580:10730" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="10776:10858" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="10918:12145" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="12151:12169" ph="/**...*/" />
-                <marker date="1523971799454" expanded="true" signature="12248:13582" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="13620:14656" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="14719:15887" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="15932:17156" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="17200:18536" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="18590:19132" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="19190:19667" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="19726:20681" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="20761:28364" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="28420:28861" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="28903:29193" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="29244:29430" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="29484:29756" ph="{...}" />
-                <marker date="1523971799454" expanded="true" signature="29812:40585" ph="{...}" />
-                <marker date="1523971799454" expanded="false" signature="40615:40626" ph=" { " />
-                <marker date="1523971799454" expanded="false" signature="40693:40699" ph=" }" />
+                <marker date="1523971799454" expanded="false" signature="150:293" ph="..." />
+                <marker date="1523971799454" expanded="true" signature="466:484" ph="/**...*/" />
               </folding>
             </state>
           </provider>
@@ -324,7 +198,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>100</find>
       <find>---------------------------------------------------------------------</find>
       <find>_____________________________________________________________________</find>
       <find>FTP服务器文件删除完成</find>
@@ -354,6 +227,7 @@
       <find>ZkClient</find>
       <find>I0Itec</find>
       <find>parameters</find>
+      <find>failedSubscribed</find>
     </findStrings>
     <replaceStrings>
       <replace>HaoQCountryFieldEnum</replace>
@@ -419,7 +293,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/liupeng/learning/basic/TestStatic.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/liupeng/dubbo/DemoServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/liupeng/dubbo/api/TestApiProvider.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/liupeng/dubbo/api/TestApiConsumer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/liupeng/learning/basic/TestCalc.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/liupeng/learning/zookeeper/ZookeeperClient.java" />
@@ -429,6 +302,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/liupeng/learning/basic/TesstSubstring.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/liupeng/learning/basic/TestAndOr.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/liupeng/learning/basic/TestBigDecimal.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/liupeng/dubbo/api/TestApiProvider.java" />
       </list>
     </option>
   </component>
@@ -477,7 +351,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -518,7 +395,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="liupeng" type="462c0819:PsiDirectoryNode" />
-              <item name="learning" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
@@ -527,16 +404,139 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="liupeng" type="462c0819:PsiDirectoryNode" />
-              <item name="learning" type="462c0819:PsiDirectoryNode" />
-              <item name="basic" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alibaba:dubbo:2.6.1" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alibaba:dubbo:2.6.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="dubbo-2.6.1.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alibaba:dubbo:2.6.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="dubbo-2.6.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="alibaba" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alibaba:dubbo:2.6.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="dubbo-2.6.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="alibaba" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alibaba:dubbo:2.6.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="dubbo-2.6.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="alibaba" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alibaba:dubbo:2.6.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="dubbo-2.6.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="alibaba" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alibaba:dubbo:2.6.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="dubbo-2.6.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="alibaba" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="invoker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alibaba:dubbo:2.6.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="dubbo-2.6.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="alibaba" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="registry" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alibaba:dubbo:2.6.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="dubbo-2.6.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="alibaba" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="registry" type="462c0819:PsiDirectoryNode" />
+              <item name="integration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alibaba:dubbo:2.6.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="dubbo-2.6.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="alibaba" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="remoting" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alibaba:dubbo:2.6.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="dubbo-2.6.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="alibaba" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="remoting" type="462c0819:PsiDirectoryNode" />
+              <item name="exchange" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alibaba:dubbo:2.6.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="dubbo-2.6.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="alibaba" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="rpc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alibaba:dubbo:2.6.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="dubbo-2.6.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="alibaba" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="rpc" type="462c0819:PsiDirectoryNode" />
+              <item name="protocol" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alibaba:dubbo:2.6.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="dubbo-2.6.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="alibaba" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="rpc" type="462c0819:PsiDirectoryNode" />
+              <item name="protocol" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -545,7 +545,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="Registry&#9;FILE&#9;jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/registry/integration/RegistryDirectory.class&#10;Failover&#9;PSI&#9;JAVA://com.alibaba.dubbo.rpc.cluster.support.FailoverClusterInvoker&#10;MockClusterInvoker&#9;FILE&#9;jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/rpc/cluster/support/wrapper/MockClusterInvoker.class&#10;InvokerInvocationHandler&#9;PSI&#9;JAVA://com.alibaba.dubbo.rpc.proxy.InvokerInvocationHandler&#10;MockClusterIn&#9;PSI&#9;JAVA://com.alibaba.dubbo.rpc.cluster.support.wrapper.MockClusterInvoker&#10;ZkClient&#9;FILE&#9;jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/zookeeper/zkclient&#10;Injvm&#9;PSI&#9;JAVA://com.alibaba.dubbo.rpc.protocol.injvm.InjvmProtocol&#10;RegistryService&#9;FILE&#9;jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/registry/RegistryService.class&#10;AbstractRegistry&#9;FILE&#9;jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/registry/support/AbstractRegistry.class&#10;Abstr&#9;FILE&#9;jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/rpc/protocol/AbstractProxyProtocol.class&#10;ZookeeperRegistry&#9;PSI&#9;JAVA://com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry&#10;ServiceConfig&#9;FILE&#9;jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/config/ServiceConfig.class&#10;ExporterList&#9;FILE&#9;jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/rpc/ExporterListener.class&#10;Main&#9;FILE&#9;jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/container/Main.class&#10;RpcStatus&#9;PSI&#9;JAVA://com.alibaba.dubbo.rpc.RpcStatus&#10;ExtensionFactory&#9;FILE&#9;jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/config/spring/extension/SpringExtensionFactory.class&#10;SpringConta&#9;FILE&#9;jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/container/spring/SpringContainer.class&#10;SpringExten&#9;FILE&#9;jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/config/spring/extension/SpringExtensionFactory.class&#10;Fork&#9;FILE&#9;jar://D:/Users/liupenga/.m2/repository/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/rpc/cluster/support/ForkingClusterInvoker.class&#10;ZipEntry&#9;PSI&#9;JAVA://java.util.zip.ZipEntry&#10;ForkClus&#9;PSI&#9;JAVA://com.alibaba.dubbo.rpc.cluster.support.ForkingClusterInvoker&#10;FailsafeClusterInvoker&#9;PSI&#9;JAVA://com.alibaba.dubbo.rpc.cluster.support.FailsafeClusterInvoker&#10;Randoml&#9;PSI&#9;JAVA://com.alibaba.dubbo.rpc.cluster.loadbalance.RandomLoadBalance&#10;loadbalance&#9;PSI&#9;JAVA://com.alibaba.dubbo.config.annotation.Service#loadbalance&#10;loadBalancer&#9;null&#9;null&#10;LoadBalance&#9;PSI&#9;JAVA://com.alibaba.dubbo.common.Constants#LOADBALANCE_KEY&#10;dubbo.iml&#9;FILE&#9;file://D:/lp-ctrip-project/dubbo/dubbo.iml" />
+    <property name="SearchEverywhereHistoryKey" value="RegistryProtocol&#9;FILE&#9;jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/registry/integration/RegistryProtocol.class&#10;RegistryPro&#9;PSI&#9;JAVA://com.alibaba.dubbo.registry.integration.RegistryProtocol&#10;Registry&#9;FILE&#9;jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/registry/integration/RegistryDirectory.class&#10;Failover&#9;PSI&#9;JAVA://com.alibaba.dubbo.rpc.cluster.support.FailoverClusterInvoker&#10;MockClusterInvoker&#9;FILE&#9;jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/rpc/cluster/support/wrapper/MockClusterInvoker.class&#10;InvokerInvocationHandler&#9;PSI&#9;JAVA://com.alibaba.dubbo.rpc.proxy.InvokerInvocationHandler&#10;MockClusterIn&#9;PSI&#9;JAVA://com.alibaba.dubbo.rpc.cluster.support.wrapper.MockClusterInvoker&#10;ZkClient&#9;FILE&#9;jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/zookeeper/zkclient&#10;Injvm&#9;PSI&#9;JAVA://com.alibaba.dubbo.rpc.protocol.injvm.InjvmProtocol&#10;RegistryService&#9;FILE&#9;jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/registry/RegistryService.class&#10;AbstractRegistry&#9;FILE&#9;jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/registry/support/AbstractRegistry.class&#10;Abstr&#9;FILE&#9;jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/rpc/protocol/AbstractProxyProtocol.class&#10;ZookeeperRegistry&#9;PSI&#9;JAVA://com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry&#10;ServiceConfig&#9;FILE&#9;jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/config/ServiceConfig.class&#10;ExporterList&#9;FILE&#9;jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/rpc/ExporterListener.class&#10;Main&#9;FILE&#9;jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/container/Main.class&#10;RpcStatus&#9;PSI&#9;JAVA://com.alibaba.dubbo.rpc.RpcStatus&#10;ExtensionFactory&#9;FILE&#9;jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/config/spring/extension/SpringExtensionFactory.class&#10;SpringConta&#9;FILE&#9;jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/container/spring/SpringContainer.class&#10;SpringExten&#9;FILE&#9;jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/config/spring/extension/SpringExtensionFactory.class&#10;Fork&#9;FILE&#9;jar://D:/Users/liupenga/.m2/repository/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/rpc/cluster/support/ForkingClusterInvoker.class&#10;ZipEntry&#9;PSI&#9;JAVA://java.util.zip.ZipEntry&#10;ForkClus&#9;PSI&#9;JAVA://com.alibaba.dubbo.rpc.cluster.support.ForkingClusterInvoker&#10;FailsafeClusterInvoker&#9;PSI&#9;JAVA://com.alibaba.dubbo.rpc.cluster.support.FailsafeClusterInvoker&#10;Randoml&#9;PSI&#9;JAVA://com.alibaba.dubbo.rpc.cluster.loadbalance.RandomLoadBalance&#10;loadbalance&#9;PSI&#9;JAVA://com.alibaba.dubbo.config.annotation.Service#loadbalance&#10;loadBalancer&#9;null&#9;null&#10;LoadBalance&#9;PSI&#9;JAVA://com.alibaba.dubbo.common.Constants#LOADBALANCE_KEY&#10;dubbo.iml&#9;FILE&#9;file://D:/lp-ctrip-project/dubbo/dubbo.iml" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="SONARLINT_ANALYSIS_RESULTS_SCOPE" value="VCS changed files" />
   </component>
@@ -584,7 +584,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestBigDecimal">
+  <component name="RunManager" selected="Application.TestApiProvider">
     <configuration default="true" type="Applet" factoryName="Applet">
       <module />
       <option name="HTML_USED" value="false" />
@@ -770,11 +770,11 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.TestBigDecimal" />
-        <item index="1" class="java.lang.String" itemvalue="Application.TestAndOr" />
-        <item index="2" class="java.lang.String" itemvalue="Application.TesstSubstring" />
-        <item index="3" class="java.lang.String" itemvalue="Application.TestApiConsumer" />
-        <item index="4" class="java.lang.String" itemvalue="Application.TestApiProvider" />
+        <item index="0" class="java.lang.String" itemvalue="Application.TestApiProvider" />
+        <item index="1" class="java.lang.String" itemvalue="Application.TestBigDecimal" />
+        <item index="2" class="java.lang.String" itemvalue="Application.TestAndOr" />
+        <item index="3" class="java.lang.String" itemvalue="Application.TesstSubstring" />
+        <item index="4" class="java.lang.String" itemvalue="Application.TestApiConsumer" />
       </list>
     </recent_temporary>
   </component>
@@ -823,7 +823,9 @@
       <workItem from="1531377720140" duration="737000" />
       <workItem from="1531471662621" duration="3747000" />
       <workItem from="1531712665770" duration="9383000" />
-      <workItem from="1531738245931" duration="1190000" />
+      <workItem from="1531738245931" duration="3795000" />
+      <workItem from="1531903596599" duration="11633000" />
+      <workItem from="1532019166070" duration="409000" />
     </task>
     <task id="LOCAL-00001" summary="add .gitignore file">
       <created>1524627380283</created>
@@ -836,7 +838,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="336244000" />
+    <option name="totallyTimeSpent" value="350891000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -849,6 +851,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3257329" sideWeight="0.5021322" order="9" side_tool="true" content_ui="tabs" />
@@ -859,21 +862,20 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="SonarQube" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37793177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.271855" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3995657" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39413682" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39413682" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32790446" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32249466" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32622603" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -883,6 +885,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2238806" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -901,7 +904,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="SonarQube" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3736674" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.271855" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3995657" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -916,11 +919,11 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39413682" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2238806" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31556502" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32790446" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32622603" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -1094,15 +1097,131 @@
           <properties />
           <option name="timeStamp" value="71" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/liupeng/dubbo/api/TestApiProvider.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/registry/integration/RegistryProtocol.class</url>
+          <line>112</line>
+          <properties />
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/registry/integration/RegistryProtocol.class</url>
+          <line>164</line>
+          <properties />
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/config/ServiceConfig.class</url>
+          <line>509</line>
+          <properties />
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/config/ServiceConfig.class</url>
+          <line>550</line>
+          <properties />
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/registry/integration/RegistryProtocol.class</url>
+          <line>159</line>
+          <properties />
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/registry/integration/RegistryProtocol.class</url>
+          <line>105</line>
+          <properties />
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/rpc/protocol/injvm/InjvmProtocol.class</url>
+          <line>64</line>
+          <properties />
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/registry/integration/RegistryProtocol.class</url>
+          <line>180</line>
+          <properties />
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/registry/integration/RegistryProtocol.class</url>
+          <line>174</line>
+          <properties />
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/registry/integration/RegistryProtocol.class</url>
+          <line>184</line>
+          <properties />
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/registry/support/ProviderConsumerRegTable.class</url>
+          <line>24</line>
+          <properties />
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/registry/support/AbstractRegistry.class</url>
+          <line>274</line>
+          <properties />
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/registry/zookeeper/ZookeeperRegistry.class</url>
+          <line>94</line>
+          <properties />
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/registry/support/ProviderConsumerRegTable.class</url>
+          <line>41</line>
+          <properties />
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/registry/support/AbstractRegistry.class</url>
+          <line>43</line>
+          <properties field="properties" class="com.alibaba.dubbo.registry.support.AbstractRegistry" />
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="72" />
+      <option name="time" value="93" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
       <expression>
+        <expression-string>registryURL.getParameter(&quot;dynamic&quot;);</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>url.getBackupUrls();</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>url.getProtocol();</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>((Properties) properties).keySet;</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>properties.size();</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
@@ -1126,97 +1245,107 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>i$.hasNext();</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>i$.next();</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>baos.toByteArray().length;</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>localFile.getParentFile().exists();</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/registry/integration/RegistryDirectory.class">
+    <entry file="jar://D:/maven_repositories/org/jboss/netty/netty/3.2.5.Final/netty-3.2.5.Final.jar!/org/jboss/netty/channel/socket/nio/NioServerSocketChannelFactory.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="661" column="0" lean-forward="false" selection-start-line="661" selection-start-column="0" selection-end-line="661" selection-end-column="0" />
+        <state relative-caret-position="285">
+          <caret line="23" column="11" lean-forward="false" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+          <folding>
+            <marker date="1523971797437" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1523971797437" expanded="false" signature="158:456" ph="..." />
+            <marker date="1523971797437" expanded="true" signature="743:827" ph="{...}" />
+            <marker date="1523971797437" expanded="true" signature="935:1511" ph="{...}" />
+            <marker date="1523971797437" expanded="true" signature="1581:1658" ph="{...}" />
+            <marker date="1523971797437" expanded="false" signature="1702:1713" ph=" { " />
+            <marker date="1523971797437" expanded="false" signature="1792:1798" ph=" }" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/basic/TesstSubstring.java">
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/transport/netty/NettyServer.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="247">
+          <caret line="41" column="11" lean-forward="false" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
+          <folding>
+            <marker date="1523971799454" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1523971799454" expanded="false" signature="166:1354" ph="..." />
+            <marker date="1523971799454" expanded="true" signature="1726:1839" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="1886:3175" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="2564:2645" ph="getPipeline() → {" />
+            <marker date="1523971799454" expanded="true" signature="3085:3100" ph="}" />
+            <marker date="1523971799454" expanded="true" signature="3223:4472" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="4519:4946" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="5011:5102" ph="{...}" />
+            <marker date="1523971799454" expanded="false" signature="5132:5143" ph=" { " />
+            <marker date="1523971799454" expanded="false" signature="5173:5179" ph=" }" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/dubbo/api/TestConsumerAsync.java">
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/transport/mina/MinaTransporter.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="247">
+          <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <folding>
+            <marker date="1523971799454" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1523971799454" expanded="false" signature="165:428" ph="..." />
+            <marker date="1523971799454" expanded="true" signature="560:567" ph="{}" />
+            <marker date="1523971799454" expanded="true" signature="650:702" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="788:840" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/dubbo/api/TestApiGenericConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/rpc/ServiceClassHolder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="25" column="16" lean-forward="true" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/dubbo/api/TestApiConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="34" column="56" lean-forward="true" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/rpc/ProxyFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/rpc/protocol/AbstractExporter.class">
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/transport/mina/MinaServer.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
-          <caret line="12" column="56" lean-forward="false" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
+          <caret line="30" column="19" lean-forward="false" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+          <folding>
+            <marker date="1523971799454" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1523971799454" expanded="false" signature="165:1171" ph="..." />
+            <marker date="1523971799454" expanded="true" signature="1424:1537" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="1584:2143" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="2191:2424" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="2471:2931" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="2996:3442" ph="{...}" />
+            <marker date="1523971799454" expanded="false" signature="3472:3483" ph=" { " />
+            <marker date="1523971799454" expanded="false" signature="3537:3543" ph=" }" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/rpc/protocol/injvm/InjvmExporter.class">
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/transport/AbstractServer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="34" column="11" lean-forward="false" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+          <folding>
+            <marker date="1523971799454" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1523971799454" expanded="false" signature="160:913" ph="..." />
+            <marker date="1523971799454" expanded="true" signature="1467:2762" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="2908:4999" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="5077:5378" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="5404:5933" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="5970:6062" ph="{...}" />
+            <marker date="1523971799454" expanded="false" signature="6110:6121" ph=" { " />
+            <marker date="1523971799454" expanded="false" signature="6146:6152" ph=" }" />
+            <marker date="1523971799454" expanded="true" signature="6199:6210" ph=" { " />
+            <marker date="1523971799454" expanded="true" signature="6234:6240" ph=" }" />
+            <marker date="1523971799454" expanded="false" signature="6269:6280" ph=" { " />
+            <marker date="1523971799454" expanded="false" signature="6300:6306" ph=" }" />
+            <marker date="1523971799454" expanded="false" signature="6339:6350" ph=" { " />
+            <marker date="1523971799454" expanded="false" signature="6374:6380" ph=" }" />
+            <marker date="1523971799454" expanded="true" signature="6445:7120" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="7188:7454" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/rpc/protocol/dubbo/DubboExporter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
-          <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/rpc/protocol/injvm/InjvmProtocol.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="64" column="87" lean-forward="false" selection-start-line="64" selection-start-column="87" selection-end-line="64" selection-end-column="87" />
+          <caret line="16" column="11" lean-forward="false" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -1227,135 +1356,284 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/rpc/Exporter.class">
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/config/AbstractInterfaceConfig.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        <state relative-caret-position="338">
+          <caret line="112" column="24" lean-forward="false" selection-start-line="112" selection-start-column="24" selection-end-line="112" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/rpc/protocol/AbstractProtocol.class">
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/config/AbstractConfig.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="23" column="36" lean-forward="false" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+        <state relative-caret-position="355">
+          <caret line="58" column="26" lean-forward="false" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/telnet/TelnetHandler.class">
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/META-INF/dubbo/internal/com.alibaba.dubbo.rpc.Protocol">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/rpc/protocol/AbstractExporter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/rpc/protocol/injvm/InjvmExporter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="17" column="23" lean-forward="false" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/rpc/listener/ExporterListenerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="15" column="16" lean-forward="false" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/rpc/ExporterListener.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
-          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/lang/Boolean.java">
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/rpc/listener/ListenerExporterWrapper.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1976">
-          <caret line="42" column="19" lean-forward="false" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+        <state relative-caret-position="137">
+          <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/common/URL.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="382" column="18" lean-forward="false" selection-start-line="382" selection-start-column="18" selection-end-line="382" selection-end-column="18" />
+        <state relative-caret-position="158">
+          <caret line="879" column="60" lean-forward="false" selection-start-line="879" selection-start-column="55" selection-end-line="879" selection-end-column="60" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/rpc/protocol/dubbo/filter/FutureFilter.class">
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/rpc/protocol/injvm/InjvmProtocol.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/exchange/ResponseCallback.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="8" column="10" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/exchange/ResponseFuture.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/RemotingException.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/exchange/ExchangeHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/util/concurrent/Future.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="596">
-          <caret line="118" column="12" lean-forward="false" selection-start-line="118" selection-start-column="12" selection-end-line="118" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/exchange/Request.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="11" column="31" lean-forward="false" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/basic/TestAndOr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        <state relative-caret-position="194">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/registry/zookeeper/ZookeeperRegistryFactory.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="1764" column="16" lean-forward="false" selection-start-line="1764" selection-start-column="16" selection-end-line="1764" selection-end-column="16" />
+        <state relative-caret-position="323">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/util/Collections.java">
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/registry/support/AbstractRegistryFactory.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="252">
+          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/registry/RegistryFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/registry/support/ProviderConsumerRegTable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="60" column="46" lean-forward="false" selection-start-line="60" selection-start-column="46" selection-end-line="60" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/registry/integration/RegistryDirectory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-640">
+          <caret line="144" column="29" lean-forward="false" selection-start-line="144" selection-start-column="29" selection-end-line="144" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/registry/NotifyListener.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/registry/support/AbstractRegistry.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="457" column="0" lean-forward="false" selection-start-line="457" selection-start-column="0" selection-end-line="457" selection-end-column="0" />
           <folding>
-            <element signature="e#186740#186741#0" expanded="true" />
-            <element signature="e#186785#186786#0" expanded="true" />
+            <marker date="1523971799454" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1523971799454" expanded="false" signature="158:1320" ph="..." />
+            <marker date="1523971799454" expanded="true" signature="2225:3039" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="3109:3341" ph="{...}" />
+            <marker date="1523971799454" expanded="false" signature="3366:3377" ph=" { " />
+            <marker date="1523971799454" expanded="false" signature="3401:3407" ph=" }" />
+            <marker date="1523971799454" expanded="true" signature="3444:3613" ph="{...}" />
+            <marker date="1523971799454" expanded="false" signature="3650:3661" ph=" { " />
+            <marker date="1523971799454" expanded="false" signature="3684:3690" ph=" }" />
+            <marker date="1523971799454" expanded="false" signature="3748:3759" ph=" { " />
+            <marker date="1523971799454" expanded="false" signature="3782:3788" ph=" }" />
+            <marker date="1523971799454" expanded="false" signature="3847:3858" ph=" { " />
+            <marker date="1523971799454" expanded="false" signature="3879:3885" ph=" }" />
+            <marker date="1523971799454" expanded="false" signature="3917:3928" ph=" { " />
+            <marker date="1523971799454" expanded="false" signature="3945:3951" ph=" }" />
+            <marker date="1523971799454" expanded="false" signature="3995:4006" ph=" { " />
+            <marker date="1523971799454" expanded="false" signature="4029:4035" ph=" }" />
+            <marker date="1523971799454" expanded="false" signature="4080:4091" ph=" { " />
+            <marker date="1523971799454" expanded="false" signature="4120:4126" ph=" }" />
+            <marker date="1523971799454" expanded="true" signature="4175:6419" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="6455:7286" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="7331:8458" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="8497:9867" ph="{...}" />
+            <marker date="1523971799454" expanded="false" signature="9249:9345" ph="notify(urls) → { " />
+            <marker date="1523971799454" expanded="false" signature="9365:9397" ph=" }" />
+            <marker date="1523971799454" expanded="true" signature="9903:10190" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="10228:10522" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="10584:11250" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="11314:11859" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="11907:13148" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="13192:14370" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="14448:16509" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="16552:17875" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="17903:19930" ph="{...}" />
+            <marker date="1523971799454" expanded="false" signature="19960:19971" ph=" { " />
+            <marker date="1523971799454" expanded="false" signature="20003:20009" ph=" }" />
+            <marker date="1523971799454" expanded="true" signature="20064:20300" ph="{...}" />
+            <marker date="1523971799454" expanded="false" signature="20141:20156" ph=" { " />
+            <marker date="1523971799454" expanded="false" signature="20179:20189" ph=" }" />
+            <marker date="1523971799454" expanded="false" signature="20216:20231" ph=" { " />
+            <marker date="1523971799454" expanded="false" signature="20284:20294" ph=" }" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/exchange/support/header/HeartBeatTask.class">
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/rpc/protocol/ProtocolListenerWrapper.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="68" column="42" lean-forward="true" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
+        <state relative-caret-position="380">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/rpc/protocol/ProtocolFilterWrapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/qos/protocol/QosProtocolWrapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/dubbo/api/TestApiProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="39" column="20" lean-forward="false" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+        <state relative-caret-position="299">
+          <caret line="39" column="20" lean-forward="true" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/config/ServiceConfig.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="534" column="57" lean-forward="false" selection-start-line="534" selection-start-column="57" selection-end-line="534" selection-end-column="57" />
+        <state relative-caret-position="234">
+          <caret line="534" column="59" lean-forward="false" selection-start-line="534" selection-start-column="59" selection-end-line="534" selection-end-column="59" />
+          <folding>
+            <marker date="1523971799454" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1523971799454" expanded="false" signature="148:1763" ph="..." />
+            <marker date="1523971799454" expanded="true" signature="2902:2909" ph="{}" />
+            <marker date="1523971799454" expanded="false" signature="2952:2963" ph=" { " />
+            <marker date="1523971799454" expanded="false" signature="3009:3015" ph=" }" />
+            <marker date="1523971799454" expanded="true" signature="3021:3039" ph="/**...*/" />
+            <marker date="1523971799454" expanded="true" signature="3160:3619" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="3625:3643" ph="/**...*/" />
+            <marker date="1523971799454" expanded="true" signature="3764:4223" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="4229:4247" ph="/**...*/" />
+            <marker date="1523971799454" expanded="true" signature="4355:4951" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="4957:4975" ph="/**...*/" />
+            <marker date="1523971799454" expanded="true" signature="5083:5659" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="5719:5878" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="5949:6113" ph="{...}" />
+            <marker date="1523971799454" expanded="false" signature="6137:6148" ph=" { " />
+            <marker date="1523971799454" expanded="false" signature="6239:6245" ph=" }" />
+            <marker date="1523971799454" expanded="false" signature="6276:6287" ph=" { " />
+            <marker date="1523971799454" expanded="false" signature="6304:6310" ph=" }" />
+            <marker date="1523971799454" expanded="true" signature="6316:6357" ph="@{...}" />
+            <marker date="1523971799454" expanded="false" signature="6389:6400" ph=" { " />
+            <marker date="1523971799454" expanded="false" signature="6421:6427" ph=" }" />
+            <marker date="1523971799454" expanded="true" signature="6433:6474" ph="@{...}" />
+            <marker date="1523971799454" expanded="false" signature="6508:6519" ph=" { " />
+            <marker date="1523971799454" expanded="false" signature="6542:6548" ph=" }" />
+            <marker date="1523971799454" expanded="true" signature="6588:7286" ph="{...}" />
+            <marker date="1523971799454" expanded="false" signature="7007:7063" ph="run() → {" />
+            <marker date="1523971799454" expanded="false" signature="7135:7158" ph="}" />
+            <marker date="1523971799454" expanded="true" signature="7331:12218" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="12248:12578" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="12620:13333" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="13367:13669" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="13768:22740" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="22780:23325" ph="{...}" />
+            <marker date="1523971799454" expanded="false" signature="23369:23380" ph=" { " />
+            <marker date="1523971799454" expanded="false" signature="23402:23408" ph=" }" />
+            <marker date="1523971799454" expanded="true" signature="23527:26869" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="26978:28415" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="28466:29054" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="29137:29434" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="29468:29614" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="29649:30287" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="30329:30977" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="30983:31001" ph="/**...*/" />
+            <marker date="1523971799454" expanded="false" signature="31060:31071" ph=" { " />
+            <marker date="1523971799454" expanded="false" signature="31105:31111" ph=" }" />
+            <marker date="1523971799454" expanded="false" signature="31145:31156" ph=" { " />
+            <marker date="1523971799454" expanded="false" signature="31182:31188" ph=" }" />
+            <marker date="1523971799454" expanded="true" signature="31241:31396" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="31452:31815" ph="{...}" />
+            <marker date="1523971799454" expanded="false" signature="31838:31849" ph=" { " />
+            <marker date="1523971799454" expanded="false" signature="31865:31871" ph=" }" />
+            <marker date="1523971799454" expanded="false" signature="31902:31913" ph=" { " />
+            <marker date="1523971799454" expanded="false" signature="31928:31934" ph=" }" />
+            <marker date="1523971799454" expanded="true" signature="31940:31981" ph="@{...}" />
+            <marker date="1523971799454" expanded="false" signature="32009:32020" ph=" { " />
+            <marker date="1523971799454" expanded="false" signature="32037:32043" ph=" }" />
+            <marker date="1523971799454" expanded="true" signature="32082:32152" ph="{...}" />
+            <marker date="1523971799454" expanded="false" signature="32196:32207" ph=" { " />
+            <marker date="1523971799454" expanded="false" signature="32227:32233" ph=" }" />
+            <marker date="1523971799454" expanded="false" signature="32299:32310" ph=" { " />
+            <marker date="1523971799454" expanded="false" signature="32333:32339" ph=" }" />
+            <marker date="1523971799454" expanded="false" signature="32380:32391" ph=" { " />
+            <marker date="1523971799454" expanded="false" signature="32412:32418" ph=" }" />
+            <marker date="1523971799454" expanded="false" signature="32472:32483" ph=" { " />
+            <marker date="1523971799454" expanded="false" signature="32508:32514" ph=" }" />
+            <marker date="1523971799454" expanded="false" signature="32546:32557" ph=" { " />
+            <marker date="1523971799454" expanded="false" signature="32577:32583" ph=" }" />
+            <marker date="1523971799454" expanded="true" signature="32628:32908" ph="{...}" />
+            <marker date="1523971799454" expanded="false" signature="32948:32959" ph=" { " />
+            <marker date="1523971799454" expanded="false" signature="32976:32982" ph=" }" />
+            <marker date="1523971799454" expanded="true" signature="32988:33006" ph="/**...*/" />
+            <marker date="1523971799454" expanded="false" signature="33069:33080" ph=" { " />
+            <marker date="1523971799454" expanded="false" signature="33129:33135" ph=" }" />
+            <marker date="1523971799454" expanded="true" signature="33141:33159" ph="/**...*/" />
+            <marker date="1523971799454" expanded="false" signature="33236:33247" ph=" { " />
+            <marker date="1523971799454" expanded="false" signature="33301:33307" ph=" }" />
+            <marker date="1523971799454" expanded="true" signature="33313:33354" ph="@{...}" />
+            <marker date="1523971799454" expanded="true" signature="33396:33769" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1366,151 +1644,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/Endpoint.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/common/Resetable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/exchange/ExchangeServer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/Client.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/Channel.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/exchange/ExchangeChannel.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
-          <caret line="10" column="44" lean-forward="false" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/Server.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/exchange/support/header/HeaderExchangeServer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="42" column="11" lean-forward="false" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/transport/ChannelHandlerDispatcher.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="25" column="11" lean-forward="false" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/ChannelHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
           <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/transport/ChannelHandlerAdapter.class">
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/transport/netty/NettyTransporter.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="11" column="54" lean-forward="false" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
+        <state relative-caret-position="228">
+          <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
           <folding>
             <marker date="1523971799454" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1523971799454" expanded="false" signature="160:298" ph="..." />
-            <marker date="1523971799454" expanded="true" signature="398:405" ph="{}" />
-            <marker date="1523971799454" expanded="true" signature="475:482" ph="{}" />
-            <marker date="1523971799454" expanded="true" signature="555:562" ph="{}" />
-            <marker date="1523971799454" expanded="true" signature="643:650" ph="{}" />
-            <marker date="1523971799454" expanded="true" signature="735:742" ph="{}" />
-            <marker date="1523971799454" expanded="true" signature="830:837" ph="{}" />
+            <marker date="1523971799454" expanded="false" signature="166:429" ph="..." />
+            <marker date="1523971799454" expanded="true" signature="564:571" ph="{}" />
+            <marker date="1523971799454" expanded="true" signature="655:709" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="796:850" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/common/extension/ExtensionLoader.class">
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/transport/grizzly/GrizzlyServer.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5795">
-          <caret line="348" column="13" lean-forward="false" selection-start-line="348" selection-start-column="13" selection-end-line="348" selection-end-column="13" />
+        <state relative-caret-position="175">
+          <caret line="32" column="11" lean-forward="false" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
           <folding>
             <marker date="1523971799454" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1523971799454" expanded="false" signature="158:1242" ph="..." />
-            <marker date="1523971799454" expanded="true" signature="2736:2923" ph="{...}" />
-            <marker date="1523971799454" expanded="false" signature="2994:3005" ph=" { " />
-            <marker date="1523971799454" expanded="false" signature="3048:3054" ph=" }" />
-            <marker date="1523971799454" expanded="true" signature="3131:3934" ph="{...}" />
-            <marker date="1523971799454" expanded="false" signature="3984:3995" ph=" { " />
-            <marker date="1523971799454" expanded="false" signature="4041:4047" ph=" }" />
-            <marker date="1523971799454" expanded="false" signature="4104:4115" ph=" { " />
-            <marker date="1523971799454" expanded="false" signature="4174:4180" ph=" }" />
-            <marker date="1523971799454" expanded="false" signature="4241:4252" ph=" { " />
-            <marker date="1523971799454" expanded="false" signature="4304:4310" ph=" }" />
-            <marker date="1523971799454" expanded="false" signature="4372:4383" ph=" { " />
-            <marker date="1523971799454" expanded="false" signature="4448:4454" ph=" }" />
-            <marker date="1523971799454" expanded="true" signature="4522:4608" ph="{...}" />
-            <marker date="1523971799454" expanded="true" signature="4685:4882" ph="{...}" />
-            <marker date="1523971799454" expanded="true" signature="4964:6583" ph="{...}" />
-            <marker date="1523971799454" expanded="true" signature="6649:7151" ph="{...}" />
-            <marker date="1523971799454" expanded="true" signature="7210:8200" ph="{...}" />
-            <marker date="1523971799454" expanded="true" signature="8247:8698" ph="{...}" />
-            <marker date="1523971799454" expanded="false" signature="8744:8755" ph=" { " />
-            <marker date="1523971799454" expanded="false" signature="8834:8840" ph=" }" />
-            <marker date="1523971799454" expanded="true" signature="8881:9889" ph="{...}" />
-            <marker date="1523971799454" expanded="true" signature="9926:10149" ph="{...}" />
-            <marker date="1523971799454" expanded="true" signature="10196:10530" ph="{...}" />
-            <marker date="1523971799454" expanded="true" signature="10580:10730" ph="{...}" />
-            <marker date="1523971799454" expanded="true" signature="10776:10858" ph="{...}" />
-            <marker date="1523971799454" expanded="true" signature="10918:12145" ph="{...}" />
-            <marker date="1523971799454" expanded="true" signature="12151:12169" ph="/**...*/" />
-            <marker date="1523971799454" expanded="true" signature="12248:13582" ph="{...}" />
-            <marker date="1523971799454" expanded="true" signature="13620:14656" ph="{...}" />
-            <marker date="1523971799454" expanded="true" signature="14719:15887" ph="{...}" />
-            <marker date="1523971799454" expanded="true" signature="15932:17156" ph="{...}" />
-            <marker date="1523971799454" expanded="true" signature="17200:18536" ph="{...}" />
-            <marker date="1523971799454" expanded="true" signature="18590:19132" ph="{...}" />
-            <marker date="1523971799454" expanded="true" signature="19190:19667" ph="{...}" />
-            <marker date="1523971799454" expanded="true" signature="19726:20681" ph="{...}" />
-            <marker date="1523971799454" expanded="true" signature="20761:28364" ph="{...}" />
-            <marker date="1523971799454" expanded="true" signature="28420:28861" ph="{...}" />
-            <marker date="1523971799454" expanded="true" signature="28903:29193" ph="{...}" />
-            <marker date="1523971799454" expanded="true" signature="29244:29430" ph="{...}" />
-            <marker date="1523971799454" expanded="true" signature="29484:29756" ph="{...}" />
-            <marker date="1523971799454" expanded="true" signature="29812:40585" ph="{...}" />
-            <marker date="1523971799454" expanded="false" signature="40615:40626" ph=" { " />
-            <marker date="1523971799454" expanded="false" signature="40693:40699" ph=" }" />
+            <marker date="1523971799454" expanded="false" signature="168:1089" ph="..." />
+            <marker date="1523971799454" expanded="true" signature="1428:1464" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="1511:3039" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="3087:3239" ph="{...}" />
+            <marker date="1523971799454" expanded="false" signature="3269:3280" ph=" { " />
+            <marker date="1523971799454" expanded="false" signature="3315:3321" ph=" }" />
+            <marker date="1523971799454" expanded="false" signature="3367:3378" ph=" { " />
+            <marker date="1523971799454" expanded="false" signature="3408:3414" ph=" }" />
+            <marker date="1523971799454" expanded="true" signature="3479:3570" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="3635:3751" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="3819:3937" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/transport/grizzly/GrizzlyTransporter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="21" column="24" lean-forward="false" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/Transporter.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="133">
+          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
           <folding>
             <marker date="1523971799454" expanded="false" signature="0:104" ph="/.../" />
             <marker date="1523971799454" expanded="false" signature="150:278" ph="..." />
@@ -1518,38 +1704,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/Transporters.class">
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/exchange/support/header/HeaderExchanger.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding>
             <marker date="1523971799454" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1523971799454" expanded="false" signature="150:416" ph="..." />
-            <marker date="1523971799454" expanded="true" signature="473:480" ph="{}" />
-            <marker date="1523971799454" expanded="true" signature="576:631" ph="{...}" />
-            <marker date="1523971799454" expanded="true" signature="725:1261" ph="{...}" />
-            <marker date="1523971799454" expanded="true" signature="1360:1418" ph="{...}" />
-            <marker date="1523971799454" expanded="true" signature="1515:2093" ph="{...}" />
-            <marker date="1523971799454" expanded="true" signature="2142:2255" ph="{...}" />
-            <marker date="1523971799454" expanded="true" signature="2268:2384" ph="{...}" />
+            <marker date="1523971799454" expanded="false" signature="174:645" ph="..." />
+            <marker date="1523971799454" expanded="true" signature="777:784" ph="{}" />
+            <marker date="1523971799454" expanded="true" signature="879:1037" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="1129:1278" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/exchange/ExchangeClient.class">
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/exchange/Exchanger.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        <state relative-caret-position="171">
+          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
           <folding>
             <marker date="1523971799454" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1523971799454" expanded="false" signature="159:340" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/rpc/protocol/dubbo/DubboProtocol.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5928">
-          <caret line="360" column="44" lean-forward="false" selection-start-line="360" selection-start-column="44" selection-end-line="360" selection-end-column="44" />
+        <state relative-caret-position="3800">
+          <caret line="248" column="21" lean-forward="false" selection-start-line="248" selection-start-column="21" selection-end-line="248" selection-end-column="21" />
           <folding>
             <marker date="1523971799454" expanded="false" signature="0:104" ph="/.../" />
             <marker date="1523971799454" expanded="false" signature="160:1741" ph="..." />
@@ -1588,92 +1771,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/exchange/support/header/HeaderExchangeClient.class">
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/common/Resetable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="37" column="11" lean-forward="false" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
+        <state relative-caret-position="76">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
           <folding>
             <marker date="1523971799454" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1523971799454" expanded="false" signature="174:1155" ph="..." />
-            <marker date="1523971799454" expanded="true" signature="1734:2557" ph="{...}" />
-            <marker date="1523971799454" expanded="true" signature="2634:2687" ph="{...}" />
-            <marker date="1523971799454" expanded="false" signature="2712:2723" ph=" { " />
-            <marker date="1523971799454" expanded="false" signature="2752:2758" ph=" }" />
-            <marker date="1523971799454" expanded="false" signature="2807:2818" ph=" { " />
-            <marker date="1523971799454" expanded="false" signature="2857:2863" ph=" }" />
-            <marker date="1523971799454" expanded="true" signature="2953:3015" ph="{...}" />
-            <marker date="1523971799454" expanded="false" signature="3062:3073" ph=" { " />
-            <marker date="1523971799454" expanded="false" signature="3113:3119" ph=" }" />
-            <marker date="1523971799454" expanded="false" signature="3153:3164" ph=" { " />
-            <marker date="1523971799454" expanded="false" signature="3198:3204" ph=" }" />
-            <marker date="1523971799454" expanded="false" signature="3252:3263" ph=" { " />
-            <marker date="1523971799454" expanded="false" signature="3301:3307" ph=" }" />
-            <marker date="1523971799454" expanded="false" signature="3356:3367" ph=" { " />
-            <marker date="1523971799454" expanded="false" signature="3408:3414" ph=" }" />
-            <marker date="1523971799454" expanded="true" signature="3478:3521" ph="{...}" />
-            <marker date="1523971799454" expanded="true" signature="3599:3648" ph="{...}" />
-            <marker date="1523971799454" expanded="false" signature="3679:3690" ph=" { " />
-            <marker date="1523971799454" expanded="false" signature="3721:3727" ph=" }" />
-            <marker date="1523971799454" expanded="true" signature="3753:3814" ph="{...}" />
-            <marker date="1523971799454" expanded="true" signature="3851:3946" ph="{...}" />
-            <marker date="1523971799454" expanded="false" signature="3976:3987" ph=" { " />
-            <marker date="1523971799454" expanded="false" signature="4013:4019" ph=" }" />
-            <marker date="1523971799454" expanded="false" signature="4051:4062" ph=" { " />
-            <marker date="1523971799454" expanded="false" signature="4085:4091" ph=" }" />
-            <marker date="1523971799454" expanded="true" signature="4097:4115" ph="/**...*/" />
-            <marker date="1523971799454" expanded="false" signature="4176:4187" ph=" { " />
-            <marker date="1523971799454" expanded="false" signature="4255:4261" ph=" }" />
-            <marker date="1523971799454" expanded="true" signature="4316:4356" ph="{...}" />
-            <marker date="1523971799454" expanded="false" signature="4400:4411" ph=" { " />
-            <marker date="1523971799454" expanded="false" signature="4449:4455" ph=" }" />
-            <marker date="1523971799454" expanded="false" signature="4511:4522" ph=" { " />
-            <marker date="1523971799454" expanded="false" signature="4560:4566" ph=" }" />
-            <marker date="1523971799454" expanded="false" signature="4611:4622" ph=" { " />
-            <marker date="1523971799454" expanded="false" signature="4656:4662" ph=" }" />
-            <marker date="1523971799454" expanded="false" signature="4707:4718" ph=" { " />
-            <marker date="1523971799454" expanded="false" signature="4756:4762" ph=" }" />
-            <marker date="1523971799454" expanded="true" signature="4803:5280" ph="{...}" />
-            <marker date="1523971799454" expanded="true" signature="4981:5154" ph="{...}" />
-            <marker date="1523971799454" expanded="false" signature="5039:5062" ph=" { " />
-            <marker date="1523971799454" expanded="false" signature="5122:5140" ph=" }" />
-            <marker date="1523971799454" expanded="true" signature="5320:5733" ph="{...}" />
-            <marker date="1523971799454" expanded="false" signature="5761:5772" ph=" { " />
-            <marker date="1523971799454" expanded="false" signature="5798:5804" ph=" }" />
-            <marker date="1523971799454" expanded="false" signature="5834:5845" ph=" { " />
-            <marker date="1523971799454" expanded="false" signature="5906:5912" ph=" }" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/exchange/support/header/HeaderExchanger.class">
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/Endpoint.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="24" column="36" lean-forward="false" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+        <state relative-caret-position="114">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
           <folding>
             <marker date="1523971799454" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1523971799454" expanded="false" signature="174:645" ph="..." />
-            <marker date="1523971799454" expanded="true" signature="777:784" ph="{}" />
-            <marker date="1523971799454" expanded="true" signature="879:1037" ph="{...}" />
-            <marker date="1523971799454" expanded="true" signature="1129:1278" ph="{...}" />
+            <marker date="1523971799454" expanded="false" signature="150:214" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/exchange/Exchanger.class">
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/Server.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        <state relative-caret-position="114">
+          <caret line="12" column="53" lean-forward="false" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
           <folding>
             <marker date="1523971799454" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1523971799454" expanded="false" signature="159:340" ph="..." />
+            <marker date="1523971799454" expanded="false" signature="150:293" ph="..." />
+            <marker date="1523971799454" expanded="true" signature="466:484" ph="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/exchange/support/header/HeaderExchangeServer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="122" column="0" lean-forward="true" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/exchange/ExchangeServer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <marker date="1523971799454" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1523971799454" expanded="false" signature="159:257" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/Transporters.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <marker date="1523971799454" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1523971799454" expanded="false" signature="150:416" ph="..." />
+            <marker date="1523971799454" expanded="true" signature="473:480" ph="{}" />
+            <marker date="1523971799454" expanded="true" signature="576:631" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="725:1261" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="1360:1418" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="1515:2093" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="2142:2255" ph="{...}" />
+            <marker date="1523971799454" expanded="true" signature="2268:2384" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/exchange/Exchangers.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="86" column="41" lean-forward="false" selection-start-line="86" selection-start-column="41" selection-end-line="86" selection-end-column="41" />
+        <state relative-caret-position="418">
+          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding>
             <marker date="1523971799454" expanded="false" signature="0:104" ph="/.../" />
             <marker date="1523971799454" expanded="false" signature="159:596" ph="..." />
@@ -1699,13 +1869,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/liupeng/learning/basic/TestBigDecimal.java">
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/registry/integration/RegistryProtocol.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="21" column="72" lean-forward="true" selection-start-line="21" selection-start-column="72" selection-end-line="21" selection-end-column="72" />
+        <state relative-caret-position="589">
+          <caret line="124" column="22" lean-forward="false" selection-start-line="124" selection-start-column="22" selection-end-line="124" selection-end-column="22" />
           <folding>
-            <element signature="e#140#141#0" expanded="true" />
-            <element signature="e#163#164#0" expanded="true" />
+            <element signature="e#3290#3291#0" expanded="true" />
+            <element signature="e#3344#3345#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/registry/RegistryService.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="15" column="9" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/registry/support/FailbackRegistry.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="152" column="16" lean-forward="false" selection-start-line="152" selection-start-column="16" selection-end-line="152" selection-end-column="16" />
+          <folding>
+            <element signature="e#1761#2101#0" expanded="true" />
+            <element signature="e#2100#2101#0" expanded="true" />
+            <element signature="e#9476#9477#0" expanded="true" />
+            <element signature="e#9525#9526#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/zookeeper/support/AbstractZookeeperClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="35" column="53" lean-forward="false" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/remoting/zookeeper/ZookeeperClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="11" column="9" lean-forward="false" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven_repositories/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/com/alibaba/dubbo/registry/zookeeper/ZookeeperRegistry.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="754">
+          <caret line="138" column="33" lean-forward="false" selection-start-line="138" selection-start-column="33" selection-end-line="138" selection-end-column="33" />
+          <folding>
+            <element signature="e#2035#2457#0" expanded="true" />
+            <element signature="e#2456#2457#0" expanded="true" />
+            <element signature="e#4602#5432#0" expanded="true" />
+            <element signature="e#5431#5432#0" expanded="true" />
           </folding>
         </state>
       </provider>
