@@ -12,9 +12,19 @@
     <dubbo:application name="demo-consumer"/>
     <!--<dubbo:registry address="multicast://224.5.6.7:1234" />-->
     <dubbo:registry address="zookeeper://127.0.0.1:2181" />
-    <dubbo:reference id="demoService" interface="com.liupeng.dubbo.example.DemoService" loadbalance="consistenthash" timeout="6000"/>
 
+    <dubbo:reference id="demoService" interface="com.liupeng.dubbo.example.DemoService" timeout="6000" />
 
+    <!--负载均衡-->
+    <!--<dubbo:reference id="demoService" interface="com.liupeng.dubbo.example.DemoService" loadbalance="consistenthash" timeout="6000" />-->
 
-    <dubbo:monitor protocol="registry"></dubbo:monitor>
+    <!--线程模型-->
+    <!--<dubbo:protocol name="dubbo" dispatcher="all" threadpool="fixed" threads="10" />-->
+    <!--服务直连-->
+    <!-- <dubbo:reference id="demoService" interface="com.liupeng.dubbo.example.DemoService" loadbalance="consistenthash" timeout="6000"  url="dubbo://localhost:20881"/>-->
+    <!-- -Dcom.liupeng.dubbo.example.DemoService=dubbo://localhost:20880-->
+    <!--总提示找不到mydubbo.properties文件，绝对路径才能找到文件？？？-->
+    <!-- -Ddubbo.resolve.file=mydubbo.properties-->
+
+    <dubbo:monitor protocol="registry"/>
 </beans>
