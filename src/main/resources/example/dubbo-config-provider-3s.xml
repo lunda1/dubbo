@@ -6,10 +6,17 @@
     <dubbo:application name="demo-provider"/>
     <!--<dubbo:registry address="multicast://224.5.6.7:1234" />-->
     <dubbo:protocol name="dubbo" port="20880"/>
+
     <dubbo:service interface="com.liupeng.dubbo.example.DemoService" ref="demoService" />
     <dubbo:monitor protocol="registry"/>
     <bean id="demoService" class="com.liupeng.dubbo.example.DemoService3Impl"/>
     <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
+
+    <bean id="genericService" class="com.liupeng.dubbo.example.MyGenericService"/>
+    <dubbo:service interface="com.liupeng.dubbo.example.DemoService" ref="genericService"/>
+
+    <!--分组聚合-->
+    <!--<dubbo:service interface="com.liupeng.dubbo.example.DemoService" ref="demoService" group="333"/>-->
 
     <!--配置多个协议的时候会自动暴露多个exporter，在管理平台可以看到-->
     <!--<dubbo:protocol name="rmi" port="1099"/>-->

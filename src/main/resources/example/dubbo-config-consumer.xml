@@ -15,6 +15,21 @@
 
     <dubbo:reference id="demoService" interface="com.liupeng.dubbo.example.DemoService" timeout="6000" />
 
+    <dubbo:reference id="genericService" interface="com.liupeng.dubbo.example.DemoService" timeout="6000" />
+
+    <!--使用泛化调用-->
+    <!--<dubbo:reference id="demoService" interface="com.liupeng.dubbo.example.DemoService" timeout="6000" generic="true"/>-->
+
+    <!--缓存结果-->
+    <!--<dubbo:reference id="demoService" interface="com.liupeng.dubbo.example.DemoService" timeout="6000" >
+        <dubbo:method name="timestamp" cache="lru"/>
+    </dubbo:reference>-->
+
+    <!--分组聚合-->
+    <!--<dubbo:reference id="demoService" interface="com.liupeng.dubbo.example.DemoService" timeout="6000" group="*">
+        <dubbo:method name="list" merger="true"/>
+    </dubbo:reference>-->
+
     <!--负载均衡-->
     <!--<dubbo:reference id="demoService" interface="com.liupeng.dubbo.example.DemoService" loadbalance="consistenthash" timeout="6000" />-->
 
