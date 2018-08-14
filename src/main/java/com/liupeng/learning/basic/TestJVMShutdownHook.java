@@ -1,4 +1,4 @@
-package com.liupeng.learning;
+package com.liupeng.learning.basic;
 
 import static java.util.concurrent.TimeUnit.SECONDS;
 

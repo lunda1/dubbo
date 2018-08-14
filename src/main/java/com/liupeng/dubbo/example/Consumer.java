@@ -16,10 +16,10 @@ public class Consumer {
         DemoService demoService = (DemoService) context.getBean("demoService");
 
         /*test sayHello method*/
-        /*for (int i=0;i<10;i++) {
+        for (int i=0;i<10;i++) {
             String hello = demoService.sayHello(i+"world");
             System.out.println(i+" "+hello);
-        }*/
+        }
 
         /*test list method*/
         /*for (int i=0;i<10;i++) {
@@ -45,11 +45,11 @@ public class Consumer {
         System.out.println(echoService.$echo("444444"));*/
 
         /*RpcContext*/
-        demoService.sayHello("hihihi!");
+        /*demoService.sayHello("hihihi!");
         RpcContext.getContext().setAttachment("index","11");
         System.out.println(JSON.toJSONString(RpcContext.getContext()));
         demoService.sayHello("hihihi!");
-        System.out.println(JSON.toJSONString(RpcContext.getContext()));
+        System.out.println(JSON.toJSONString(RpcContext.getContext()));*/
 
         Thread.currentThread().join();
 
