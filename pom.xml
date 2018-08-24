@@ -21,6 +21,11 @@
 
   <dependencies>
     <dependency>
+      <groupId>io.netty</groupId>
+      <artifactId>netty-all</artifactId>
+      <version>4.1.28.Final</version>
+    </dependency>
+    <dependency>
       <groupId>com.liupeng.learning</groupId>
       <artifactId>dubbo-spi</artifactId>
       <version>1.0-SNAPSHOT</version>

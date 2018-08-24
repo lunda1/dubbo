@@ -13,8 +13,8 @@ public class TestApiConsumer {
         registryConfig.setProtocol("zookeeper");
 
         ProtocolConfig protocolConfig = new ProtocolConfig();
-        protocolConfig.setName("rmi");
-        protocolConfig.setPort(1099);
+//        protocolConfig.setName("rmi");
+//        protocolConfig.setPort(1099);
 
 //        MonitorConfig monitorConfig = new MonitorConfig();
 //        monitorConfig.setProtocol("registry");
