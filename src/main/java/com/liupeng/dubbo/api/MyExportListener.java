@@ -7,9 +7,11 @@ import com.alibaba.dubbo.rpc.RpcException;
 import com.alibaba.dubbo.rpc.listener.ExporterListenerAdapter;
 
 @Activate
-public class MyListener extends ExporterListenerAdapter {
+public class MyExportListener extends ExporterListenerAdapter {
+
+    @Override
     public void exported(Exporter<?> exporter) throws RpcException {
         Class<?> clz = exporter.getInvoker().getInterface();
-        System.out.println("------------"+clz.getName());
+        System.out.println("export------------"+clz.getName()+"----------"+exporter.getInvoker().getUrl());
     }
 }
