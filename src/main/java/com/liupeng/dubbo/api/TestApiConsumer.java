@@ -29,7 +29,7 @@ public class TestApiConsumer {
         referenceConfig.setGroup("dubbo1");
 //        referenceConfig.setMonitor(monitorConfig);
         referenceConfig.setTimeout(3000);
-
+        //referenceConfig.setFilter("-myFilter");
 
         DemoService demoService = (DemoService) referenceConfig.get();
         System.out.println(demoService.sayHello("111"));

@@ -12,6 +12,6 @@ public class MyExportListener extends ExporterListenerAdapter {
     @Override
     public void exported(Exporter<?> exporter) throws RpcException {
         Class<?> clz = exporter.getInvoker().getInterface();
-        System.out.println("export------------"+clz.getName()+"----------"+exporter.getInvoker().getUrl());
+        System.out.println("exportListener------------"+clz.getName()+"----------"+exporter.getInvoker().getUrl());
     }
 }

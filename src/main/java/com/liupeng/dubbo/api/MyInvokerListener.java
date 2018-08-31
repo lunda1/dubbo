@@ -13,7 +13,7 @@ public class MyInvokerListener extends InvokerListenerAdapter {
     @Override
     public void referred(Invoker<?> invoker) throws RpcException {
         Class<?> clz = invoker.getInterface();
-        System.out.println("invoker------------"+clz.getName()+"------------"+invoker.getUrl().toFullString());
+        System.out.println("invokerListener------------"+clz.getName()+"------------"+invoker.getUrl().toFullString());
     }
 
 }
