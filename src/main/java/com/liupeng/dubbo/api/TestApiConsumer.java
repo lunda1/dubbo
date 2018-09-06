@@ -29,6 +29,9 @@ public class TestApiConsumer {
         referenceConfig.setGroup("dubbo1");
 //        referenceConfig.setMonitor(monitorConfig);
         referenceConfig.setTimeout(3000);
+//        referenceConfig.setMock("com.liupeng.dubbo.api.MyMock");
+        referenceConfig.setMock("return null");
+        referenceConfig.setStub("com.liupeng.dubbo.api.MyStub");
         //referenceConfig.setFilter("-myFilter");
 
         DemoService demoService = (DemoService) referenceConfig.get();

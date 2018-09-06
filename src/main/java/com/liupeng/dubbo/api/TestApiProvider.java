@@ -36,6 +36,7 @@ public class TestApiProvider {
         service.setVersion("1.0.0");
         service.setGroup("dubbo1");
 //        service.setMonitor(monitorConfig);
+//        service.setStub(true);
 
         service.export();
 
