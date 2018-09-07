@@ -3,6 +3,9 @@ package com.liupeng.dubbo.api;
 import com.alibaba.dubbo.config.*;
 import com.liupeng.dubbo.DemoService;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class TestApiConsumer {
     public static void main(String[] args) throws InterruptedException {
         ApplicationConfig applicationConfig = new ApplicationConfig();
@@ -33,6 +36,11 @@ public class TestApiConsumer {
         referenceConfig.setMock("return null");
         referenceConfig.setStub("com.liupeng.dubbo.api.MyStub");
         //referenceConfig.setFilter("-myFilter");
+        referenceConfig.setLoadbalance("consistenthash");
+        Map<String,String> parameters = new HashMap<>();
+        parameters.put("hash.arguments","0");
+        parameters.put("hash.nodes","200");
+        referenceConfig.setParameters(parameters);
 
         DemoService demoService = (DemoService) referenceConfig.get();
         System.out.println(demoService.sayHello("111"));
