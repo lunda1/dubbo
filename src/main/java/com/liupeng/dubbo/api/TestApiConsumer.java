@@ -16,6 +16,8 @@ public class TestApiConsumer {
         registryConfig.setProtocol("zookeeper");
 
         ProtocolConfig protocolConfig = new ProtocolConfig();
+        protocolConfig.setName("hessian");
+        protocolConfig.setPort(8081);
 //        protocolConfig.setName("rmi");
 //        protocolConfig.setPort(1099);
 
@@ -40,7 +42,9 @@ public class TestApiConsumer {
         Map<String,String> parameters = new HashMap<>();
         parameters.put("hash.arguments","0");
         parameters.put("hash.nodes","200");
+        parameters.put("register","false");
         referenceConfig.setParameters(parameters);
+//        referenceConfig.setUrl("dubbo://localhost:20880");
 
         DemoService demoService = (DemoService) referenceConfig.get();
         System.out.println(demoService.sayHello("111"));

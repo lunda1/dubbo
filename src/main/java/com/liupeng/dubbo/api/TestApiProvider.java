@@ -13,14 +13,19 @@ public class TestApiProvider {
 
         RegistryConfig registry = new RegistryConfig();
         registry.setAddress("127.0.0.1:2181");
+        //registry.setAddress("127.0.0.1:2181?dynamic=false");
         registry.setProtocol("zookeeper");
 
         ProtocolConfig protocol = new ProtocolConfig();
-        /*protocol.setName("rmi");
-        protocol.setPort(1099);*/
+//        protocol.setName("rmi");
+//        protocol.setPort(1099);
 
         protocol.setName("dubbo");
         protocol.setPort(20880);
+
+
+//        protocol.setName("hessian");
+//        protocol.setPort(8082);
 
 //        MonitorConfig monitorConfig = new MonitorConfig();
 //        monitorConfig.setProtocol("registry");
