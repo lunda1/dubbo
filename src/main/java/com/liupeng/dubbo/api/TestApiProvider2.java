@@ -6,10 +6,11 @@ import com.alibaba.dubbo.config.RegistryConfig;
 import com.alibaba.dubbo.config.ServiceConfig;
 import com.liupeng.dubbo.DemoService;
 import com.liupeng.dubbo.DemoServiceImpl;
+import com.liupeng.dubbo.DemoServiceImpl2;
 
 public class TestApiProvider2 {
     public static void main(String[] args) throws InterruptedException {
-        DemoService demoService = new DemoServiceImpl();
+        DemoService demoService = new DemoServiceImpl2();
 
         ApplicationConfig application = new ApplicationConfig();
         application.setName("app-api-provider");
@@ -37,7 +38,7 @@ public class TestApiProvider2 {
         service.setInterface(DemoService.class);
         service.setRef(demoService);
         service.setVersion("1.0.0");
-        service.setGroup("dubbo1");
+        service.setGroup("dubbo2");
 //        service.setMonitor(monitorConfig);
 
         service.export();

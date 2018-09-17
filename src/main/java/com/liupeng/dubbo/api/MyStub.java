@@ -2,6 +2,8 @@ package com.liupeng.dubbo.api;
 
 import com.liupeng.dubbo.DemoService;
 
+import java.util.List;
+
 public class MyStub implements DemoService {
 
     private final DemoService demoService;
@@ -13,5 +15,10 @@ public class MyStub implements DemoService {
     @Override
     public String sayHello(String name) throws InterruptedException {
         return " ----stub---- "+demoService.sayHello(name);
+    }
+
+    @Override
+    public List<Integer> listInt(List<Integer> args) throws InterruptedException {
+        return demoService.listInt(args);
     }
 }
