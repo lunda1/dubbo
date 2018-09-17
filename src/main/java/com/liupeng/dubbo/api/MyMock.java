@@ -14,4 +14,12 @@ public class MyMock implements DemoService {
     @Override public List<Integer> listInt(List<Integer> args) throws InterruptedException {
         return null;
     }
+
+    @Override public String testValidation(MyParameter myParameter) throws Exception {
+        return null;
+    }
+
+    @Override public List<Integer> addAll(List<Integer> list) throws Exception {
+        return null;
+    }
 }

@@ -1,6 +1,7 @@
 package com.liupeng.dubbo;
 
 import com.alibaba.fastjson.JSON;
+import com.liupeng.dubbo.api.MyParameter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,4 +24,9 @@ public class DemoServiceImpl implements DemoService {
         list.add(13);
         return list;
     }
+
+    @Override public String testValidation(MyParameter myParameter) throws Exception {
+        return "---"+getClass().getName();
+    }
+
 }

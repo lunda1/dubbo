@@ -33,9 +33,11 @@ public class TestApiConsumer {
         referenceConfig.setInterface(DemoService.class);
         referenceConfig.setVersion("1.0.0");
 
-        //referenceConfig.setGroup("dubbo1");
+        referenceConfig.setGroup("dubbo1");
+        //mergeable
         referenceConfig.setGroup("dubbo1,dubbo2");
-        referenceConfig.setMerger("myMerger");
+        referenceConfig.setMerger("true");
+        //referenceConfig.setMerger("myMerger");
 
 //        referenceConfig.setMonitor(monitorConfig);
         referenceConfig.setTimeout(3000);
@@ -52,9 +54,24 @@ public class TestApiConsumer {
 
 //        referenceConfig.setUrl("dubbo://localhost:20880");
 
+        //validation
+        //referenceConfig.setValidation("true");
+
         DemoService demoService = (DemoService) referenceConfig.get();
         //System.out.println(demoService.sayHello("111"));
         System.out.println(demoService.listInt(Arrays.asList(3,2,3)));
+
+
+        //validation
+        /*MyParameter myParameter = new MyParameter();
+        myParameter.setName("123");
+        myParameter.setEmail("1163.com");
+        myParameter.setAge(20);
+        try {
+            System.out.println(demoService.testValidation(myParameter));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }*/
 
         Thread.currentThread().join();
 
