@@ -19,7 +19,4 @@ public class MyMock implements DemoService {
         return null;
     }
 
-    @Override public List<Integer> addAll(List<Integer> list) throws Exception {
-        return null;
-    }
 }

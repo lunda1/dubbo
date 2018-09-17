@@ -40,7 +40,7 @@ public class TestApiConsumer {
         //referenceConfig.setMerger("myMerger");
 
 //        referenceConfig.setMonitor(monitorConfig);
-        referenceConfig.setTimeout(3000);
+        referenceConfig.setTimeout(9000);
 //        referenceConfig.setMock("com.liupeng.dubbo.api.MyMock");
         //referenceConfig.setMock("return null");
         //referenceConfig.setStub("com.liupeng.dubbo.api.MyStub");
@@ -57,9 +57,15 @@ public class TestApiConsumer {
         //validation
         //referenceConfig.setValidation("true");
 
+
+        //cache
+        referenceConfig.setCache("lru");
+
         DemoService demoService = (DemoService) referenceConfig.get();
         //System.out.println(demoService.sayHello("111"));
-        System.out.println(demoService.listInt(Arrays.asList(3,2,3)));
+        System.out.println(demoService.listInt(Arrays.asList(5,6,7)));
+
+        System.out.println(demoService.listInt(Arrays.asList(5,6,7)));
 
 
         //validation

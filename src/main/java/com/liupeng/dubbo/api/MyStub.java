@@ -26,7 +26,4 @@ public class MyStub implements DemoService {
         return demoService.testValidation(myParameter);
     }
 
-    @Override public List<Integer> addAll(List<Integer> list) throws Exception {
-        return demoService.addAll(list);
-    }
 }
