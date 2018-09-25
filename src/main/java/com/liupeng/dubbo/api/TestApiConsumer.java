@@ -1,11 +1,16 @@
 package com.liupeng.dubbo.api;
 
 import com.alibaba.dubbo.config.*;
+import com.alibaba.dubbo.rpc.RpcContext;
+import com.alibaba.dubbo.rpc.service.EchoService;
+import com.alibaba.fastjson.JSON;
 import com.liupeng.dubbo.DemoService;
 
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Future;
 
 public class TestApiConsumer {
     public static void main(String[] args) throws InterruptedException {
@@ -15,12 +20,6 @@ public class TestApiConsumer {
         RegistryConfig registryConfig = new RegistryConfig();
         registryConfig.setAddress("127.0.0.1:2181");
         registryConfig.setProtocol("zookeeper");
-
-        ProtocolConfig protocolConfig = new ProtocolConfig();
-//        protocolConfig.setName("hessian");
-//        protocolConfig.setPort(8081);
-//        protocolConfig.setName("rmi");
-//        protocolConfig.setPort(1099);
 
 //        MonitorConfig monitorConfig = new MonitorConfig();
 //        monitorConfig.setProtocol("registry");
@@ -32,12 +31,12 @@ public class TestApiConsumer {
         referenceConfig.setRegistry(registryConfig);
         referenceConfig.setInterface(DemoService.class);
         referenceConfig.setVersion("1.0.0");
-
         referenceConfig.setGroup("dubbo1");
+        referenceConfig.setScope("local");
         //mergeable
-        referenceConfig.setGroup("dubbo1,dubbo2");
-        referenceConfig.setMerger("true");
-        //referenceConfig.setMerger("myMerger");
+//        referenceConfig.setGroup("dubbo1,dubbo2");
+//        referenceConfig.setMerger("true");
+//        referenceConfig.setMerger("myMerger");
 
 //        referenceConfig.setMonitor(monitorConfig);
         referenceConfig.setTimeout(9000);
@@ -59,13 +58,37 @@ public class TestApiConsumer {
 
 
         //cache
-        referenceConfig.setCache("lru");
+        //referenceConfig.setCache("lru");
+
+        //async
+        //referenceConfig.setAsync(true);
 
         DemoService demoService = (DemoService) referenceConfig.get();
-        //System.out.println(demoService.sayHello("111"));
-        System.out.println(demoService.listInt(Arrays.asList(5,6,7)));
+        System.out.println(demoService.sayHello("123"));
+//        demoService.sayHello("123");
+//        Future<String> future = RpcContext.getContext().getFuture();
+//
+//        try {
+//            System.out.println(future.get());
+//        } catch (ExecutionException e) {
+//            e.printStackTrace();
+//        }
 
-        System.out.println(demoService.listInt(Arrays.asList(5,6,7)));
+        //echo
+        //EchoService echoService = (EchoService) referenceConfig.get();
+        //System.out.println(echoService.$echo("OK!"));
+
+        //设置RpcContext
+        //RpcContext.getContext().setAttachment("testkey","2222");
+        //System.out.println(JSON.toJSONString(RpcContext.getContext()));
+
+
+        //normal
+        //System.out.println(demoService.sayHello("111"));
+
+        //cache
+        //System.out.println(demoService.listInt(Arrays.asList(5,6,7)));
+        //System.out.println(demoService.listInt(Arrays.asList(5,6,7)));
 
 
         //validation
