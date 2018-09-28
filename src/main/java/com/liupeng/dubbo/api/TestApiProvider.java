@@ -3,10 +3,13 @@ package com.liupeng.dubbo.api;
 import com.alibaba.dubbo.config.*;
 import com.liupeng.dubbo.DemoService;
 import com.liupeng.dubbo.DemoServiceImpl;
+import com.liupeng.dubbo.example.callback.Notify;
+import com.liupeng.dubbo.example.callback.NotifyImpl;
 
 public class TestApiProvider {
     public static void main(String[] args) throws InterruptedException {
         DemoService demoService = new DemoServiceImpl();
+        Notify notify = new NotifyImpl();
 
         ApplicationConfig application = new ApplicationConfig();
         application.setName("app-api-provider");
@@ -42,6 +45,7 @@ public class TestApiProvider {
         service.setGroup("dubbo1");
 //        service.setMonitor(monitorConfig);
 //        service.setStub(true);
+        service.setDelay(5000);
 
         service.export();
 

@@ -32,7 +32,6 @@ public class TestApiConsumer {
         referenceConfig.setInterface(DemoService.class);
         referenceConfig.setVersion("1.0.0");
         referenceConfig.setGroup("dubbo1");
-        referenceConfig.setScope("local");
         //mergeable
 //        referenceConfig.setGroup("dubbo1,dubbo2");
 //        referenceConfig.setMerger("true");
@@ -40,8 +39,8 @@ public class TestApiConsumer {
 
 //        referenceConfig.setMonitor(monitorConfig);
         referenceConfig.setTimeout(9000);
-//        referenceConfig.setMock("com.liupeng.dubbo.api.MyMock");
-        //referenceConfig.setMock("return null");
+        //referenceConfig.setMock("com.liupeng.dubbo.api.MyMock");
+//        referenceConfig.setMock("return null");
         //referenceConfig.setStub("com.liupeng.dubbo.api.MyStub");
         //referenceConfig.setFilter("-myFilter");
 
@@ -62,6 +61,8 @@ public class TestApiConsumer {
 
         //async
         //referenceConfig.setAsync(true);
+
+        referenceConfig.setActives(5);
 
         DemoService demoService = (DemoService) referenceConfig.get();
         System.out.println(demoService.sayHello("123"));
