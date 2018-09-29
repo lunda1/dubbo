@@ -6,6 +6,9 @@ import com.liupeng.dubbo.DemoServiceImpl;
 import com.liupeng.dubbo.example.callback.Notify;
 import com.liupeng.dubbo.example.callback.NotifyImpl;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class TestApiProvider {
     public static void main(String[] args) throws InterruptedException {
         DemoService demoService = new DemoServiceImpl();
@@ -46,6 +49,11 @@ public class TestApiProvider {
 //        service.setMonitor(monitorConfig);
 //        service.setStub(true);
         service.setDelay(5000);
+        service.setToken(true);
+
+        Map<String,String> params = new HashMap<>();
+        params.put("accepts","3");
+        service.setParameters(params);
 
         service.export();
 

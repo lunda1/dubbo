@@ -29,6 +29,7 @@ public class TestApiConsumer {
         ReferenceConfig referenceConfig = new ReferenceConfig();
         referenceConfig.setApplication(applicationConfig);
         referenceConfig.setRegistry(registryConfig);
+        referenceConfig.setProtocol("dubbo");
         referenceConfig.setInterface(DemoService.class);
         referenceConfig.setVersion("1.0.0");
         referenceConfig.setGroup("dubbo1");
@@ -63,6 +64,11 @@ public class TestApiConsumer {
         //referenceConfig.setAsync(true);
 
         referenceConfig.setActives(5);
+        referenceConfig.setConnections(2);
+
+        Map<String,String> parameters = new HashMap<>();
+        parameters.put("router","condition");
+        referenceConfig.setParameters(parameters);
 
         DemoService demoService = (DemoService) referenceConfig.get();
         System.out.println(demoService.sayHello("123"));
