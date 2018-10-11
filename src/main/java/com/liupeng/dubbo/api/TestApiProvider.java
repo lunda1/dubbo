@@ -16,6 +16,7 @@ public class TestApiProvider {
 
         ApplicationConfig application = new ApplicationConfig();
         application.setName("app-api-provider");
+        application.setLogger("log4j");
 
         RegistryConfig registry = new RegistryConfig();
         registry.setAddress("127.0.0.1:2181");
