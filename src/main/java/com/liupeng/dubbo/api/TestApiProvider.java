@@ -18,6 +18,9 @@ public class TestApiProvider {
         application.setName("app-api-provider");
         application.setLogger("log4j");
 
+        application.setDumpDirectory("d://app-api-provider-dump.log");
+
+
         RegistryConfig registry = new RegistryConfig();
         registry.setAddress("127.0.0.1:2181");
         //registry.setAddress("127.0.0.1:2181?dynamic=false");
@@ -30,6 +33,10 @@ public class TestApiProvider {
         protocol.setName("dubbo");
         protocol.setPort(20880);
 
+        //因为配置了log4j，所以默认会将访问日志记录到log4j配置的文件中
+//        protocol.setAccesslog("true");
+        //因为配置访问日志文件，所以访问日志会打印到相应的文件中
+//        protocol.setAccesslog("d://app-api-provider.log");
 
 //        protocol.setName("hessian");
 //        protocol.setPort(8082);
@@ -51,6 +58,8 @@ public class TestApiProvider {
 //        service.setStub(true);
         service.setDelay(5000);
         service.setToken(true);
+        service.setAccesslog(true);
+
 
         Map<String,String> params = new HashMap<>();
         params.put("accepts","3");

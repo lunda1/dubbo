@@ -1,6 +1,7 @@
 package com.liupeng.dubbo.api;
 
 import com.alibaba.dubbo.config.*;
+import com.alibaba.dubbo.config.utils.ReferenceConfigCache;
 import com.alibaba.dubbo.rpc.RpcContext;
 import com.alibaba.dubbo.rpc.service.EchoService;
 import com.alibaba.fastjson.JSON;
@@ -69,6 +70,8 @@ public class TestApiConsumer {
         Map<String,String> parameters = new HashMap<>();
         parameters.put("router","condition");
         referenceConfig.setParameters(parameters);
+
+        ReferenceConfigCache cache = ReferenceConfigCache.getCache();
 
         DemoService demoService = (DemoService) referenceConfig.get();
         System.out.println(demoService.sayHello("123"));
