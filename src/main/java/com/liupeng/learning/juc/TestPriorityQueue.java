@@ -1,4 +1,4 @@
-package com.liupeng.learning.jcu;
+package com.liupeng.learning.juc;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;
