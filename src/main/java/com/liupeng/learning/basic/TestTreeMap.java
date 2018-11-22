@@ -12,7 +12,12 @@ public class TestTreeMap {
         treeMap.put(6,"six");
         treeMap.put(4,"four");
         treeMap.put(3,"three");
+        treeMap.put(5,"five");
 
+        System.out.println(JSON.toJSONString(treeMap.tailMap(2,true)));
+        System.out.println("----------------");
         System.out.println(JSON.toJSONString(treeMap.tailMap(0,true).firstEntry()));
+        System.out.println("----------------");
+        System.out.println(JSON.toJSONString(treeMap.tailMap(4,true)));
     }
 }
