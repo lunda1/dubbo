@@ -19,7 +19,7 @@ public class TestApiConsumer {
         applicationConfig.setName("app-api-consumer");
 
         RegistryConfig registryConfig = new RegistryConfig();
-        registryConfig.setAddress("127.0.0.1:2181;127.0.0.1:2182");
+        registryConfig.setAddress("127.0.0.1:2181;127.0.0.1:2182?subscribe=false");
         registryConfig.setProtocol("zookeeper");
 
 //        MonitorConfig monitorConfig = new MonitorConfig();

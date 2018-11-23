@@ -6,7 +6,9 @@ import com.liupeng.dubbo.DemoServiceImpl;
 import com.liupeng.dubbo.example.callback.Notify;
 import com.liupeng.dubbo.example.callback.NotifyImpl;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class TestApiProvider {
@@ -24,14 +26,20 @@ public class TestApiProvider {
         RegistryConfig registry = new RegistryConfig();
         registry.setAddress("127.0.0.1:2181");
         //registry.setAddress("127.0.0.1:2181?dynamic=false");
+//        registry.setAddress("127.0.0.1:2181?subscribe=false");
         registry.setProtocol("zookeeper");
 
         ProtocolConfig protocol = new ProtocolConfig();
-//        protocol.setName("rmi");
-//        protocol.setPort(1099);
-
         protocol.setName("dubbo");
         protocol.setPort(20880);
+
+        ProtocolConfig protocol2 = new ProtocolConfig();
+        protocol2.setName("rmi");
+        protocol2.setPort(1099);
+
+        List<ProtocolConfig> protocolConfigList = new ArrayList<>();
+        protocolConfigList.add(protocol);
+        protocolConfigList.add(protocol2);
 
         //因为配置了log4j，所以默认会将访问日志记录到log4j配置的文件中
 //        protocol.setAccesslog("true");
@@ -49,7 +57,8 @@ public class TestApiProvider {
         ServiceConfig<DemoService> service = new ServiceConfig<>();
         service.setApplication(application);
         service.setRegistry(registry);
-        service.setProtocol(protocol);
+        //service.setProtocol(protocol);
+        service.setProtocols(protocolConfigList);
         service.setInterface(DemoService.class);
         service.setRef(demoService);
         service.setVersion("1.0.0");
