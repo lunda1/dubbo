@@ -16,15 +16,17 @@ public class TestApiProvider {
         DemoService demoService = new DemoServiceImpl();
         Notify notify = new NotifyImpl();
 
-        ApplicationConfig application = new ApplicationConfig();
-        application.setName("app-api-provider");
-        application.setLogger("log4j");
+        ApplicationConfig applicationConfig = new ApplicationConfig();
+        applicationConfig.setName("app-api-provider");
+        applicationConfig.setLogger("log4j");
 
-        application.setDumpDirectory("d://app-api-provider-dump.log");
+        applicationConfig.setDumpDirectory("d://app-api-provider-dump.log");
 
+        //qos
+        applicationConfig.setQosEnable(true);
 
         RegistryConfig registry = new RegistryConfig();
-        registry.setAddress("127.0.0.1:2181");
+        registry.setAddress("127.0.0.1:2181|127.0.0.1:2182");
         //registry.setAddress("127.0.0.1:2181?dynamic=false");
 //        registry.setAddress("127.0.0.1:2181?subscribe=false");
         registry.setProtocol("zookeeper");
@@ -55,7 +57,7 @@ public class TestApiProvider {
 //        monitorConfig.setAddress("127.0.0.1:8083");
 
         ServiceConfig<DemoService> service = new ServiceConfig<>();
-        service.setApplication(application);
+        service.setApplication(applicationConfig);
         service.setRegistry(registry);
         //service.setProtocol(protocol);
         service.setProtocols(protocolConfigList);

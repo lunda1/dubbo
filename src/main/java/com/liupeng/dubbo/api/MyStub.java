@@ -22,7 +22,7 @@ public class MyStub implements DemoService {
         return demoService.listInt(args);
     }
 
-    @Override public String testValidation(MyParameter myParameter) throws Exception {
+    @Override public String testValidation(MyParameter myParameter) {
         return demoService.testValidation(myParameter);
     }
 

@@ -2,6 +2,7 @@ package com.liupeng.dubbo;
 
 import com.liupeng.dubbo.api.MyParameter;
 
+import javax.validation.constraints.NotNull;
 import java.util.List;
 
 public interface DemoService {
@@ -9,6 +10,6 @@ public interface DemoService {
 
     List<Integer> listInt(List<Integer> args) throws InterruptedException;
 
-    @interface TestValidation{}
-    String testValidation(MyParameter myParameter) throws Exception;
+    //@interface TestValidation{}
+    String testValidation(@NotNull MyParameter myParameter);
 }

@@ -29,7 +29,7 @@ public class DemoServiceImpl2 implements DemoService {
         return list;
     }
 
-    @Override public String testValidation(MyParameter myParameter) throws Exception {
+    @Override public String testValidation(MyParameter myParameter) {
         return "---"+getClass().getName();
     }
 

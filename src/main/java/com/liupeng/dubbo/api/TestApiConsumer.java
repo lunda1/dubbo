@@ -3,13 +3,14 @@ package com.liupeng.dubbo.api;
 import com.alibaba.dubbo.config.*;
 import com.alibaba.dubbo.config.utils.ReferenceConfigCache;
 import com.alibaba.dubbo.rpc.RpcContext;
+import com.alibaba.dubbo.rpc.RpcException;
 import com.alibaba.dubbo.rpc.service.EchoService;
 import com.alibaba.fastjson.JSON;
 import com.liupeng.dubbo.DemoService;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import javax.validation.ConstraintViolation;
+import javax.validation.ConstraintViolationException;
+import java.util.*;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 
@@ -19,7 +20,7 @@ public class TestApiConsumer {
         applicationConfig.setName("app-api-consumer");
 
         RegistryConfig registryConfig = new RegistryConfig();
-        registryConfig.setAddress("127.0.0.1:2181;127.0.0.1:2182?subscribe=false");
+        registryConfig.setAddress("127.0.0.1:2181;127.0.0.1:2182");
         registryConfig.setProtocol("zookeeper");
 
 //        MonitorConfig monitorConfig = new MonitorConfig();
@@ -55,11 +56,11 @@ public class TestApiConsumer {
 //        referenceConfig.setUrl("dubbo://localhost:20880");
 
         //validation
-        //referenceConfig.setValidation("true");
+//        referenceConfig.setValidation("true");
 
 
         //cache
-        //referenceConfig.setCache("lru");
+        referenceConfig.setCache("lru");
 
         //async
         //referenceConfig.setAsync(true);
@@ -74,7 +75,8 @@ public class TestApiConsumer {
         ReferenceConfigCache cache = ReferenceConfigCache.getCache();
 
         DemoService demoService = (DemoService) referenceConfig.get();
-        System.out.println(demoService.sayHello("123"));
+//        System.out.println(demoService.sayHello("123"));
+//        System.out.println(demoService.listInt(Arrays.asList(1,2,3,6,5,4)));
 //        demoService.sayHello("123");
 //        Future<String> future = RpcContext.getContext().getFuture();
 //
@@ -97,20 +99,22 @@ public class TestApiConsumer {
         //System.out.println(demoService.sayHello("111"));
 
         //cache
-        //System.out.println(demoService.listInt(Arrays.asList(5,6,7)));
-        //System.out.println(demoService.listInt(Arrays.asList(5,6,7)));
+        System.out.println(demoService.listInt(Arrays.asList(5,6,7)));
+        System.out.println(demoService.listInt(Arrays.asList(5,6,7)));
 
 
         //validation
-        /*MyParameter myParameter = new MyParameter();
-        myParameter.setName("123");
-        myParameter.setEmail("1163.com");
-        myParameter.setAge(20);
-        try {
-            System.out.println(demoService.testValidation(myParameter));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }*/
+//        MyParameter myParameter = new MyParameter();
+//        myParameter.setName("123");
+//        myParameter.setEmail("1163.com");
+//        myParameter.setAge(1);
+//        try {
+//            System.out.println(demoService.testValidation(myParameter));
+//        } catch (RpcException e) {
+//            ConstraintViolationException ve = (ConstraintViolationException) e.getCause(); // Inside a ConstraintViolationException
+//            Set<ConstraintViolation<?>> violations = ve.getConstraintViolations(); // You can get the collection of validation error details
+//            System.out.println(violations);
+//        }
 
         Thread.currentThread().join();
 

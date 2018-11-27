@@ -15,7 +15,7 @@ public class MyMock implements DemoService {
         return null;
     }
 
-    @Override public String testValidation(MyParameter myParameter) throws Exception {
+    @Override public String testValidation(MyParameter myParameter) {
         return null;
     }
 
