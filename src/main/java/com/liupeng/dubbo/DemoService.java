@@ -12,4 +12,5 @@ public interface DemoService {
 
     //@interface TestValidation{}
     String testValidation(@NotNull MyParameter myParameter);
+
 }

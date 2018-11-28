@@ -60,10 +60,10 @@ public class TestApiConsumer {
 
 
         //cache
-        referenceConfig.setCache("lru");
+//        referenceConfig.setCache("lru");
 
         //async
-        //referenceConfig.setAsync(true);
+        referenceConfig.setAsync(true);
 
         referenceConfig.setActives(5);
         referenceConfig.setConnections(2);
@@ -75,8 +75,14 @@ public class TestApiConsumer {
         ReferenceConfigCache cache = ReferenceConfigCache.getCache();
 
         DemoService demoService = (DemoService) referenceConfig.get();
-//        System.out.println(demoService.sayHello("123"));
-//        System.out.println(demoService.listInt(Arrays.asList(1,2,3,6,5,4)));
+        System.out.println(demoService.sayHello("123"));
+
+        try {
+            System.out.println(RpcContext.getContext().getFuture().get());
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+        //        System.out.println(demoService.listInt(Arrays.asList(1,2,3,6,5,4)));
 //        demoService.sayHello("123");
 //        Future<String> future = RpcContext.getContext().getFuture();
 //
@@ -99,8 +105,8 @@ public class TestApiConsumer {
         //System.out.println(demoService.sayHello("111"));
 
         //cache
-        System.out.println(demoService.listInt(Arrays.asList(5,6,7)));
-        System.out.println(demoService.listInt(Arrays.asList(5,6,7)));
+//        System.out.println(demoService.listInt(Arrays.asList(5,6,7)));
+//        System.out.println(demoService.listInt(Arrays.asList(5,6,7)));
 
 
         //validation

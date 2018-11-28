@@ -42,6 +42,7 @@ public class CallbackServiceImpl implements CallbackService {
     }
 
     @Override public String buildName(Integer id) {
+        System.out.println("-------buildName-------"+id+"--------------");
         return "name_"+id;
     }
 

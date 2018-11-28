@@ -1,4 +1,4 @@
-package com.liupeng.dubbo.api;
+package com.liupeng.dubbo.api.callback;
 
 import com.alibaba.dubbo.config.*;
 import com.liupeng.dubbo.DemoService;
@@ -11,13 +11,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class TestApiProvider {
+public class TestApiNotifyProvider {
     public static void main(String[] args) throws InterruptedException {
         DemoService demoService = new DemoServiceImpl();
-        Notify notify = new NotifyImpl();
 
         ApplicationConfig applicationConfig = new ApplicationConfig();
-        applicationConfig.setName("app-api-provider");
+        applicationConfig.setName("app-api-notify-provider");
         applicationConfig.setLogger("log4j");
 
         applicationConfig.setDumpDirectory("d://app-api-provider-dump.log");
@@ -43,19 +42,6 @@ public class TestApiProvider {
         protocolConfigList.add(protocol);
         protocolConfigList.add(protocol2);
 
-        //因为配置了log4j，所以默认会将访问日志记录到log4j配置的文件中
-//        protocol.setAccesslog("true");
-        //因为配置访问日志文件，所以访问日志会打印到相应的文件中
-//        protocol.setAccesslog("d://app-api-provider.log");
-
-//        protocol.setName("hessian");
-//        protocol.setPort(8082);
-
-//        MonitorConfig monitorConfig = new MonitorConfig();
-//        monitorConfig.setProtocol("registry");
-//        monitorConfig.setDefault(true);
-//        monitorConfig.setAddress("127.0.0.1:8083");
-
         ServiceConfig<DemoService> service = new ServiceConfig<>();
         service.setApplication(applicationConfig);
         service.setRegistry(registry);
@@ -65,12 +51,8 @@ public class TestApiProvider {
         service.setRef(demoService);
         service.setVersion("1.0.0");
         service.setGroup("dubbo1");
-//        service.setMonitor(monitorConfig);
-//        service.setStub(true);
         service.setDelay(5000);
-//        service.setToken(true);
         service.setAccesslog(true);
-
 
         Map<String,String> params = new HashMap<>();
         params.put("accepts","3");
