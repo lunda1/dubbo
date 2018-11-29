@@ -42,9 +42,10 @@ public class TestApiConsumer {
 
 //        referenceConfig.setMonitor(monitorConfig);
         referenceConfig.setTimeout(9000);
-        //referenceConfig.setMock("com.liupeng.dubbo.api.MyMock");
+//        referenceConfig.setMock("com.liupeng.dubbo.api.MyMock");
 //        referenceConfig.setMock("return null");
-        //referenceConfig.setStub("com.liupeng.dubbo.api.MyStub");
+//        referenceConfig.setStub("com.liupeng.dubbo.api.MyStub");
+//        referenceConfig.setStub(true);
         //referenceConfig.setFilter("-myFilter");
 
         /*referenceConfig.setLoadbalance("consistenthash");
@@ -63,7 +64,7 @@ public class TestApiConsumer {
 //        referenceConfig.setCache("lru");
 
         //async
-        referenceConfig.setAsync(true);
+//        referenceConfig.setAsync(true);
 
         referenceConfig.setActives(5);
         referenceConfig.setConnections(2);
@@ -77,20 +78,14 @@ public class TestApiConsumer {
         DemoService demoService = (DemoService) referenceConfig.get();
         System.out.println(demoService.sayHello("123"));
 
-        try {
-            System.out.println(RpcContext.getContext().getFuture().get());
-        } catch (ExecutionException e) {
-            e.printStackTrace();
-        }
-        //        System.out.println(demoService.listInt(Arrays.asList(1,2,3,6,5,4)));
-//        demoService.sayHello("123");
-//        Future<String> future = RpcContext.getContext().getFuture();
-//
+        //异步调用
 //        try {
-//            System.out.println(future.get());
+//            System.out.println(RpcContext.getContext().getFuture().get());
 //        } catch (ExecutionException e) {
 //            e.printStackTrace();
 //        }
+
+        //        System.out.println(demoService.listInt(Arrays.asList(1,2,3,6,5,4)));
 
         //echo
         //EchoService echoService = (EchoService) referenceConfig.get();

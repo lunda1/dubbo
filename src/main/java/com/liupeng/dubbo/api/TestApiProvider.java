@@ -14,7 +14,6 @@ import java.util.Map;
 public class TestApiProvider {
     public static void main(String[] args) throws InterruptedException {
         DemoService demoService = new DemoServiceImpl();
-        Notify notify = new NotifyImpl();
 
         ApplicationConfig applicationConfig = new ApplicationConfig();
         applicationConfig.setName("app-api-provider");
@@ -35,13 +34,13 @@ public class TestApiProvider {
         protocol.setName("dubbo");
         protocol.setPort(20880);
 
-        ProtocolConfig protocol2 = new ProtocolConfig();
-        protocol2.setName("rmi");
-        protocol2.setPort(1099);
+//        ProtocolConfig protocol2 = new ProtocolConfig();
+//        protocol2.setName("rmi");
+//        protocol2.setPort(1099);
 
         List<ProtocolConfig> protocolConfigList = new ArrayList<>();
         protocolConfigList.add(protocol);
-        protocolConfigList.add(protocol2);
+//        protocolConfigList.add(protocol2);
 
         //因为配置了log4j，所以默认会将访问日志记录到log4j配置的文件中
 //        protocol.setAccesslog("true");
@@ -66,7 +65,7 @@ public class TestApiProvider {
         service.setVersion("1.0.0");
         service.setGroup("dubbo1");
 //        service.setMonitor(monitorConfig);
-//        service.setStub(true);
+        service.setStub("com.liupeng.dubbo.api.MyStub");
         service.setDelay(5000);
 //        service.setToken(true);
         service.setAccesslog(true);

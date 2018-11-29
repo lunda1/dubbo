@@ -29,7 +29,7 @@ public class TestApiNotifyConsumer {
         referenceConfig.setGroup("dubbo1");
         referenceConfig.setTimeout(9000);
         //async
-        referenceConfig.setAsync(true);
+//        referenceConfig.setAsync(true);
         referenceConfig.setActives(5);
         referenceConfig.setConnections(2);
         Map<String,String> parameters = new HashMap<>();
