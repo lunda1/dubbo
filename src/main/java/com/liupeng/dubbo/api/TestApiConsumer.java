@@ -20,7 +20,8 @@ public class TestApiConsumer {
         applicationConfig.setName("app-api-consumer");
 
         RegistryConfig registryConfig = new RegistryConfig();
-        registryConfig.setAddress("127.0.0.1:2181;127.0.0.1:2182");
+//        registryConfig.setAddress("127.0.0.1:2181|127.0.0.1:2182");
+        registryConfig.setAddress("127.0.0.1:2181");
         registryConfig.setProtocol("zookeeper");
 
 //        MonitorConfig monitorConfig = new MonitorConfig();
@@ -44,7 +45,8 @@ public class TestApiConsumer {
         referenceConfig.setTimeout(9000);
 //        referenceConfig.setMock("com.liupeng.dubbo.api.MyMock");
 //        referenceConfig.setMock("return null");
-//        referenceConfig.setStub("com.liupeng.dubbo.api.MyStub");
+        referenceConfig.setStub("com.liupeng.dubbo.api.MyStub");
+        referenceConfig.setLocal("com.liupeng.dubbo.api.MyStub");
 //        referenceConfig.setStub(true);
         //referenceConfig.setFilter("-myFilter");
 
@@ -69,9 +71,9 @@ public class TestApiConsumer {
         referenceConfig.setActives(5);
         referenceConfig.setConnections(2);
 
-        Map<String,String> parameters = new HashMap<>();
-        parameters.put("router","condition");
-        referenceConfig.setParameters(parameters);
+//        Map<String,String> parameters = new HashMap<>();
+//        parameters.put("router","condition");
+//        referenceConfig.setParameters(parameters);
 
         ReferenceConfigCache cache = ReferenceConfigCache.getCache();
 

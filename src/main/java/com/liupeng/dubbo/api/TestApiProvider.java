@@ -25,7 +25,8 @@ public class TestApiProvider {
 //        applicationConfig.setQosEnable(true);
 
         RegistryConfig registry = new RegistryConfig();
-        registry.setAddress("127.0.0.1:2181|127.0.0.1:2182");
+//        registry.setAddress("127.0.0.1:2181|127.0.0.1:2182");
+        registry.setAddress("127.0.0.1:2181");
         //registry.setAddress("127.0.0.1:2181?dynamic=false");
 //        registry.setAddress("127.0.0.1:2181?subscribe=false");
         registry.setProtocol("zookeeper");
@@ -65,7 +66,7 @@ public class TestApiProvider {
         service.setVersion("1.0.0");
         service.setGroup("dubbo1");
 //        service.setMonitor(monitorConfig);
-        service.setStub("com.liupeng.dubbo.api.MyStub");
+//        service.setStub("com.liupeng.dubbo.api.MyStub");
         service.setDelay(5000);
 //        service.setToken(true);
         service.setAccesslog(true);
