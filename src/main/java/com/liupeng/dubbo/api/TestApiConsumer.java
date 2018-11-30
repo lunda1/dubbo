@@ -43,10 +43,9 @@ public class TestApiConsumer {
 
 //        referenceConfig.setMonitor(monitorConfig);
         referenceConfig.setTimeout(9000);
-//        referenceConfig.setMock("com.liupeng.dubbo.api.MyMock");
+//        referenceConfig.setMock("return mockreturn");
 //        referenceConfig.setMock("return null");
-        referenceConfig.setStub("com.liupeng.dubbo.api.MyStub");
-        referenceConfig.setLocal("com.liupeng.dubbo.api.MyStub");
+//        referenceConfig.setStub("com.liupeng.dubbo.api.MyStub");
 //        referenceConfig.setStub(true);
         //referenceConfig.setFilter("-myFilter");
 
@@ -71,13 +70,16 @@ public class TestApiConsumer {
         referenceConfig.setActives(5);
         referenceConfig.setConnections(2);
 
-//        Map<String,String> parameters = new HashMap<>();
-//        parameters.put("router","condition");
-//        referenceConfig.setParameters(parameters);
+        Map<String,String> parameters = new HashMap<>();
+        parameters.put("router","condition");
+        referenceConfig.setParameters(parameters);
 
-        ReferenceConfigCache cache = ReferenceConfigCache.getCache();
 
         DemoService demoService = (DemoService) referenceConfig.get();
+
+        ReferenceConfigCache cache = ReferenceConfigCache.getCache();
+        demoService = (DemoService) cache.get(referenceConfig);
+
         System.out.println(demoService.sayHello("123"));
 
         //异步调用
