@@ -1,7 +1,7 @@
 package com.liupeng.learning.basic;
 
 /**
- * -Xss128k:代表线程堆栈的大小为128k，一个进程可以创建多个线程，一个线程有一个堆栈
+ * -Xss128k:代表线程堆栈所占内存的大小为128k，一个进程可以创建多个线程，一个线程有一个堆栈
  */
 public class TestStackOverflowError {
     private int stackLength = 1;
