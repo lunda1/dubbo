@@ -30,6 +30,9 @@ public class TestApiProvider {
         //registry.setAddress("127.0.0.1:2181?dynamic=false");
 //        registry.setAddress("127.0.0.1:2181?subscribe=false");
         registry.setProtocol("zookeeper");
+        Map<String,String> registryParams = new HashMap<>();
+        registryParams.put("save.file","true");
+        registry.setParameters(registryParams);
 
         ProtocolConfig protocol = new ProtocolConfig();
         protocol.setName("dubbo");
@@ -75,6 +78,7 @@ public class TestApiProvider {
 
         Map<String,String> params = new HashMap<>();
         params.put("accepts","3");
+//        params.put("save.file","true");
         service.setParameters(params);
 
         service.export();
