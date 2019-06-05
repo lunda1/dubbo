@@ -20,8 +20,8 @@ public class TestApiConsumer {
         applicationConfig.setName("app-api-consumer");
 
         RegistryConfig registryConfig = new RegistryConfig();
-//        registryConfig.setAddress("127.0.0.1:2181|127.0.0.1:2182");
-        registryConfig.setAddress("127.0.0.1:2181");
+        registryConfig.setAddress("127.0.0.1:2181|127.0.0.1:2182");
+//        registryConfig.setAddress("127.0.0.1:2181");
         registryConfig.setProtocol("zookeeper");
 
 //        MonitorConfig monitorConfig = new MonitorConfig();
@@ -46,7 +46,7 @@ public class TestApiConsumer {
 //        referenceConfig.setMock("return mockreturn");
 //        referenceConfig.setMock("return null");
 //        referenceConfig.setStub("com.liupeng.dubbo.api.MyStub");
-//        referenceConfig.setStub(true);
+        referenceConfig.setStub(true);
         //referenceConfig.setFilter("-myFilter");
 
         /*referenceConfig.setLoadbalance("consistenthash");
@@ -79,6 +79,8 @@ public class TestApiConsumer {
 
         ReferenceConfigCache cache = ReferenceConfigCache.getCache();
         demoService = (DemoService) cache.get(referenceConfig);
+
+//        RpcContext.getContext().setAttachment("token","0477c751-14ed-488f-a870-cdcb2c70091d");
 
         System.out.println(demoService.sayHello("123"));
 
