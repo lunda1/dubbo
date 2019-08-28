@@ -1,4 +1,4 @@
-package com.liupeng.learning.algorithm.exchange;
+package com.liupeng.learning.algorithm.sort.exchange;
 
 import com.alibaba.fastjson.JSON;
 

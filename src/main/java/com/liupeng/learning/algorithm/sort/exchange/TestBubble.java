@@ -1,7 +1,7 @@
-package com.liupeng.learning.algorithm.exchange;
+package com.liupeng.learning.algorithm.sort.exchange;
 
 import com.alibaba.fastjson.JSON;
-import com.liupeng.learning.algorithm.AlgorithmConst;
+import com.liupeng.learning.algorithm.sort.AlgorithmConst;
 
 /**
  * @Author oliver.liu
