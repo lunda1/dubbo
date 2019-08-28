@@ -26,6 +26,7 @@ public class MergeSort {
         sort(arr,start,mid);
         sort(arr,mid+1,end);
         merge(arr,start,mid,end);
+
     }
 
     public static void merge(int[] arr, int start, int mid, int end){
@@ -38,7 +39,7 @@ public class MergeSort {
                 tmp[k++] = arr[j++];
             }
         }
-        while (i<=mid) {
+        while (i<=mid)  {
             tmp[k++] = arr[i++];
         }
         while(j<=end){
