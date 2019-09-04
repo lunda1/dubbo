@@ -6,9 +6,9 @@ package com.liupeng.learning.algorithm.greedy;
  * https://www.jianshu.com/p/fa2e4c7d8202
  */
 public class DijkstraTest {
-    public static Integer[] startArr = new Integer[]{1,1,2,2,4,4,5,4,3};
-    public static Integer[] endArr = new Integer[]{2,3,3,4,3,5,6,6,5};
-    public static Integer[] weightArr = new Integer[]{1,12,9,3,4,13,4,13,4,15,5};
+    public static Integer[] startArr =  new Integer[]{1,1,2,2,4,4,5,4,3};
+    public static Integer[] endArr =    new Integer[]{2,3,3,4,3,5,6,6,5};
+    public static Integer[] weightArr = new Integer[]{1,12,9,3,4,13,4,15,5};
     public static int[][] data = new int[7][7];
 
     public static void initData(){
