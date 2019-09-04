@@ -31,43 +31,44 @@ public class DijkstraTest {
 
         initData();
 
-        int a = 1;
-        int n = 6;
-        int min = 999;
-        int u = 0;
+        int fromIndex = 1;
+        int toIndex = 6;
+        int tmpMin = 999;
+        int tmpIndex = 0;
+        //动态记录from到其他各个点的距离
         int[] dis = new int[7];
 
-        //各点到源点距离
+        //记录已经计算过的节点
         int[] vis = new int[7];
         for (int i=1;i<vis.length;i++) {
             vis[i] = 0;
         }
 
-        vis[a]=1;
+        vis[fromIndex]=1;
 
-        for(int i=1;i<=n;i++) {
-            dis[i]=data[a][i];
+        for(int i=1;i<=toIndex;i++) {
+            dis[i]=data[fromIndex][i];
         }
 
         //Dijkstra方法核心代码
-        for(int i=1;i<=n;i++) {
+        for(int i=1;i<=toIndex;i++) {
 
-            min = 999;
+            tmpMin = 999;
             //求距离源点最近的且未访问过的点
-            for(int j=1;j<=n;j++) {
-                if(vis[j]==0 && dis[j]<min) {
-                    min=dis[j];u=j;
+            for(int j=1;j<=toIndex;j++) {
+                if(vis[j]==0 && dis[j]<tmpMin) {
+                    tmpMin=dis[j];tmpIndex=j;
                 }
             }//for
 
             //设置该点已被访问
-            vis[u]=1;
+            vis[tmpIndex]=1;
 
             //更新从该点到其余各点的最短距离
-            for(int v=1;v<=n;v++) {
-                if(data[u][v]<999) {
-                    if(dis[v]>dis[u]+data[u][v]) {
-                        dis[v]=dis[u]+data[u][v];
+            for(int v=1;v<=toIndex;v++) {
+                if(data[tmpIndex][v]<999) {
+                    if(dis[v]>dis[tmpIndex]+data[tmpIndex][v]) {
+                        dis[v]=dis[tmpIndex]+data[tmpIndex][v];
                     }//if
                 }//if
             }//for
