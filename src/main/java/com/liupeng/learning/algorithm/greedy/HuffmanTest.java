@@ -1,6 +1,8 @@
 package com.liupeng.learning.algorithm.greedy;
 
 import com.alibaba.dubbo.common.utils.CollectionUtils;
+import com.alibaba.fastjson.JSON;
+import com.google.common.base.Joiner;
 
 import java.util.*;
 
@@ -18,6 +20,31 @@ public class HuffmanTest {
     public static void main(String[] args) {
         HuffmanNode root = buildRoot();
         printRoot(root);
+        buildHuffmanCode(root);
+    }
+
+    public static void buildHuffmanCode(HuffmanNode root){
+        Map<String,String> nameAndCodeMap = new HashMap<>();
+        LinkedList<HuffmanNode> queue = new LinkedList<>();
+        queue.add(root);
+        while (!queue.isEmpty()) {
+            HuffmanNode tmpNode = queue.poll();
+            if (tmpNode.isLeaf()) {
+                List<Integer> codes = new LinkedList<>();
+                codes.add(tmpNode.getCode());
+                HuffmanNode parentNode = tmpNode.getParent();
+                while (!"root".equals(parentNode.getName())) {
+                    codes.add(parentNode.getCode());
+                    parentNode = parentNode.getParent();
+                }
+                Collections.reverse(codes);
+                nameAndCodeMap.put(tmpNode.getName(), Joiner.on("").join(codes));
+            }
+            if (tmpNode.getLeft() != null) queue.add(tmpNode.getLeft());
+            if (tmpNode.getRight() != null) queue.add(tmpNode.getRight());
+        }
+
+        System.out.println("\nHuffman codes: "+ JSON.toJSONString(nameAndCodeMap));
     }
 
     public static void printRoot(HuffmanNode root){
@@ -67,8 +94,13 @@ public class HuffmanTest {
                 HuffmanNode tmpNode = new HuffmanNode("",a1.getWeigh()+a2.getWeigh(),false,null,a1,a2);
                 a1.setParent(tmpNode);
                 a2.setParent(tmpNode);
+                String sep = !a1.isLeaf || !a2.isLeaf ? "||":"|";
+                tmpNode.setName(a1.getName()+sep+a2.getName());
+                a1.setCode(0);
+                a2.setCode(1);
 
                 if (tmp.size() == 0) {
+                    tmpNode.setName(root.getName());
                     root = tmpNode;
                     return root;
                 }
@@ -97,6 +129,7 @@ class HuffmanNode{
     HuffmanNode parent;
     HuffmanNode left;
     HuffmanNode right;
+    int code;
 
     public HuffmanNode(String name, int weigh, boolean isLeaf, HuffmanNode parent, HuffmanNode left, HuffmanNode right) {
         this.name = name;
@@ -105,6 +138,14 @@ class HuffmanNode{
         this.parent = parent;
         this.left = left;
         this.right = right;
+    }
+
+    public int getCode() {
+        return code;
+    }
+
+    public void setCode(int code) {
+        this.code = code;
     }
 
     public String getName() {

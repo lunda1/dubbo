@@ -12,8 +12,14 @@ package com.liupeng.learning.algorithm.dynamic;
  * 4 5 2 6 5
  *
  */
-public class TriangleTest {
+public class TriangleRecursiveTest {
     public static int[][] data = new int[5][5];
+
+    public static void main(String[] args) {
+        initData();
+        System.out.println(getMax());
+
+    }
 
     public static void initData(){
         data[0][0] = 7;
@@ -24,26 +30,19 @@ public class TriangleTest {
     }
 
     public static int getMax(){
-        int MAX = 101;
-        int[][] D = data;   //存储数字三角形
-        int level = 2;              //n表示层数
-        int i = 0; int j = 0;
-        int maxSum = getMaxSum(D,level-1,i,j);
+        int level = 2;              //level表示层数
+        int startI = 0; int startJ = 0;
+        int maxSum = getMaxSum(level-1,startI,startJ);
         return maxSum;
     }
 
-    public static int getMaxSum(int[][] D,int n,int i,int j){
-        if(i == n){
-            return D[i][j];
+    public static int getMaxSum(int maxRowIndex,int i,int j){
+        if(maxRowIndex == i){
+            return data[i][j];
         }
-        int x = getMaxSum(D,n,i+1,j);
-        int y = getMaxSum(D,n,i+1,j+1);
-        return Math.max(x,y)+D[i][j];
-    }
-
-    public static void main(String[] args) {
-        initData();
-        System.out.println(getMax());
+        int x = getMaxSum(maxRowIndex,i+1,j);
+        int y = getMaxSum(maxRowIndex,i+1,j+1);
+        return Math.max(x,y)+data[i][j];
     }
 
 }
