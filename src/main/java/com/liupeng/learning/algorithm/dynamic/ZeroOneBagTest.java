@@ -39,7 +39,7 @@ public class ZeroOneBagTest {
         //m[i][j] 表示 在背包容量剩余j的时候考虑到第i件物品的最大价值（考虑到第i件商品的含义是i件可能放入或者不放入）
         int m[][] = new int[n][total+1];
 
-        for(int j = 0; j < total+1; j++) {
+        for(int j = 0; j <= total; j++) {
             if(w[0] > j) {
                 m[0][j] = 0;
             } else {
@@ -52,7 +52,7 @@ public class ZeroOneBagTest {
                 if(w[i] > j) {
                     m[i][j] = m[i-1][j];
                 } else {
-                    m[i][j] = Math.max(m[i-1][j], m[i-1][j-w[i]]+v[i]);
+                    m[i][j] = Math.max(m[i-1][j], m[i-1][j-w[i]]+v[i]);//比较上一行同一列的值与上一行和当前列减去当前重量的最大值加上当前值的最大值。
                 }
             }
         }
