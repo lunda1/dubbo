@@ -30,32 +30,26 @@ public class LargestCommonSequencesTest {
 
         //初始化第一列
         for(int i=0;i<n;i++){
-            if(a[i]==b[0]){
+            if (a[i] == b[0]) {
                 dp[i][0] = 1;
-                for(int j=i+1;j<n;j++){
-                    dp[j][0] = 1;
-                }
-                break;
+            } else {
+                dp[i][0] = 0;
             }
         }//for
 
         //初始化第一行
-        for(int i=0;i<m;i++){
-            if(a[0]==b[i]){
-                dp[0][i] = 1;
-                for(int j=i+1;j<m;j++){
-                    dp[0][j] = 1;
-                }
-                break;
+        for(int j=0;j<m;j++){
+            if (a[0] == b[j]) {
+                dp[0][j] = 1;
+            } else {
+                dp[0][j] = 0;
             }
         }//for
 
         for(int i=1;i<n;i++){
             for(int j=1;j<m;j++){
                 if(a[i]==b[j]){
-                    //如果i==j，说明最长子序列还可能是dp[i-1][j-1]+1的记录。
-                    //例如：行为a,b,c；列为a,b,c,c,
-                    dp[i][j] = max(dp[i-1][j-1]+1,dp[i-1][j],dp[i][j-1]);
+                    dp[i][j] = dp[i-1][j-1]+1;//此处是区分最长公共子序列和最长公共子串的关键区别
                 }else{
                     dp[i][j] = Math.max(dp[i-1][j],dp[i][j-1]);
                 }
