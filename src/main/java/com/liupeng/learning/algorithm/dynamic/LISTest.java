@@ -1,4 +1,4 @@
-package com.liupeng.learning.algorithm.dynamic.lis;
+package com.liupeng.learning.algorithm.dynamic;
 
 /**
  * 最长上升子序列长度
